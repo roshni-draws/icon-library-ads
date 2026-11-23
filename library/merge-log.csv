@@ -1,0 +1,383 @@
+source_file,library_name,section,original_label,suggested_material
+Checkbox,checkbox_checked,Medical,Checkbox in administer list,check_box
+Chronic,chronic,Medical,Chronic condition,chronic
+Chronic_white,chronic,Medical,Chronic condition,chronic
+Clock,time,Medical,Time / scheduled time,schedule
+Control_substance_dark,controlled_substance,Medical,Controlled substance,custom:controlled_substance
+Document,document,Medical,Attached document,description
+Filter,filter,Medical,Filter list,filter_list
+FirstAid,medical,Medical,First aid / hospital case,medical_services
+Med_Advice,medical_record,Medical,Medical advice,medical_information
+Med_Attachments,attach_file,Medical,Medical record attachments,attach_file
+Med_Casetype,category,Medical,Case type,category
+Med_Complaints,symptoms,Medical,Complaints / symptoms,sick
+Med_Diagnosis,diagnosis,Medical,Diagnosis,diagnosis
+Med_Followup,event_repeat,Medical,Follow-up date,event_repeat
+Med_Lab,lab_request,Medical,Lab request / tests,science
+Med_Notes,clinical_notes,Medical,Medical notes,clinical_notes
+Med_Prescription,prescription,Medical,Prescription,prescriptions
+Notes,note,Medical,Notes,sticky_note_2
+Notes_alt,note,Medical,Notes,sticky_note_2
+Notes_icon,edit_note,Medical,Add or edit note,edit_note
+Notes_new,note_add,Medical,New note,note_add
+SkipWhiteSvg,skip,Medical,Skip dose,skip_next
+TagSimple,sell,Medical,Tag / label,sell
+administer_add,add_circle,Medical,Add administration,add_circle
+administer_done,done,Medical,Dose administered,check_circle
+afternoon,wb_sunny,Medical,Afternoon dose slot,wb_sunny
+alternative_blue,repeat,Medical,Alternate-day dosing,repeat
+animal_paw_outline,animal,Medical,Animal / individual,pets
+attach_file,attach_file,Medical,Attach file,attach_file
+batchIcon,animal_batch,Medical,Batch,custom:animal_batch
+batch_missing,error,Medical,Missing batch number,error
+capsule,pill,Medical,Medicine / capsule,pill
+change,swap,Medical,Change / swap item,swap_horiz
+clinical_notes,clinical_notes,Medical,Symptoms / clinical notes,clinical_notes
+completedVaccine,vaccine,Medical,Vaccine,vaccines
+deliveryRoute,route,Medical,Route of administration,route
+dewormingRecord,deworming,Medical,Deworming record,custom:deworming
+deworming_svg,deworming,Medical,Deworming,custom:deworming
+directVaccine,vaccine,Medical,Record vaccine directly,vaccines
+doc,file_word,Medical,Word document file,description
+document_alt,document,Medical,Document,description
+dosageSvg,medication,Medical,Dosage,medication
+expand_more,expand_more,Medical,Expand / show more,keyboard_arrow_down
+fire,urgent,Medical,Urgent / hot case,local_fire_department
+fire_red,urgent,Medical,Urgent case,local_fire_department
+galleryAdminister,add_a_photo,Medical,Photo proof of dose,add_a_photo
+history,history,Medical,History,history
+homesvg_home_health,home_health,Medical,Hospital / home health,home_health
+hospital_transfer,hospital_transfer,Medical,Hospital transfer,ambulance
+imagesmode,image,Medical,Image attachment,image
+likeicon,like,Medical,Like / acknowledge,thumb_up
+medical_record_icon,medical_record,Medical,Medical record,medical_information
+microscopegrey,lab_microscope,Medical,Lab test,biotech
+mood_bad,symptoms,Medical,Unwell / adverse reaction,sick
+morning,wb_twilight,Medical,Morning dose slot,wb_twilight
+night,bedtime,Medical,Night dose slot,bedtime
+notesNew,note_add,Medical,Add note,note_add
+pdf,file_pdf,Medical,PDF file,picture_as_pdf
+pendingVaccine,vaccine,Medical,Vaccine,vaccines
+prescriptionMedical,prescription,Medical,Prescription record,prescriptions
+printer,print,Medical,Print,print
+recordAdminister,medication,Medical,Administer record,medication
+recordAssessment,assessment,Medical,Assessment record,assignment
+recordDeworming,deworming,Medical,Deworming record,custom:deworming
+recordLab,lab_profile,Medical,Lab record,lab_profile
+recordSymtoms,symptoms,Medical,Symptoms record,sick
+recordVaccination,vaccine,Medical,Vaccination record,vaccines
+scheduleVaccine,calendar_add_on,Medical,Schedule vaccine,calendar_add_on
+skipBlackSvg,skip,Medical,Skip dose,skip_next
+skipRedIcon,skip,Medical,Skip dose,skip_next
+skipVaccine,skip,Medical,Skip vaccine,skip_next
+stopVaccine,stop_circle,Medical,Stop vaccine course,stop_circle
+supplement_module,supplement,Medical,Supplement record,nutrition
+upcoming,event_upcoming,Medical,Upcoming,event_upcoming
+vaccineIcon,vaccine,Medical,Vaccine,vaccines
+vaccineRecord,vaccine,Medical,Vaccination record,vaccines
+visit_type,event_note,Medical,Visit type,event_note
+vital_signs,vital_signs,Medical,Vital signs,vital_signs
+warning,warning,Medical,Warning,warning
+warning_complaint,report,Medical,Complaint warning,report
+weightScale,monitor_weight,Medical,Weight / weight-based dose,monitor_weight
+Dose,medication,Pharmacy,Dose,medication
+HighPR,priority_high,Pharmacy,High priority,keyboard_arrow_up
+HighPRT,priority_high,Pharmacy,High priority,keyboard_arrow_up
+HighPrior,emergency,Pharmacy,Emergency priority,emergency
+OutlineEmergency,emergency,Pharmacy,Emergency,emergency
+PharmaDispense,medication,Pharmacy,Dispense medicine,medication
+PharmaRequest,assignment_add,Pharmacy,Pharmacy request,assignment_add
+Prescription,prescription,Pharmacy,Prescription,prescriptions
+gallery-add_2,add_photo,Pharmacy,Add photo,add_photo_alternate
+priroty_icon_priority_low,priority_low,Pharmacy,Low priority,keyboard_arrow_down
+archiveIcon,archive,Lab,Archive,archive
+archiveIconSelected,archive,Lab,Archive,archive
+images_microscope,lab_microscope,Lab,Lab / microscope,biotech
+priroty_request_priority_high,priority_high,Lab,High-priority request,keyboard_arrow_up
+requestsDefault,request,Lab,Requests,approval
+requestsSelected,request,Lab,Requests,approval
+samplesDefault,lab_sample,Lab,Samples,labs
+samplesSelected,lab_sample,Lab,Samples,labs
+test_tube,lab_request,Lab,Lab request type,science
+testtube,lab_sample,Lab,Lab sample,labs
+ActiveSearch,search,Animals and species,Search,search
+Expand_icon,open_in_full,Animals and species,Expand card,open_in_full
+FavouritePlain,star,Animals and species,Favourite,star
+ModeOfReproductionIcons_OviparousIcon,repro_oviparous,Animals and species,Oviparous (lays eggs),custom:repro_oviparous
+ModeOfReproductionIcons_Ovoviviparousicon,repro_ovoviviparous,Animals and species,Ovoviviparous,custom:repro_ovoviviparous
+ModeOfReproductionIcons_UnKnownIcon,repro_unknown,Animals and species,Reproduction mode unknown,custom:repro_unknown
+ModeOfReproductionIcons_ViviparousIcon,repro_viviparous,Animals and species,Viviparous (live birth),custom:repro_viviparous
+Mortality,mortality,Animals and species,Mortality,skull
+Prescription1,prescription,Animals and species,Prescription count on card,prescriptions
+Search,search,Animals and species,Search,search
+TaxonomyIcon,account_tree,Animals and species,Taxonomy,account_tree
+actionTaken,assignment_turned_in,Animals and species,Action taken,assignment_turned_in
+add_parent,family_history,Animals and species,Add parent / female,family_history
+approved_request,done,Animals and species,Approved / completed,check_circle
+arrow_shape_up_stack,arrow_shape_up_stack,Animals and species,Tag move up / bulk,arrow_shape_up_stack
+beenhere,beenhere,Animals and species,Tagged / saved,beenhere
+death,mortality,Animals and species,Deceased,skull
+description,document,Animals and species,Description / notes,description
+deworming_black,deworming,Animals and species,Deworming,custom:deworming
+deworming_green,deworming,Animals and species,Deworming,custom:deworming
+dustbin,delete,Animals and species,Delete tag,delete
+enclosure,enclosure,Animals and species,Enclosure,fence
+foundBy,person_search,Animals and species,Found by,person_search
+gender_male,male,Animals and species,Male,male
+gridPrimary,grid_view,Animals and species,Grid view,grid_view
+gridSurface,grid_view,Animals and species,Grid view,grid_view
+hard_disk,hard_drive,Animals and species,Records / storage,hard_drive
+healthAssessment,health_and_safety,Animals and species,Health assessment,health_and_safety
+highLefttag,ear_tag_high_left,Animals and species,"Ear tag, high, left",custom:ear_tag_high_left
+highRighttag,ear_tag_high_right,Animals and species,"Ear tag, high, right",custom:ear_tag_high_right
+home_housing,enclosure,Animals and species,Housing / home enclosure,fence
+necropsy_AddIcon,add,Animals and species,Add,add
+necropsy_Alert,warning,Animals and species,Alert,warning
+necropsy_Calendar,calendar,Animals and species,Date,calendar_month
+necropsy_Checkbox-select,checkbox_checked,Animals and species,Checkbox,check_box
+necropsy_Checkbox-unselect,checkbox_unchecked,Animals and species,"Checkbox, unselected",check_box_outline_blank
+necropsy_Close,close,Animals and species,Close,close
+necropsy_delete,delete,Animals and species,Delete,delete
+necropsy_description,document,Animals and species,Description,description
+necropsy_edit,edit,Animals and species,Edit,edit
+necropsy_pdf,file_pdf,Animals and species,PDF report,picture_as_pdf
+necropsy_schedule,time,Animals and species,Schedule,schedule
+necropsy_search,search,Animals and species,Search,search
+info,info,Animals and species,Information,info
+injuryDetails,personal_injury,Animals and species,Injury details,personal_injury
+labs1,lab_request,Animals and species,Lab count on card,science
+lowLefttag,ear_tag_low_left,Animals and species,"Ear tag, low, left",custom:ear_tag_low_left
+lowRighttag,ear_tag_low_right,Animals and species,"Ear tag, low, right",custom:ear_tag_low_right
+moderateLefttag,ear_tag_moderate_left,Animals and species,"Ear tag, moderate, left",custom:ear_tag_moderate_left
+moderateRighttag,ear_tag_moderate_right,Animals and species,"Ear tag, moderate, right",custom:ear_tag_moderate_right
+moved_location,moved_location,Animals and species,Moved to new location,move_location
+pair_icon,breeding_pair,Animals and species,Breeding pair,custom:breeding_pair
+prescriptions,prescription,Animals and species,Prescriptions,prescriptions
+priroty_high,priority_high,Animals and species,High priority,keyboard_arrow_up
+priroty_low,priority_low,Animals and species,Low priority,keyboard_arrow_down
+shrink-svgrepo-com,close_fullscreen,Animals and species,Collapse card,close_fullscreen
+stepsList,format_list_numbered,Animals and species,Steps taken,format_list_numbered
+supplement,supplement,Animals and species,Supplement,nutrition
+supplement_black,supplement,Animals and species,Supplement,nutrition
+tagglobal,tag_public,Animals and species,Public tag,custom:tag_public
+tagglobalsearch,travel_explore,Animals and species,Search public tags,travel_explore
+tagprivate,tag_private,Animals and species,Private tag,custom:tag_private
+vaccination_black,vaccine,Animals and species,Vaccination,vaccines
+vaccination_green,vaccine,Animals and species,Vaccination,vaccines
+Ambulance,carcass_pickup,Mortality and necropsy,Carcass pickup / transport,ambulance
+AmbulanceFAB,carcass_pickup,Mortality and necropsy,Report mortality,ambulance
+CarcassTransferFAB,carcass_transfer,Mortality and necropsy,Carcass transfer,custom:carcass
+awaiting_approval_request,pending_actions,Mortality and necropsy,Awaiting approval,pending_actions
+delayIcon,hourglass_bottom,Mortality and necropsy,Delayed,hourglass_bottom
+fish-bones,fish_bones,Mortality and necropsy,Mortality / carcass,custom:fish_bones
+necropsy_Assessment,assessment,Mortality and necropsy,Necropsy assessment,assignment
+necropsy_EditIcon,edit,Mortality and necropsy,Edit necropsy,edit
+necropsy_MedicalHistory,medical_record,Mortality and necropsy,Medical history,medical_information
+necropsy_Timeline,timeline,Mortality and necropsy,Timeline,timeline
+necropsy_block,block,Mortality and necropsy,Blocked / not allowed,block
+necropsy_check_circle,done,Mortality and necropsy,Completed,check_circle
+necropsy_download,download,Mortality and necropsy,Download report,download
+necropsy_draft,draft,Mortality and necropsy,Draft,draft
+notIcon,cancelled,Mortality and necropsy,Not done / rejected,cancel
+refresh,refresh,Mortality and necropsy,Refresh,refresh
+Union,egg_clutch,Eggs,Egg group,custom:egg_clutch
+checkCircle,done,Eggs,Selected / done,check_circle
+clutchEgg,egg_clutch,Eggs,Clutch,custom:egg_clutch
+collectedEgg,egg_collected,Eggs,Egg collected,custom:egg_collected
+discardedEgg,egg_discarded,Eggs,Egg discarded,custom:egg_discarded
+egg,egg,Eggs,Egg,egg
+egg1,egg,Eggs,Eggs,egg
+eggAdd,egg_add,Eggs,Add egg,custom:egg_add
+eggDiscardRed,egg_discarded,Eggs,Discard egg,custom:egg_discarded
+eggDiscardSvg,egg_discarded,Eggs,Discard egg,custom:egg_discarded
+eggVectorImage,egg,Eggs,Egg,egg
+eggdiscard,egg_discarded,Eggs,Discard egg,custom:egg_discarded
+eggnest,egg_nest,Eggs,Egg in nest,custom:egg_nest
+eggnursery,egg_nursery,Eggs,Move egg to nursery,custom:egg_nursery
+gallery-add,add_photo,Eggs,Add photo,add_photo_alternate
+golden-egg,egg_golden,Eggs,Fertile / special egg,custom:egg_golden
+hatched_bird,chick_hatched,Eggs,Hatched chick,custom:chick_hatched
+hatchedegg,egg_hatched,Eggs,Hatched egg,custom:egg_hatched
+infertileegg,egg_infertile,Eggs,Infertile egg,custom:egg_infertile
+location,location,Eggs,Location / site,location_on
+medicalservices,medical,Eggs,Medical count on card,medical_services
+nestEgg,egg_nest,Eggs,Egg in nest,custom:egg_nest
+nurseryEgg,egg_nursery,Eggs,Nursery,custom:egg_nursery
+select_all_discard,select_all,Eggs,Select all to discard,select_all
+siteLocation,site,Eggs,Site,location_city
+Dietitian,dietitian,Housing and diet,Dietitian,nutrition
+MediaPdf,file_pdf,Housing and diet,PDF file,picture_as_pdf
+compare_arrows_white,transfer,Housing and diet,Transfer,compare_arrows
+edit_food_wastage,edit,Housing and diet,Edit food wastage,edit
+filter_white,filter,Housing and diet,Filter,filter_list
+food_wastage_count,compost,Housing and diet,Food wastage count,compost
+food_wastage_graph,bar_chart,Housing and diet,Graph view,bar_chart
+food_wastage_graph_active,bar_chart,Housing and diet,Graph view,bar_chart
+food_wastage_list,list,Housing and diet,List view,list
+food_wastage_list_in_active,list,Housing and diet,List view,list
+line_end_circle,line_end_circle,Housing and diet,Timeline end point (circle),line_end_circle
+move_down_white,move_in,Housing and diet,Move in,move_down
+moved_location_white,moved_location,Housing and diet,Moved location,move_location
+CompressMore,expand_less,Assessments,Collapse,keyboard_arrow_up
+DateIcon,calendar,Assessments,Date,calendar_month
+ExpandMore,expand_more,Assessments,Expand,keyboard_arrow_down
+SecondaryTrash,delete,Assessments,Remove,delete
+TimeIcon,time,Assessments,Time,schedule
+calendar_check,event_available,Assessments,Scheduled / date confirmed,event_available
+Image-Upload-section,add_photo,"Requests, approvals and transfers",Upload image,add_photo_alternate
+approved_request1,done,"Requests, approvals and transfers",Approved,check_circle
+assignment_ind,assignment_ind,"Requests, approvals and transfers",Assigned to,assignment_ind
+awaitingTertiary,pending,"Requests, approvals and transfers",Awaiting,pending
+cancel_request,cancelled,"Requests, approvals and transfers",Cancelled,cancel
+category,category,"Requests, approvals and transfers",Category,category
+check_circle,done,"Requests, approvals and transfers",Done,check_circle
+clarify,contact_support,"Requests, approvals and transfers",Clarification needed,contact_support
+completed_request,task_alt,"Requests, approvals and transfers",Completed,task_alt
+content_copy,content_copy,"Requests, approvals and transfers",Copy,content_copy
+delete,delete,"Requests, approvals and transfers",Delete,delete
+deleted_request,delete_forever,"Requests, approvals and transfers",Deleted,delete_forever
+emergency_home_fill,emergency_announcement,"Requests, approvals and transfers",Emergency,emergency_home
+flag_priority_emergency,priority_flag,"Requests, approvals and transfers",Priority flag,flag
+galleryIcon,gallery,"Requests, approvals and transfers",Gallery,photo_library
+group_alt,people,"Requests, approvals and transfers",People involved,group
+groups,groups,"Requests, approvals and transfers",Groups,groups
+in_progress_request,progress_activity,"Requests, approvals and transfers",In progress,progress_activity
+line_end_square_white,line_end_square,"Requests, approvals and transfers",Timeline end,line_end_square
+location_on,location,"Requests, approvals and transfers",Location,location_on
+move_down,move_in,"Requests, approvals and transfers",Move in,move_down
+priroty_flag_priority_high,priority_flag,"Requests, approvals and transfers",Priority flag,flag
+priroty_flag_priority_low,priority_flag,"Requests, approvals and transfers",Priority flag,flag
+quote,request_quote,"Requests, approvals and transfers",Quotation,request_quote
+rejected_request,do_not_disturb_on,"Requests, approvals and transfers",Rejected,do_not_disturb_on
+start,start,"Requests, approvals and transfers",Start point,start
+today,today,"Requests, approvals and transfers",Today / date,today
+Fullscreen,fullscreen,"Notes, journal and announcements",Full screen,fullscreen
+Group,groups,"Notes, journal and announcements",Group (journal),groups
+Helpdesk,support_agent,"Notes, journal and announcements",Helpdesk,support_agent
+LikeNewSvg,like,"Notes, journal and announcements",Like,thumb_up
+Video,videocam,"Notes, journal and announcements",Video,videocam
+campaign_white,announcement,"Notes, journal and announcements",Announcement,campaign
+chatIcon,chat_bubble,"Notes, journal and announcements",Chat / reply,chat_bubble
+comment,comment,"Notes, journal and announcements",Comment,comment
+commentIcon,comment,"Notes, journal and announcements",Comments,comment
+emergency_home,emergency_announcement,"Notes, journal and announcements",Emergency announcement,emergency_home
+errorAnnouncement,announcement,"Notes, journal and announcements",Error announcement,campaign
+like_on,like,"Notes, journal and announcements",Like,thumb_up
+priroty_flag_priority_critical,priority_flag,"Notes, journal and announcements",Priority flag,flag
+priroty_flag_priority_medium,priority_flag,"Notes, journal and announcements",Priority flag,flag
+unlike,like,"Notes, journal and announcements",Like,thumb_up
+user_module_chat,chat,"Notes, journal and announcements",Chat with user,chat
+warningAnnouncement,announcement,"Notes, journal and announcements",Warning announcement,campaign
+white_emergency,emergency_announcement,"Notes, journal and announcements",Emergency,emergency_home
+NotificationFilter,filter,Notifications,Filter notifications,filter_list
+NotificationFilterActive,filter_applied,Notifications,Filter,filter_alt
+notifications_announcement,announcement,Notifications,Announcement notification,campaign
+notifications_approvals,request,Notifications,Approval notification,approval
+notifications_carcass-transfer,carcass_transfer,Notifications,Carcass transfer notification,custom:carcass
+notifications_deworming,deworming,Notifications,Deworming notification,custom:deworming
+notifications_eggs,egg,Notifications,Eggs notification,egg
+notifications_hospital-transfer,hospital_transfer,Notifications,Hospital transfer notification,ambulance
+notifications_medical,medical,Notifications,Medical notification,medical_services
+notifications_medicine,medication,Notifications,Pharmacy notification,medication
+notifications_nacropsy,mortality,Notifications,Mortality notification,skull
+notifications_necropsy,necropsy,Notifications,Necropsy notification,biotech
+notifications_note,note,Notifications,Note notification,sticky_note_2
+notifications_pets,animal,Notifications,Animal notification,pets
+notifications_requests,request,Notifications,Request notification,approval
+notifications_sites,site,Notifications,Site notification,location_city
+notifications_supplements,supplement,Notifications,Supplement notification,nutrition
+notifications_transfer,swap,Notifications,Transfer notification,swap_horiz
+notifications_vaccination,vaccine,Notifications,Vaccination notification,vaccines
+account_circle,user,Chat,User / profile,account_circle
+admin,admin_panel_settings,Chat,Group admin,admin_panel_settings
+delete_chatmodule,delete,Chat,Delete message,delete
+floting_button_chat,add_comment,Chat,New chat,add_comment
+group_iocn_chat,groups,Chat,Group chat,groups
+remove,person_remove,Chat,Remove member,person_remove
+Favourite,star,"Home, navigation and insights",Favourite,star
+Helpdesk-Focus,support_agent,"Home, navigation and insights",Helpdesk,support_agent
+User_menu,user,"Home, navigation and insights",User menu,account_circle
+add_column_right,add_column_right,"Home, navigation and insights",Add column (reports),add_column_right
+batch_medical,animal_batch,"Home, navigation and insights",Batch medical record,custom:animal_batch
+chatIconBottomTab,forum,"Home, navigation and insights",Chat,forum
+chatIconBottomTabFocused,forum,"Home, navigation and insights",Chat,forum
+folder,folder,"Home, navigation and insights",Folder / collection,folder
+food_wastage_sort,sort,"Home, navigation and insights",Sort,sort
+homesvg_HelpDesk,support_agent,"Home, navigation and insights",Helpdesk,support_agent
+homesvg_announcementHome,announcement,"Home, navigation and insights",Announcements,campaign
+homesvg_download,download,"Home, navigation and insights",Downloads,download
+homesvg_encrypted,encrypted,"Home, navigation and insights",Security,encrypted
+homesvg_fetal_death_master,fetal_death,"Home, navigation and insights",Fetal death master,skull
+homesvg_first_aid_green,medical,"Home, navigation and insights",Medical,medical_services
+homesvg_forward,arrow_forward,"Home, navigation and insights",Forward / next,arrow_forward
+homesvg_move,move_in,"Home, navigation and insights",Move animal,move_down
+homesvg_person,person,"Home, navigation and insights",People,person
+homesvg_pets,animal,"Home, navigation and insights",Animals,pets
+homesvg_visibility,visibility,"Home, navigation and insights",Visibility,visibility
+injection,vaccine,"Home, navigation and insights",Medical favourite,vaccines
+insights_collection_icon,monitoring,"Home, navigation and insights",Insights: collection,monitoring
+insights_home_icon,query_stats,"Home, navigation and insights",Insights: home stats,query_stats
+labs,lab_request,"Home, navigation and insights",Lab,science
+qr_code_scanner,qr_code_scanner,"Home, navigation and insights",Scan QR code,qr_code_scanner
+redoIcon,redo,"Home, navigation and insights",Redo,redo
+single_medical,medical_record,"Home, navigation and insights",Single medical record,medical_information
+Account_status_indicator,person_off,"Login, account and staff",Account inactive,person_off
+Persons_group,people,"Login, account and staff",Team / members,group
+badge,verified,"Login, account and staff",Verified badge,verified
+call,call,"Login, account and staff",Call,call
+campaign,announcement,"Login, account and staff",Announcements,campaign
+chat,chat,"Login, account and staff",Chat,chat
+hospital,local_hospital,"Login, account and staff",Hospital,local_hospital
+images_finger-print,fingerprint,"Login, account and staff",Fingerprint login,fingerprint
+images_lock,lock,"Login, account and staff",Password,lock
+images_logout,logout,"Login, account and staff",Log out,logout
+images_mail,mail,"Login, account and staff",Email,mail
+images_visibility_off,visibility_off,"Login, account and staff",Hide password,visibility_off
+images_visible,visibility,"Login, account and staff",Show password,visibility
+images_warning,warning,"Login, account and staff",Warning,warning
+mail,mail,"Login, account and staff",Email,mail
+necropsyCenter,necropsy,"Login, account and staff",Necropsy centre,biotech
+person_pin_circle,person_pin_circle,"Login, account and staff",Assigned location,person_pin_circle
+sms,sms,"Login, account and staff",SMS,sms
+AssessmentOnFilter,filter_applied,"Shared controls (filter, sort, media)",Filter,filter_alt
+MediaDoc,file_word,"Shared controls (filter, sort, media)",Word document,description
+MediaExcel,file_excel,"Shared controls (filter, sort, media)",Excel file,table_chart
+PlayIcon,play_circle,"Shared controls (filter, sort, media)",Play video,play_circle
+add_complaints,add_circle,"Shared controls (filter, sort, media)",Add,add_circle
+add_photo_alternate,add_photo,"Shared controls (filter, sort, media)",Add photo,add_photo_alternate
+alphabeticalAsc,sort_a_to_z,"Shared controls (filter, sort, media)",Sort A to Z,sort_by_alpha
+alphabeticalDes,sort_z_to_a,"Shared controls (filter, sort, media)",Sort Z to A,sort_by_alpha
+detailsIcon,article,"Shared controls (filter, sort, media)",Details,article
+expand_all,unfold_more,"Shared controls (filter, sort, media)",Expand all,unfold_more
+oldFirst,sort_oldest_first,"Shared controls (filter, sort, media)",Sort oldest first,history
+priroty_icon_priority_critical,priority_critical,"Shared controls (filter, sort, media)",Critical priority,keyboard_double_arrow_up
+priroty_icon_priority_critical_filled,priority_critical,"Shared controls (filter, sort, media)",Critical priority,keyboard_double_arrow_up
+priroty_icon_priority_medium_filled,priority_medium,"Shared controls (filter, sort, media)",Medium priority,drag_handle
+priroty_modrate,priority_medium,"Shared controls (filter, sort, media)",Moderate priority,drag_handle
+recentFirst,sort_newest_first,"Shared controls (filter, sort, media)",Sort newest first,update
+request_filter_new,filter,"Shared controls (filter, sort, media)",Filter,filter_list
+sortIcons_AtoZ,sort_a_to_z,"Shared controls (filter, sort, media)",Sort A to Z,sort_by_alpha
+sortIcons_ZtoA,sort_z_to_a,"Shared controls (filter, sort, media)",Sort Z to A,sort_by_alpha
+sortIcons_arrowRight,arrow_right_alt,"Shared controls (filter, sort, media)",Sort direction arrow,arrow_right_alt
+Add,add,Shared across modules,Add,add
+AssessmentFilter,filter,Shared across modules,Filter,filter_list
+BookmarkAdded,bookmark_added,Shared across modules,Bookmarked / favourite,bookmark_added
+Calendar,calendar,Shared across modules,Date picker,calendar_month
+Gallery,gallery,Shared across modules,Pick from gallery,photo_library
+Subtract,checkbox_partial,Shared across modules,Partly selected (select all),indeterminate_check_box
+compare_arrows,transfer,Shared across modules,Transfer / move,compare_arrows
+control_substance_tag,controlled_substance,Shared across modules,Controlled substance,custom:controlled_substance
+lab_batch_medical,animal_batch,Shared across modules,Batch lab request,custom:animal_batch
+line_end_square,line_end_square,Shared across modules,Timeline end point,line_end_square
+line_start_circle,line_start_circle,Shared across modules,Timeline start point,line_start_circle
+note_alt,note_alt,Shared across modules,Assessment / notes,note_alt
+priroty_icon_priority_high_filled,priority_high,Shared across modules,High priority,keyboard_arrow_up
+priroty_icon_priority_low_filled,priority_low,Shared across modules,Low priority,keyboard_arrow_down
+select_all,select_all,Shared across modules,Select all,select_all
+fire,emergency,Pharmacy,Urgent / hot case (merged from urgent),local_fire_department
+fire_red,emergency,Pharmacy,Urgent case (merged from urgent),local_fire_department
+ModeOfReproductionIcons_OviparousIcon,egg,Eggs,Oviparous (lays eggs) (merged from repro_oviparous),custom:repro_oviparous
+actionTaken,assessment,Medical,Action taken (merged from assignment_turned_in),assignment_turned_in
+awaiting_approval_request,pending,"Requests, approvals and transfers",Awaiting approval (merged from pending_actions),pending_actions
+sms,chat,"Notes, journal and announcements",SMS (merged from sms),sms
+ModeOfReproductionIcons_ViviparousIcon,animal,Animals and species,Viviparous (live birth) (merged from repro_viviparous),custom:repro_viviparous

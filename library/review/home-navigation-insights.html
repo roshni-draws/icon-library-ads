@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Home, navigation and insights icon review</title>
+<style>
+:root{--bg:#fbfbf9;--surface:#fff;--ink:#1c1f1d;--muted:#5d6661;--line:#e3e6e3;--tile:#f2f4f2}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121413;--surface:#1a1d1b;--ink:#e6e9e6;--muted:#9aa39e;--line:#2c312e;--tile:#232724}}
+:root[data-theme="dark"]{--bg:#121413;--surface:#1a1d1b;--ink:#e6e9e6;--muted:#9aa39e;--line:#2c312e;--tile:#232724}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:1180px;margin:0 auto;padding:32px 16px 64px}
+h1{font-size:22px;margin:0 0 4px}
+p.sub{margin:0 0 20px;color:var(--muted);max-width:70ch}
+.bar{display:flex;gap:8px;margin-bottom:16px}
+.bar button{font:inherit;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:6px 12px;cursor:pointer}
+.wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:900px}
+th,td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+thead th{font-size:12px;font-weight:600;color:var(--muted);background:var(--tile)}
+tbody tr:last-child>*{border-bottom:0}
+th[scope=row]{width:190px;font-weight:400}
+th code{font:600 13px ui-monospace,SFMono-Regular,Menlo,monospace;display:block}
+.lbl{display:block;color:var(--muted);font-size:12px}
+.st{display:inline-block;margin-top:4px;font-size:11px;padding:1px 8px;border-radius:99px;background:var(--tile);color:var(--muted)}
+.set{white-space:nowrap}
+.ic{display:inline-grid;place-items:center;margin-right:10px;vertical-align:middle;color:var(--ink)}
+.ic svg{width:100%;height:100%;display:block}
+.s16{width:16px;height:16px}.s24{width:24px;height:24px}
+.s48{width:48px;height:48px;background:var(--tile);border-radius:6px;padding:0;outline:1px dashed var(--line)}
+.meta{color:var(--muted);font-size:13px;max-width:260px}
+.old{white-space:nowrap}
+.old figure{display:inline-block;margin:0 10px 0 0;text-align:center}
+.old img{width:40px;height:40px;object-fit:contain;display:block;margin:0 auto;background:#fff;border-radius:6px;border:1px solid var(--line)}
+.old figcaption{font-size:10px;color:var(--muted);max-width:72px;overflow:hidden;text-overflow:ellipsis}
+.none{color:var(--muted);font-size:12px}
+</style></head>
+<body><main>
+<h1>Home, navigation and insights icon review</h1>
+<p class="sub">ANTZ Rounded: every icon in the Home, navigation and insights module. Line and filled at 16, 24 and 48px (48px sits on a tile), next to the old mobile SVGs they replace. Icons are inlined from <code>library/line</code> and <code>library/filled</code> when this sheet was generated. Old SVGs load live from <code>app/public/current</code>.</p>
+<div class="bar"><button type="button" id="theme">Toggle light / dark</button></div>
+<div class="wrap"><table>
+<thead><tr><th scope="col">Icon</th><th scope="col">Line 16 · 24 · 48</th><th scope="col">Filled 16 · 24 · 48</th><th scope="col">Metaphor</th><th scope="col">Old SVG</th></tr></thead>
+<tbody>
+<tr>
+  <th scope="row"><code>add_column_right</code><span class="lbl">Add column (reports)</span><span class="st st-draft">draft</span></th>
+  <td class="set"><span class="ic s16" title="line 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <mask id="add_column_right-line-0">
+    <rect width="24" height="24" fill="white" stroke="none"/>
+    <circle cx="17" cy="17" r="7" fill="black" stroke="none"/>
+  </mask>
+  <g mask="url(#add_column_right-line-0)">
+    <rect x="3" y="3" width="18" height="18" rx="2"/>
+    <path d="M9 3V21M15 3V21"/>
+  </g>
+  <path d="M17 13V21M13 17H21"/>
+</svg></span><span class="ic s24" title="line 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <mask id="add_column_right-line-1">
+    <rect width="24" height="24" fill="white" stroke="none"/>
+    <circle cx="17" cy="17" r="7" fill="black" stroke="none"/>
+  </mask>
+  <g mask="url(#add_column_right-line-1)">
+    <rect x="3" y="3" width="18" height="18" rx="2"/>
+    <path d="M9 3V21M15 3V21"/>
+  </g>
+  <path d="M17 13V21M13 17H21"/>
+</svg></span><span class="ic s48" title="line 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <mask id="add_column_right-line-2">
+    <rect width="24" height="24" fill="white" stroke="none"/>
+    <circle cx="17" cy="17" r="7" fill="black" stroke="none"/>
+  </mask>
+  <g mask="url(#add_column_right-line-2)">
+    <rect x="3" y="3" width="18" height="18" rx="2"/>
+    <path d="M9 3V21M15 3V21"/>
+  </g>
+  <path d="M17 13V21M13 17H21"/>
+</svg></span></td>
+  <td class="set"><span class="ic s16" title="filled 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="add_column_right-filled-3">
+    <rect x="2" y="2" width="20" height="20" rx="3" fill="white"/>
+    <path d="M9 4V20M15 4V20" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="17" cy="17" r="7" fill="black"/>
+    <circle cx="17" cy="17" r="5" fill="white"/>
+    <path d="M17 14V20M14 17H20" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#add_column_right-filled-3)"/>
+</svg></span><span class="ic s24" title="filled 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="add_column_right-filled-4">
+    <rect x="2" y="2" width="20" height="20" rx="3" fill="white"/>
+    <path d="M9 4V20M15 4V20" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="17" cy="17" r="7" fill="black"/>
+    <circle cx="17" cy="17" r="5" fill="white"/>
+    <path d="M17 14V20M14 17H20" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#add_column_right-filled-4)"/>
+</svg></span><span class="ic s48" title="filled 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="add_column_right-filled-5">
+    <rect x="2" y="2" width="20" height="20" rx="3" fill="white"/>
+    <path d="M9 4V20M15 4V20" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="17" cy="17" r="7" fill="black"/>
+    <circle cx="17" cy="17" r="5" fill="white"/>
+    <path d="M17 14V20M14 17H20" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#add_column_right-filled-5)"/>
+</svg></span></td>
+  <td class="meta">Three-column table + add badge.</td>
+  <td class="old"><figure><img src="../../app/public/current/mobile_add_column_right.svg" alt="old add_column_right"><figcaption>add_column_right</figcaption></figure></td>
+</tr>
+<tr>
+  <th scope="row"><code>forum</code><span class="lbl">Chat</span><span class="st st-draft">draft</span></th>
+  <td class="set"><span class="ic s16" title="line 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <mask id="forum-line-6">
+    <rect width="24" height="24" fill="white" stroke="none"/>
+    <rect x="8" y="8" width="16" height="16" rx="5" fill="black" stroke="none"/>
+  </mask>
+  <g mask="url(#forum-line-6)">
+    <path d="M5 3H15A2 2 0 0 1 17 5V12A2 2 0 0 1 15 14H7L3 18V5A2 2 0 0 1 5 3Z"/>
+  </g>
+  <path d="M13 11H19A2 2 0 0 1 21 13V21L18 18H13A2 2 0 0 1 11 16V13A2 2 0 0 1 13 11Z"/>
+</svg></span><span class="ic s24" title="line 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <mask id="forum-line-7">
+    <rect width="24" height="24" fill="white" stroke="none"/>
+    <rect x="8" y="8" width="16" height="16" rx="5" fill="black" stroke="none"/>
+  </mask>
+  <g mask="url(#forum-line-7)">
+    <path d="M5 3H15A2 2 0 0 1 17 5V12A2 2 0 0 1 15 14H7L3 18V5A2 2 0 0 1 5 3Z"/>
+  </g>
+  <path d="M13 11H19A2 2 0 0 1 21 13V21L18 18H13A2 2 0 0 1 11 16V13A2 2 0 0 1 13 11Z"/>
+</svg></span><span class="ic s48" title="line 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <mask id="forum-line-8">
+    <rect width="24" height="24" fill="white" stroke="none"/>
+    <rect x="8" y="8" width="16" height="16" rx="5" fill="black" stroke="none"/>
+  </mask>
+  <g mask="url(#forum-line-8)">
+    <path d="M5 3H15A2 2 0 0 1 17 5V12A2 2 0 0 1 15 14H7L3 18V5A2 2 0 0 1 5 3Z"/>
+  </g>
+  <path d="M13 11H19A2 2 0 0 1 21 13V21L18 18H13A2 2 0 0 1 11 16V13A2 2 0 0 1 13 11Z"/>
+</svg></span></td>
+  <td class="set"><span class="ic s16" title="filled 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="forum-filled-9">
+    <path d="M5 3H15A2 2 0 0 1 17 5V12A2 2 0 0 1 15 14H7L3 18V5A2 2 0 0 1 5 3Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="8" y="8" width="16" height="16" rx="5" fill="black"/>
+    <path d="M13 11H19A2 2 0 0 1 21 13V21L18 18H13A2 2 0 0 1 11 16V13A2 2 0 0 1 13 11Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#forum-filled-9)"/>
+</svg></span><span class="ic s24" title="filled 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="forum-filled-10">
+    <path d="M5 3H15A2 2 0 0 1 17 5V12A2 2 0 0 1 15 14H7L3 18V5A2 2 0 0 1 5 3Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="8" y="8" width="16" height="16" rx="5" fill="black"/>
+    <path d="M13 11H19A2 2 0 0 1 21 13V21L18 18H13A2 2 0 0 1 11 16V13A2 2 0 0 1 13 11Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#forum-filled-10)"/>
+</svg></span><span class="ic s48" title="filled 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="forum-filled-11">
+    <path d="M5 3H15A2 2 0 0 1 17 5V12A2 2 0 0 1 15 14H7L3 18V5A2 2 0 0 1 5 3Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="8" y="8" width="16" height="16" rx="5" fill="black"/>
+    <path d="M13 11H19A2 2 0 0 1 21 13V21L18 18H13A2 2 0 0 1 11 16V13A2 2 0 0 1 13 11Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#forum-filled-11)"/>
+</svg></span></td>
+  <td class="meta">Two speech bubbles, the back one hidden 2px behind the front one.</td>
+  <td class="old"><figure><img src="../../app/public/current/mobile_chatIconBottomTab.svg" alt="old chatIconBottomTab"><figcaption>chatIconBottomTab</figcaption></figure><figure><img src="../../app/public/current/mobile_chatIconBottomTabFocused.svg" alt="old chatIconBottomTabFocused"><figcaption>chatIconBottomTabFocused</figcaption></figure></td>
+</tr>
+<tr>
+  <th scope="row"><code>folder</code><span class="lbl">Folder / collection</span><span class="st st-draft">draft</span></th>
+  <td class="set"><span class="ic s16" title="line 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M5 4H9L12 7H19A2 2 0 0 1 21 9V18A2 2 0 0 1 19 20H5A2 2 0 0 1 3 18V6A2 2 0 0 1 5 4Z"/>
+</svg></span><span class="ic s24" title="line 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M5 4H9L12 7H19A2 2 0 0 1 21 9V18A2 2 0 0 1 19 20H5A2 2 0 0 1 3 18V6A2 2 0 0 1 5 4Z"/>
+</svg></span><span class="ic s48" title="line 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M5 4H9L12 7H19A2 2 0 0 1 21 9V18A2 2 0 0 1 19 20H5A2 2 0 0 1 3 18V6A2 2 0 0 1 5 4Z"/>
+</svg></span></td>
+  <td class="set"><span class="ic s16" title="filled 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="folder-filled-15">
+    <path d="M5 4H9L12 7H19A2 2 0 0 1 21 9V18A2 2 0 0 1 19 20H5A2 2 0 0 1 3 18V6A2 2 0 0 1 5 4Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#folder-filled-15)"/>
+</svg></span><span class="ic s24" title="filled 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="folder-filled-16">
+    <path d="M5 4H9L12 7H19A2 2 0 0 1 21 9V18A2 2 0 0 1 19 20H5A2 2 0 0 1 3 18V6A2 2 0 0 1 5 4Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#folder-filled-16)"/>
+</svg></span><span class="ic s48" title="filled 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="folder-filled-17">
+    <path d="M5 4H9L12 7H19A2 2 0 0 1 21 9V18A2 2 0 0 1 19 20H5A2 2 0 0 1 3 18V6A2 2 0 0 1 5 4Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#folder-filled-17)"/>
+</svg></span></td>
+  <td class="meta">Folder with a 45° tab.</td>
+  <td class="old"><figure><img src="../../app/public/current/mobile_folder.svg" alt="old folder"><figcaption>folder</figcaption></figure></td>
+</tr>
+<tr>
+  <th scope="row"><code>sort</code><span class="lbl">Sort</span><span class="st st-draft">draft</span></th>
+  <td class="set"><span class="ic s16" title="line 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M4 6H20M4 12H15M4 18H10"/>
+</svg></span><span class="ic s24" title="line 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M4 6H20M4 12H15M4 18H10"/>
+</svg></span><span class="ic s48" title="line 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M4 6H20M4 12H15M4 18H10"/>
+</svg></span></td>
+  <td class="set"><span class="ic s16" title="filled 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="sort-filled-21">
+    <path d="M4 6H20M4 12H15M4 18H10" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#sort-filled-21)"/>
+</svg></span><span class="ic s24" title="filled 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="sort-filled-22">
+    <path d="M4 6H20M4 12H15M4 18H10" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#sort-filled-22)"/>
+</svg></span><span class="ic s48" title="filled 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="sort-filled-23">
+    <path d="M4 6H20M4 12H15M4 18H10" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#sort-filled-23)"/>
+</svg></span></td>
+  <td class="meta">Three left-aligned lines, longest to shortest.</td>
+  <td class="old"><figure><img src="../../app/public/current/mobile_food_wastage_sort.svg" alt="old food_wastage_sort"><figcaption>food_wastage_sort</figcaption></figure></td>
+</tr>
+<tr>
+  <th scope="row"><code>encrypted</code><span class="lbl">Security</span><span class="st st-draft">draft</span></th>
+  <td class="set"><span class="ic s16" title="line 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M5 5A2 2 0 0 1 7 3H17A2 2 0 0 1 19 5V11C19 16 15.5 19.5 12 21C8.5 19.5 5 16 5 11Z"/>
+  <circle cx="12" cy="10" r="2"/>
+  <path d="M12 12V15"/>
+</svg></span><span class="ic s24" title="line 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M5 5A2 2 0 0 1 7 3H17A2 2 0 0 1 19 5V11C19 16 15.5 19.5 12 21C8.5 19.5 5 16 5 11Z"/>
+  <circle cx="12" cy="10" r="2"/>
+  <path d="M12 12V15"/>
+</svg></span><span class="ic s48" title="line 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M5 5A2 2 0 0 1 7 3H17A2 2 0 0 1 19 5V11C19 16 15.5 19.5 12 21C8.5 19.5 5 16 5 11Z"/>
+  <circle cx="12" cy="10" r="2"/>
+  <path d="M12 12V15"/>
+</svg></span></td>
+  <td class="set"><span class="ic s16" title="filled 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="encrypted-filled-27">
+    <path d="M5 5A2 2 0 0 1 7 3H17A2 2 0 0 1 19 5V11C19 16 15.5 19.5 12 21C8.5 19.5 5 16 5 11Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="12" cy="10" r="2" fill="black"/>
+    <path d="M12 10V15" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#encrypted-filled-27)"/>
+</svg></span><span class="ic s24" title="filled 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="encrypted-filled-28">
+    <path d="M5 5A2 2 0 0 1 7 3H17A2 2 0 0 1 19 5V11C19 16 15.5 19.5 12 21C8.5 19.5 5 16 5 11Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="12" cy="10" r="2" fill="black"/>
+    <path d="M12 10V15" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#encrypted-filled-28)"/>
+</svg></span><span class="ic s48" title="filled 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="encrypted-filled-29">
+    <path d="M5 5A2 2 0 0 1 7 3H17A2 2 0 0 1 19 5V11C19 16 15.5 19.5 12 21C8.5 19.5 5 16 5 11Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="12" cy="10" r="2" fill="black"/>
+    <path d="M12 10V15" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#encrypted-filled-29)"/>
+</svg></span></td>
+  <td class="meta">Shield with a keyhole.</td>
+  <td class="old"><figure><img src="../../app/public/current/mobile_homesvg_encrypted.svg" alt="old homesvg_encrypted"><figcaption>homesvg_encrypted</figcaption></figure></td>
+</tr>
+<tr>
+  <th scope="row"><code>fetal_death</code><span class="lbl">Fetal death</span><span class="st st-draft">draft</span></th>
+  <td class="set"><span class="ic s16" title="line 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="13" cy="8" r="4"/>
+  <path d="M9 9C5 12 6 19 11 20C15 21 19 19 19 15"/>
+</svg></span><span class="ic s24" title="line 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="13" cy="8" r="4"/>
+  <path d="M9 9C5 12 6 19 11 20C15 21 19 19 19 15"/>
+</svg></span><span class="ic s48" title="line 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="13" cy="8" r="4"/>
+  <path d="M9 9C5 12 6 19 11 20C15 21 19 19 19 15"/>
+</svg></span></td>
+  <td class="set"><span class="ic s16" title="filled 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="fetal_death-filled-33">
+    <circle cx="13" cy="8" r="5" fill="white"/>
+    <path d="M9 9C5 12 6 19 11 20C15 21 19 19 19 15" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#fetal_death-filled-33)"/>
+</svg></span><span class="ic s24" title="filled 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="fetal_death-filled-34">
+    <circle cx="13" cy="8" r="5" fill="white"/>
+    <path d="M9 9C5 12 6 19 11 20C15 21 19 19 19 15" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#fetal_death-filled-34)"/>
+</svg></span><span class="ic s48" title="filled 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="fetal_death-filled-35">
+    <circle cx="13" cy="8" r="5" fill="white"/>
+    <path d="M9 9C5 12 6 19 11 20C15 21 19 19 19 15" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#fetal_death-filled-35)"/>
+</svg></span></td>
+  <td class="meta">Curled fetus: large head, body curling underneath. Needs a designer pass.</td>
+  <td class="old"><figure><img src="../../app/public/current/mobile_homesvg_fetal_death_master.svg" alt="old homesvg_fetal_death_master"><figcaption>homesvg_fetal_death_master</figcaption></figure></td>
+</tr>
+<tr>
+  <th scope="row"><code>arrow_forward</code><span class="lbl">Forward / next</span><span class="st st-draft">draft</span></th>
+  <td class="set"><span class="ic s16" title="line 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M4 12H20M14 6L20 12L14 18"/>
+</svg></span><span class="ic s24" title="line 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M4 12H20M14 6L20 12L14 18"/>
+</svg></span><span class="ic s48" title="line 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M4 12H20M14 6L20 12L14 18"/>
+</svg></span></td>
+  <td class="set"><span class="ic s16" title="filled 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="arrow_forward-filled-39">
+    <path d="M4 12H20M14 6L20 12L14 18" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#arrow_forward-filled-39)"/>
+</svg></span><span class="ic s24" title="filled 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="arrow_forward-filled-40">
+    <path d="M4 12H20M14 6L20 12L14 18" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#arrow_forward-filled-40)"/>
+</svg></span><span class="ic s48" title="filled 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="arrow_forward-filled-41">
+    <path d="M4 12H20M14 6L20 12L14 18" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#arrow_forward-filled-41)"/>
+</svg></span></td>
+  <td class="meta">Arrow pointing right (6px head).</td>
+  <td class="old"><figure><img src="../../app/public/current/mobile_homesvg_forward.svg" alt="old homesvg_forward"><figcaption>homesvg_forward</figcaption></figure></td>
+</tr>
+<tr>
+  <th scope="row"><code>person</code><span class="lbl">People</span><span class="st st-draft">draft</span></th>
+  <td class="set"><span class="ic s16" title="line 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="7" r="4"/>
+  <path d="M8 15H16A4 4 0 0 1 20 19A2 2 0 0 1 18 21H6A2 2 0 0 1 4 19A4 4 0 0 1 8 15Z"/>
+</svg></span><span class="ic s24" title="line 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="7" r="4"/>
+  <path d="M8 15H16A4 4 0 0 1 20 19A2 2 0 0 1 18 21H6A2 2 0 0 1 4 19A4 4 0 0 1 8 15Z"/>
+</svg></span><span class="ic s48" title="line 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="7" r="4"/>
+  <path d="M8 15H16A4 4 0 0 1 20 19A2 2 0 0 1 18 21H6A2 2 0 0 1 4 19A4 4 0 0 1 8 15Z"/>
+</svg></span></td>
+  <td class="set"><span class="ic s16" title="filled 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="person-filled-45">
+    <circle cx="12" cy="7" r="5" fill="white"/>
+    <path d="M8 15H16A4 4 0 0 1 20 19A2 2 0 0 1 18 21H6A2 2 0 0 1 4 19A4 4 0 0 1 8 15Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#person-filled-45)"/>
+</svg></span><span class="ic s24" title="filled 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="person-filled-46">
+    <circle cx="12" cy="7" r="5" fill="white"/>
+    <path d="M8 15H16A4 4 0 0 1 20 19A2 2 0 0 1 18 21H6A2 2 0 0 1 4 19A4 4 0 0 1 8 15Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#person-filled-46)"/>
+</svg></span><span class="ic s48" title="filled 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="person-filled-47">
+    <circle cx="12" cy="7" r="5" fill="white"/>
+    <path d="M8 15H16A4 4 0 0 1 20 19A2 2 0 0 1 18 21H6A2 2 0 0 1 4 19A4 4 0 0 1 8 15Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#person-filled-47)"/>
+</svg></span></td>
+  <td class="meta">Head r4 + rounded shoulders. Common PERSON base.</td>
+  <td class="old"><figure><img src="../../app/public/current/mobile_homesvg_person.svg" alt="old homesvg_person"><figcaption>homesvg_person</figcaption></figure></td>
+</tr>
+<tr>
+  <th scope="row"><code>visibility</code><span class="lbl">Show / visible</span><span class="st st-draft">draft</span></th>
+  <td class="set"><span class="ic s16" title="line 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 12C5 7.5 8.5 5 12 5S19 7.5 21 12C19 16.5 15.5 19 12 19S5 16.5 3 12Z"/>
+  <circle cx="12" cy="12" r="3"/>
+</svg></span><span class="ic s24" title="line 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 12C5 7.5 8.5 5 12 5S19 7.5 21 12C19 16.5 15.5 19 12 19S5 16.5 3 12Z"/>
+  <circle cx="12" cy="12" r="3"/>
+</svg></span><span class="ic s48" title="line 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 12C5 7.5 8.5 5 12 5S19 7.5 21 12C19 16.5 15.5 19 12 19S5 16.5 3 12Z"/>
+  <circle cx="12" cy="12" r="3"/>
+</svg></span></td>
+  <td class="set"><span class="ic s16" title="filled 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="visibility-filled-51">
+    <path d="M3 12C5 7.5 8.5 5 12 5S19 7.5 21 12C19 16.5 15.5 19 12 19S5 16.5 3 12Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M15 12A3 3 0 1 1 9 12A3 3 0 1 1 15 12Z" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#visibility-filled-51)"/>
+</svg></span><span class="ic s24" title="filled 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="visibility-filled-52">
+    <path d="M3 12C5 7.5 8.5 5 12 5S19 7.5 21 12C19 16.5 15.5 19 12 19S5 16.5 3 12Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M15 12A3 3 0 1 1 9 12A3 3 0 1 1 15 12Z" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#visibility-filled-52)"/>
+</svg></span><span class="ic s48" title="filled 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="visibility-filled-53">
+    <path d="M3 12C5 7.5 8.5 5 12 5S19 7.5 21 12C19 16.5 15.5 19 12 19S5 16.5 3 12Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M15 12A3 3 0 1 1 9 12A3 3 0 1 1 15 12Z" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#visibility-filled-53)"/>
+</svg></span></td>
+  <td class="meta">Eye with pupil ring. Filled: solid eye, pupil ring cut.</td>
+  <td class="old"><figure><img src="../../app/public/current/mobile_homesvg_visibility.svg" alt="old homesvg_visibility"><figcaption>homesvg_visibility</figcaption></figure><figure><img src="../../app/public/current/mobile_images_visible.svg" alt="old images_visible"><figcaption>images_visible</figcaption></figure></td>
+</tr>
+<tr>
+  <th scope="row"><code>monitoring</code><span class="lbl">Insights: collection</span><span class="st st-draft">draft</span></th>
+  <td class="set"><span class="ic s16" title="line 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 3V19A2 2 0 0 0 5 21H21"/>
+  <path d="M7 15L11 11L14 14L20 8"/>
+</svg></span><span class="ic s24" title="line 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 3V19A2 2 0 0 0 5 21H21"/>
+  <path d="M7 15L11 11L14 14L20 8"/>
+</svg></span><span class="ic s48" title="line 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 3V19A2 2 0 0 0 5 21H21"/>
+  <path d="M7 15L11 11L14 14L20 8"/>
+</svg></span></td>
+  <td class="set"><span class="ic s16" title="filled 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="monitoring-filled-57">
+    <path d="M3 3V19A2 2 0 0 0 5 21H21" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M7 15L11 11L14 14L20 8" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#monitoring-filled-57)"/>
+</svg></span><span class="ic s24" title="filled 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="monitoring-filled-58">
+    <path d="M3 3V19A2 2 0 0 0 5 21H21" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M7 15L11 11L14 14L20 8" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#monitoring-filled-58)"/>
+</svg></span><span class="ic s48" title="filled 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="monitoring-filled-59">
+    <path d="M3 3V19A2 2 0 0 0 5 21H21" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M7 15L11 11L14 14L20 8" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#monitoring-filled-59)"/>
+</svg></span></td>
+  <td class="meta">Chart axes with a 45° trend line.</td>
+  <td class="old"><figure><img src="../../app/public/current/mobile_insights_collection_icon.svg" alt="old insights_collection_icon"><figcaption>insights_collection_icon</figcaption></figure></td>
+</tr>
+<tr>
+  <th scope="row"><code>query_stats</code><span class="lbl">Insights: home stats</span><span class="st st-draft">draft</span></th>
+  <td class="set"><span class="ic s16" title="line 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <mask id="query_stats-line-60">
+    <rect width="24" height="24" fill="white" stroke="none"/>
+    <circle cx="16" cy="16" r="6" fill="black" stroke="none"/>
+  </mask>
+  <path d="M3 14L8 9L12 13L19 6" mask="url(#query_stats-line-60)"/>
+  <circle cx="16" cy="16" r="3"/>
+  <path d="M19 19L21 21"/>
+</svg></span><span class="ic s24" title="line 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <mask id="query_stats-line-61">
+    <rect width="24" height="24" fill="white" stroke="none"/>
+    <circle cx="16" cy="16" r="6" fill="black" stroke="none"/>
+  </mask>
+  <path d="M3 14L8 9L12 13L19 6" mask="url(#query_stats-line-61)"/>
+  <circle cx="16" cy="16" r="3"/>
+  <path d="M19 19L21 21"/>
+</svg></span><span class="ic s48" title="line 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <mask id="query_stats-line-62">
+    <rect width="24" height="24" fill="white" stroke="none"/>
+    <circle cx="16" cy="16" r="6" fill="black" stroke="none"/>
+  </mask>
+  <path d="M3 14L8 9L12 13L19 6" mask="url(#query_stats-line-62)"/>
+  <circle cx="16" cy="16" r="3"/>
+  <path d="M19 19L21 21"/>
+</svg></span></td>
+  <td class="set"><span class="ic s16" title="filled 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="query_stats-filled-63">
+    <path d="M3 14L8 9L12 13L19 6" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="16" cy="16" r="6" fill="black"/>
+    <circle cx="16" cy="16" r="4" fill="white"/>
+    <path d="M19 19L21 21" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="16" cy="16" r="1" fill="black"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#query_stats-filled-63)"/>
+</svg></span><span class="ic s24" title="filled 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="query_stats-filled-64">
+    <path d="M3 14L8 9L12 13L19 6" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="16" cy="16" r="6" fill="black"/>
+    <circle cx="16" cy="16" r="4" fill="white"/>
+    <path d="M19 19L21 21" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="16" cy="16" r="1" fill="black"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#query_stats-filled-64)"/>
+</svg></span><span class="ic s48" title="filled 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="query_stats-filled-65">
+    <path d="M3 14L8 9L12 13L19 6" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="16" cy="16" r="6" fill="black"/>
+    <circle cx="16" cy="16" r="4" fill="white"/>
+    <path d="M19 19L21 21" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="16" cy="16" r="1" fill="black"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#query_stats-filled-65)"/>
+</svg></span></td>
+  <td class="meta">Trend line with a small magnifier cut into it (bottom right).</td>
+  <td class="old"><figure><img src="../../app/public/current/mobile_insights_home_icon.svg" alt="old insights_home_icon"><figcaption>insights_home_icon</figcaption></figure></td>
+</tr>
+<tr>
+  <th scope="row"><code>qr_code_scanner</code><span class="lbl">Scan QR code</span><span class="st st-draft">draft</span></th>
+  <td class="set"><span class="ic s16" title="line 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 6V5A2 2 0 0 1 5 3H6M18 3H19A2 2 0 0 1 21 5V6M21 18V19A2 2 0 0 1 19 21H18M6 21H5A2 2 0 0 1 3 19V18"/>
+  <rect x="8" y="8" width="2" height="2"/>
+  <rect x="14" y="8" width="2" height="2"/>
+  <rect x="8" y="14" width="2" height="2"/>
+  <path d="M15 15V15"/>
+</svg></span><span class="ic s24" title="line 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 6V5A2 2 0 0 1 5 3H6M18 3H19A2 2 0 0 1 21 5V6M21 18V19A2 2 0 0 1 19 21H18M6 21H5A2 2 0 0 1 3 19V18"/>
+  <rect x="8" y="8" width="2" height="2"/>
+  <rect x="14" y="8" width="2" height="2"/>
+  <rect x="8" y="14" width="2" height="2"/>
+  <path d="M15 15V15"/>
+</svg></span><span class="ic s48" title="line 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 6V5A2 2 0 0 1 5 3H6M18 3H19A2 2 0 0 1 21 5V6M21 18V19A2 2 0 0 1 19 21H18M6 21H5A2 2 0 0 1 3 19V18"/>
+  <rect x="8" y="8" width="2" height="2"/>
+  <rect x="14" y="8" width="2" height="2"/>
+  <rect x="8" y="14" width="2" height="2"/>
+  <path d="M15 15V15"/>
+</svg></span></td>
+  <td class="set"><span class="ic s16" title="filled 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="qr_code_scanner-filled-69">
+    <path d="M3 6V5A2 2 0 0 1 5 3H6M18 3H19A2 2 0 0 1 21 5V6M21 18V19A2 2 0 0 1 19 21H18M6 21H5A2 2 0 0 1 3 19V18" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M8 7H10A1 1 0 0 1 11 8V10A1 1 0 0 1 10 11H8A1 1 0 0 1 7 10V8A1 1 0 0 1 8 7Z" fill="white"/>
+    <path d="M14 7H16A1 1 0 0 1 17 8V10A1 1 0 0 1 16 11H14A1 1 0 0 1 13 10V8A1 1 0 0 1 14 7Z" fill="white"/>
+    <path d="M8 13H10A1 1 0 0 1 11 14V16A1 1 0 0 1 10 17H8A1 1 0 0 1 7 16V14A1 1 0 0 1 8 13Z" fill="white"/>
+    <path d="M15 15V15" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#qr_code_scanner-filled-69)"/>
+</svg></span><span class="ic s24" title="filled 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="qr_code_scanner-filled-70">
+    <path d="M3 6V5A2 2 0 0 1 5 3H6M18 3H19A2 2 0 0 1 21 5V6M21 18V19A2 2 0 0 1 19 21H18M6 21H5A2 2 0 0 1 3 19V18" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M8 7H10A1 1 0 0 1 11 8V10A1 1 0 0 1 10 11H8A1 1 0 0 1 7 10V8A1 1 0 0 1 8 7Z" fill="white"/>
+    <path d="M14 7H16A1 1 0 0 1 17 8V10A1 1 0 0 1 16 11H14A1 1 0 0 1 13 10V8A1 1 0 0 1 14 7Z" fill="white"/>
+    <path d="M8 13H10A1 1 0 0 1 11 14V16A1 1 0 0 1 10 17H8A1 1 0 0 1 7 16V14A1 1 0 0 1 8 13Z" fill="white"/>
+    <path d="M15 15V15" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#qr_code_scanner-filled-70)"/>
+</svg></span><span class="ic s48" title="filled 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="qr_code_scanner-filled-71">
+    <path d="M3 6V5A2 2 0 0 1 5 3H6M18 3H19A2 2 0 0 1 21 5V6M21 18V19A2 2 0 0 1 19 21H18M6 21H5A2 2 0 0 1 3 19V18" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M8 7H10A1 1 0 0 1 11 8V10A1 1 0 0 1 10 11H8A1 1 0 0 1 7 10V8A1 1 0 0 1 8 7Z" fill="white"/>
+    <path d="M14 7H16A1 1 0 0 1 17 8V10A1 1 0 0 1 16 11H14A1 1 0 0 1 13 10V8A1 1 0 0 1 14 7Z" fill="white"/>
+    <path d="M8 13H10A1 1 0 0 1 11 14V16A1 1 0 0 1 10 17H8A1 1 0 0 1 7 16V14A1 1 0 0 1 8 13Z" fill="white"/>
+    <path d="M15 15V15" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#qr_code_scanner-filled-71)"/>
+</svg></span></td>
+  <td class="meta">Scan corners (same as select_all) around three QR finder squares and a dot.</td>
+  <td class="old"><figure><img src="../../app/public/current/mobile_qr_code_scanner.svg" alt="old qr_code_scanner"><figcaption>qr_code_scanner</figcaption></figure></td>
+</tr>
+<tr>
+  <th scope="row"><code>redo</code><span class="lbl">Redo</span><span class="st st-draft">draft</span></th>
+  <td class="set"><span class="ic s16" title="line 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M20 10H8A4 4 0 0 0 8 18H12M16 6L20 10L16 14"/>
+</svg></span><span class="ic s24" title="line 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M20 10H8A4 4 0 0 0 8 18H12M16 6L20 10L16 14"/>
+</svg></span><span class="ic s48" title="line 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M20 10H8A4 4 0 0 0 8 18H12M16 6L20 10L16 14"/>
+</svg></span></td>
+  <td class="set"><span class="ic s16" title="filled 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="redo-filled-75">
+    <path d="M20 10H8A4 4 0 0 0 8 18H12M16 6L20 10L16 14" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#redo-filled-75)"/>
+</svg></span><span class="ic s24" title="filled 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="redo-filled-76">
+    <path d="M20 10H8A4 4 0 0 0 8 18H12M16 6L20 10L16 14" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#redo-filled-76)"/>
+</svg></span><span class="ic s48" title="filled 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="redo-filled-77">
+    <path d="M20 10H8A4 4 0 0 0 8 18H12M16 6L20 10L16 14" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#redo-filled-77)"/>
+</svg></span></td>
+  <td class="meta">U-turn arrow returning right.</td>
+  <td class="old"><figure><img src="../../app/public/current/mobile_redoIcon.svg" alt="old redoIcon"><figcaption>redoIcon</figcaption></figure></td>
+</tr>
+</tbody></table></div>
+</main>
+<script>
+document.getElementById('theme').addEventListener('click',()=>{const r=document.documentElement;const dark=r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;r.dataset.theme=dark?'light':'dark';});
+</script>
+</body></html>

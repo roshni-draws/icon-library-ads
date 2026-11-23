@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" class="antz-p-settings" role="img" aria-label="Settings">
+<style>
+.antz-p-settings-f-accent{fill:var(--antz-on-primary-fixed-variant,#005226)}
+.antz-p-settings-f-fill{fill:var(--antz-tertiary-fixed,#CCE5FF)}
+.antz-p-settings-f-ink{fill:var(--antz-on-primary-container,#00451F)}
+.antz-p-settings-f-tile{fill:var(--antz-primary-container,#36BC69)}
+.antz-p-settings-s-ink{stroke:var(--antz-on-primary-container,#00451F)}
+@keyframes antz-p-settings-small{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}4%{transform:translate(0px,0px) rotate(0deg) scale(1);}12%{transform:translate(0px,0px) rotate(6deg) scale(1);}34%{transform:translate(0px,0px) rotate(-12deg) scale(1);}42%{transform:translate(0px,0px) rotate(-9deg) scale(1);}62%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-settings-small{transform-box:view-box;transform-origin:36px 12px;animation:antz-p-settings-small 4450ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-settings-big{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}4%{transform:translate(0px,0px) rotate(0deg) scale(1);}12%{transform:translate(0px,0px) rotate(-5deg) scale(1);}34%{transform:translate(0px,0px) rotate(12deg) scale(1);}42%{transform:translate(0px,0px) rotate(9deg) scale(1);}62%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-settings-big{transform-box:view-box;transform-origin:21px 27.5px;animation:antz-p-settings-big 4450ms cubic-bezier(.45,0,.55,1) infinite}
+@media (prefers-reduced-motion:reduce){.antz-p-settings *{animation:none!important}}
+</style>
+  <rect x="0" y="0" width="48" height="48" rx="14" class="antz-p-settings-f-tile" fill="#36BC69"/>
+  <g class="antz-p-settings-small">
+    <path d="M36.626 7.544L37.754 6.262L40.092 7.612L39.546 9.23A4.5 4.5 0 0 1 40.172 10.314L40.172 10.314L41.846 10.65L41.846 13.35L40.172 13.686A4.5 4.5 0 0 1 39.546 14.77L39.546 14.77L40.092 16.388L37.754 17.738L36.626 16.456A4.5 4.5 0 0 1 35.374 16.456L35.374 16.456L34.246 17.738L31.908 16.388L32.454 14.77A4.5 4.5 0 0 1 31.828 13.686L31.828 13.686L30.154 13.35L30.154 10.65L31.828 10.314A4.5 4.5 0 0 1 32.454 9.23L32.454 9.23L31.908 7.612L34.246 6.262L35.374 7.544A4.5 4.5 0 0 1 36.626 7.544Z" class="antz-p-settings-f-ink antz-p-settings-s-ink" fill="#00451F" stroke="#00451F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g class="antz-p-settings-big">
+    <path d="M19.7 17.1H22.3V18.4H19.7ZM19.7 36.6H22.3V37.9H19.7ZM10.6 26.2H11.9V28.8H10.6ZM30.1 26.2H31.4V28.8H30.1ZM27.5 19.7H28.8V21H27.5ZM13.2 19.7H14.5V21H13.2ZM13.2 34H14.5V35.3H13.2ZM27.5 34H28.8V35.3H27.5Z" class="antz-p-settings-f-ink antz-p-settings-s-ink" fill="#00451F" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M21 19.7C25.308 19.7 28.8 23.192 28.8 27.5C28.8 31.808 25.308 35.3 21 35.3C16.692 35.3 13.2 31.808 13.2 27.5C13.2 23.192 16.692 19.7 21 19.7Z" class="antz-p-settings-f-fill antz-p-settings-s-ink" fill="#CCE5FF" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M21 23.5C23.209 23.5 25 25.291 25 27.5C25 29.709 23.209 31.5 21 31.5C18.791 31.5 17 29.709 17 27.5C17 25.291 18.791 23.5 21 23.5Z" class="antz-p-settings-f-accent" fill="#005226"/>
+    <path d="M21 26C21.828 26 22.5 26.672 22.5 27.5C22.5 28.328 21.828 29 21 29C20.172 29 19.5 28.328 19.5 27.5C19.5 26.672 20.172 26 21 26Z" class="antz-p-settings-f-fill" fill="#CCE5FF"/>
+  </g>
+</svg>

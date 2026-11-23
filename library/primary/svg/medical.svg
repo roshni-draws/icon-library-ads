@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" class="antz-p-medical" role="img" aria-label="Medical">
+<style>
+.antz-p-medical-f-fill{fill:var(--antz-tertiary-fixed,#CCE5FF)}
+.antz-p-medical-f-shade{fill:var(--antz-on-primary-container,#00451F)}
+.antz-p-medical-f-tile{fill:var(--antz-primary-container,#36BC69)}
+.antz-p-medical-s-accent{stroke:var(--antz-on-primary-fixed-variant,#005226)}
+.antz-p-medical-s-ink{stroke:var(--antz-on-primary-container,#00451F)}
+@keyframes antz-p-medical-cross{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}30%{transform:translate(0px,0px) rotate(0deg) scale(1);}35%{transform:translate(0px,0px) rotate(0deg) scale(1.1);}40%{transform:translate(0px,0px) rotate(0deg) scale(1);}45%{transform:translate(0px,0px) rotate(0deg) scale(1.06);}52%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-medical-cross{transform-box:view-box;transform-origin:24px 23.25px;animation:antz-p-medical-cross 3000ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-medical-ecg{0%{opacity:1}4%{opacity:1}12%{opacity:0}13%{opacity:0}15%{opacity:1}50%{opacity:1}100%{opacity:1}}
+.antz-p-medical-ecg{animation:antz-p-medical-ecg 3000ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-medical-ecg-trim{0%{stroke-dasharray:1 2;stroke-dashoffset:0}4%{stroke-dasharray:1 2;stroke-dashoffset:0}12%{stroke-dasharray:1 2;stroke-dashoffset:0}13%{stroke-dasharray:0 2;stroke-dashoffset:0}15%{stroke-dasharray:0.03 2;stroke-dashoffset:0}50%{stroke-dasharray:1 2;stroke-dashoffset:0}100%{stroke-dasharray:1 2;stroke-dashoffset:0}}
+.antz-p-medical-ecg-trim{animation:antz-p-medical-ecg-trim 3000ms cubic-bezier(.45,0,.55,1) infinite}
+@media (prefers-reduced-motion:reduce){.antz-p-medical *{animation:none!important}}
+</style>
+  <rect x="0" y="0" width="48" height="48" rx="14" class="antz-p-medical-f-tile" fill="#36BC69"/>
+  <path d="M19.5 16.5V13.5A3 3 0 0 1 22.5 10.5H25.5A3 3 0 0 1 28.5 13.5V16.5" class="antz-p-medical-s-ink" fill="none" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="10.5" y="16.5" width="27" height="21" rx="3" class="antz-p-medical-f-fill antz-p-medical-s-ink" fill="#CCE5FF" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M32 18H34.5A1.5 1.5 0 0 1 36 19.5V34.5A1.5 1.5 0 0 1 34.5 36H32Z" class="antz-p-medical-f-shade" fill="#00451F" fill-opacity="0.2"/>
+  <g class="antz-p-medical-cross">
+    <path d="M24 19.75V26.75M20.5 23.25H27.5" class="antz-p-medical-s-ink" fill="none" stroke="#00451F" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g class="antz-p-medical-ecg">
+    <path d="M14 32.5H18.5L20.5 29.6L23.4 35L25.6 31L27 32.5H30.5" class="antz-p-medical-s-accent antz-p-medical-ecg-trim" fill="none" stroke="#005226" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="1 2" stroke-dashoffset="0"/>
+  </g>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" class="antz-p-eggs" role="img" aria-label="Eggs">
+<style>
+.antz-p-eggs-f-accent{fill:var(--antz-on-primary-fixed-variant,#005226)}
+.antz-p-eggs-f-fill{fill:var(--antz-tertiary-fixed,#CCE5FF)}
+.antz-p-eggs-f-ink{fill:var(--antz-on-primary-container,#00451F)}
+.antz-p-eggs-f-tile{fill:var(--antz-primary-container,#36BC69)}
+.antz-p-eggs-s-accent{stroke:var(--antz-on-primary-fixed-variant,#005226)}
+.antz-p-eggs-s-ink{stroke:var(--antz-on-primary-container,#00451F)}
+.antz-p-eggs-s-shade{stroke:var(--antz-on-primary-container,#00451F)}
+@keyframes antz-p-eggs-egg{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}4%{transform:translate(0px,0px) rotate(0deg) scale(1);}10%{transform:translate(0px,0px) rotate(-7deg) scale(1);}16%{transform:translate(0px,0px) rotate(6deg) scale(1);}22%{transform:translate(0px,0px) rotate(-3.5deg) scale(1);}27%{transform:translate(0px,0px) rotate(0deg) scale(1);}62%{transform:translate(0px,0px) rotate(0deg) scale(1);}65%{transform:translate(0px,0px) rotate(2deg) scale(1);}69%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-eggs-egg{transform-box:view-box;transform-origin:24px 35.5px;animation:antz-p-eggs-egg 4200ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-eggs-chick{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}40%{transform:translate(0px,0px) rotate(0deg) scale(1);}48%{transform:translate(0px,-3.5px) rotate(0deg) scale(1);}56%{transform:translate(0px,-3.5px) rotate(0deg) scale(1);}62%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-eggs-chick{transform-box:view-box;transform-origin:24px 24px;animation:antz-p-eggs-chick 4200ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-eggs-crack{0%{opacity:0}27%{opacity:0}29%{opacity:1}38%{opacity:1}62%{opacity:1}68%{opacity:0}69%{opacity:0}100%{opacity:0}}
+.antz-p-eggs-crack{animation:antz-p-eggs-crack 4200ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-eggs-crack-trim{0%{stroke-dasharray:0 2;stroke-dashoffset:0}27%{stroke-dasharray:0 2;stroke-dashoffset:0}29%{stroke-dasharray:0.1 2;stroke-dashoffset:0}38%{stroke-dasharray:1 2;stroke-dashoffset:0}62%{stroke-dasharray:1 2;stroke-dashoffset:0}68%{stroke-dasharray:1 2;stroke-dashoffset:0}69%{stroke-dasharray:0 2;stroke-dashoffset:0}100%{stroke-dasharray:0 2;stroke-dashoffset:0}}
+.antz-p-eggs-crack-trim{animation:antz-p-eggs-crack-trim 4200ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-eggs-cap{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}40%{transform:translate(0px,0px) rotate(0deg) scale(1);}48%{transform:translate(0px,-4px) rotate(-12deg) scale(1);}56%{transform:translate(0px,-4px) rotate(-12deg) scale(1);}62%{transform:translate(0px,0.3px) rotate(1deg) scale(1);}66%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-eggs-cap{transform-box:view-box;transform-origin:14.9px 22.5px;animation:antz-p-eggs-cap 4200ms cubic-bezier(.45,0,.55,1) infinite}
+@media (prefers-reduced-motion:reduce){.antz-p-eggs *{animation:none!important}}
+</style>
+<defs><clipPath id="antz-p-eggs-shell-clip"><path d="M2 21.5L14.9 21.5L17.8 19.5L20.8 22L24 24L27.2 22L30.2 19.5L33.1 21.5L46 21.5V46H2Z"/></clipPath><clipPath id="antz-p-eggs-chick-clip"><path d="M2 2H46V22.5L33.1 22.5L30.2 20.5L27.2 23L24 25L20.8 23L17.8 20.5L14.9 22.5L2 22.5Z"/></clipPath><clipPath id="antz-p-eggs-cap-clip"><path d="M2 2H46V22.5L33.1 22.5L30.2 20.5L27.2 23L24 25L20.8 23L17.8 20.5L14.9 22.5L2 22.5Z"/></clipPath></defs>
+  <rect x="0" y="0" width="48" height="48" rx="14" class="antz-p-eggs-f-tile" fill="#36BC69"/>
+  <g class="antz-p-eggs-egg">
+    <g clip-path="url(#antz-p-eggs-shell-clip)">
+      <path d="M24 11C19.25 11 14.5 19.214 14.5 26A9.5 9.5 0 0 0 33.5 26C33.5 19.214 28.75 11 24 11Z" class="antz-p-eggs-f-fill antz-p-eggs-s-ink" fill="#CCE5FF" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <path d="M30.6 27.2C31.2 30.3 29.8 33 27.2 34.2" class="antz-p-eggs-s-shade" fill="none" stroke="#00451F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.2"/>
+    <g clip-path="url(#antz-p-eggs-chick-clip)"><g class="antz-p-eggs-chick">
+      <circle cx="24" cy="25.5" r="6" class="antz-p-eggs-f-fill antz-p-eggs-s-ink" fill="#CCE5FF" stroke="#00451F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="21.6" cy="23.8" r="1.1" class="antz-p-eggs-f-ink" fill="#00451F"/>
+      <circle cx="26.4" cy="23.8" r="1.1" class="antz-p-eggs-f-ink" fill="#00451F"/>
+      <path d="M22.8 24.7H25.2L24 26.7Z" class="antz-p-eggs-f-accent" fill="#005226"/>
+    </g></g>
+    <g class="antz-p-eggs-crack" opacity="0">
+      <path d="M14.9 22.5L17.8 20.5L20.8 23L24 25L27.2 23L30.2 20.5L33.1 22.5" class="antz-p-eggs-s-ink antz-p-eggs-crack-trim" fill="none" stroke="#00451F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="0 2" stroke-dashoffset="0"/>
+    </g>
+    <g class="antz-p-eggs-cap"><g clip-path="url(#antz-p-eggs-cap-clip)">
+      <path d="M24 11C19.25 11 14.5 19.214 14.5 26A9.5 9.5 0 0 0 33.5 26C33.5 19.214 28.75 11 24 11Z" class="antz-p-eggs-f-fill antz-p-eggs-s-ink" fill="#CCE5FF" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g></g>
+  </g>
+  <path d="M9 30.5C10 37.5 16 41 24 41C32 41 38 37.5 39 30.5C32 33.5 16 33.5 9 30.5Z" class="antz-p-eggs-f-fill antz-p-eggs-s-ink" fill="#CCE5FF" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M14 35C19 37.6 29 37.6 34 35" class="antz-p-eggs-s-accent" fill="none" stroke="#005226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M19.5 39.3L22.5 36.9" class="antz-p-eggs-s-accent" fill="none" stroke="#005226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M25.5 39.5L28.5 37.1" class="antz-p-eggs-s-accent" fill="none" stroke="#005226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

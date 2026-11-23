@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" class="antz-p-kitchen" role="img" aria-label="Kitchen">
+<style>
+.antz-p-kitchen-f-accent{fill:var(--antz-on-primary-fixed-variant,#005226)}
+.antz-p-kitchen-f-fill{fill:var(--antz-tertiary-fixed,#CCE5FF)}
+.antz-p-kitchen-f-tile{fill:var(--antz-primary-container,#36BC69)}
+.antz-p-kitchen-s-ink{stroke:var(--antz-on-primary-container,#00451F)}
+@keyframes antz-p-kitchen-steam1{0%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:0}12%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:0}13%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:0}16%{transform:translate(0px,-0.5px) rotate(0deg) scale(1);opacity:1}28%{transform:translate(0px,-2.5px) rotate(0deg) scale(1);opacity:1}40%{transform:translate(0px,-5px) rotate(0deg) scale(1);opacity:0}41%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:0}100%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:0}}
+.antz-p-kitchen-steam1{transform-box:view-box;transform-origin:24px 24px;animation:antz-p-kitchen-steam1 3450ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-kitchen-steam1-trim{0%{stroke-dasharray:1 2;stroke-dashoffset:0}12%{stroke-dasharray:1 2;stroke-dashoffset:0}13%{stroke-dasharray:0.05 2;stroke-dashoffset:0}16%{stroke-dasharray:0.25 2;stroke-dashoffset:0}28%{stroke-dasharray:1 2;stroke-dashoffset:0}40%{stroke-dasharray:1 2;stroke-dashoffset:0}41%{stroke-dasharray:1 2;stroke-dashoffset:0}100%{stroke-dasharray:1 2;stroke-dashoffset:0}}
+.antz-p-kitchen-steam1-trim{animation:antz-p-kitchen-steam1-trim 3450ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-kitchen-steam2{0%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:0}18%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:0}19%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:0}22%{transform:translate(0px,-0.5px) rotate(0deg) scale(1);opacity:1}34%{transform:translate(0px,-2.5px) rotate(0deg) scale(1);opacity:1}46%{transform:translate(0px,-5px) rotate(0deg) scale(1);opacity:0}47%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:0}100%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:0}}
+.antz-p-kitchen-steam2{transform-box:view-box;transform-origin:24px 24px;animation:antz-p-kitchen-steam2 3450ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-kitchen-steam2-trim{0%{stroke-dasharray:1 2;stroke-dashoffset:0}18%{stroke-dasharray:1 2;stroke-dashoffset:0}19%{stroke-dasharray:0.05 2;stroke-dashoffset:0}22%{stroke-dasharray:0.25 2;stroke-dashoffset:0}34%{stroke-dasharray:1 2;stroke-dashoffset:0}46%{stroke-dasharray:1 2;stroke-dashoffset:0}47%{stroke-dasharray:1 2;stroke-dashoffset:0}100%{stroke-dasharray:1 2;stroke-dashoffset:0}}
+.antz-p-kitchen-steam2-trim{animation:antz-p-kitchen-steam2-trim 3450ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-kitchen-lid{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}6%{transform:translate(0px,0px) rotate(0deg) scale(1);}18%{transform:translate(0px,-3px) rotate(-8deg) scale(1);}32%{transform:translate(0px,-3px) rotate(-6deg) scale(1);}44%{transform:translate(0px,-3px) rotate(-8deg) scale(1);}54%{transform:translate(0px,0.4px) rotate(1deg) scale(1);}60%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-kitchen-lid{transform-box:view-box;transform-origin:24px 17px;animation:antz-p-kitchen-lid 3450ms cubic-bezier(.45,0,.55,1) infinite}
+@media (prefers-reduced-motion:reduce){.antz-p-kitchen *{animation:none!important}}
+</style>
+  <rect x="0" y="0" width="48" height="48" rx="14" class="antz-p-kitchen-f-tile" fill="#36BC69"/>
+  <g class="antz-p-kitchen-steam1" opacity="0">
+    <path d="M18.5 14C16.5 12 20.5 10 18.5 7.5" class="antz-p-kitchen-s-ink antz-p-kitchen-steam1-trim" fill="none" stroke="#00451F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="1 2" stroke-dashoffset="0"/>
+  </g>
+  <g class="antz-p-kitchen-steam2" opacity="0">
+    <path d="M29.5 14C27.5 12 31.5 10 29.5 7.5" class="antz-p-kitchen-s-ink antz-p-kitchen-steam2-trim" fill="none" stroke="#00451F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="1 2" stroke-dashoffset="0"/>
+  </g>
+  <path d="M10.5 27.5H13.5M34.5 27.5H37.5" class="antz-p-kitchen-s-ink" fill="none" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M13.5 23H34.5V33.5A4.5 4.5 0 0 1 30 38H18A4.5 4.5 0 0 1 13.5 33.5Z" class="antz-p-kitchen-f-fill antz-p-kitchen-s-ink" fill="#CCE5FF" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M18 28H30C31.105 28 32 28.895 32 30V30C32 31.105 31.105 32 30 32H18C16.895 32 16 31.105 16 30V30C16 28.895 16.895 28 18 28Z" class="antz-p-kitchen-f-accent" fill="#005226"/>
+  <g class="antz-p-kitchen-lid">
+    <path d="M12 17H36M24 14V17" class="antz-p-kitchen-s-ink" fill="none" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

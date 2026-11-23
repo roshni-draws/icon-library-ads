@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Notifications icon review</title>
+<style>
+:root{--bg:#fbfbf9;--surface:#fff;--ink:#1c1f1d;--muted:#5d6661;--line:#e3e6e3;--tile:#f2f4f2}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121413;--surface:#1a1d1b;--ink:#e6e9e6;--muted:#9aa39e;--line:#2c312e;--tile:#232724}}
+:root[data-theme="dark"]{--bg:#121413;--surface:#1a1d1b;--ink:#e6e9e6;--muted:#9aa39e;--line:#2c312e;--tile:#232724}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:1180px;margin:0 auto;padding:32px 16px 64px}
+h1{font-size:22px;margin:0 0 4px}
+p.sub{margin:0 0 20px;color:var(--muted);max-width:70ch}
+.bar{display:flex;gap:8px;margin-bottom:16px}
+.bar button{font:inherit;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:6px 12px;cursor:pointer}
+.wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:900px}
+th,td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+thead th{font-size:12px;font-weight:600;color:var(--muted);background:var(--tile)}
+tbody tr:last-child>*{border-bottom:0}
+th[scope=row]{width:190px;font-weight:400}
+th code{font:600 13px ui-monospace,SFMono-Regular,Menlo,monospace;display:block}
+.lbl{display:block;color:var(--muted);font-size:12px}
+.st{display:inline-block;margin-top:4px;font-size:11px;padding:1px 8px;border-radius:99px;background:var(--tile);color:var(--muted)}
+.set{white-space:nowrap}
+.ic{display:inline-grid;place-items:center;margin-right:10px;vertical-align:middle;color:var(--ink)}
+.ic svg{width:100%;height:100%;display:block}
+.s16{width:16px;height:16px}.s24{width:24px;height:24px}
+.s48{width:48px;height:48px;background:var(--tile);border-radius:6px;padding:0;outline:1px dashed var(--line)}
+.meta{color:var(--muted);font-size:13px;max-width:260px}
+.old{white-space:nowrap}
+.old figure{display:inline-block;margin:0 10px 0 0;text-align:center}
+.old img{width:40px;height:40px;object-fit:contain;display:block;margin:0 auto;background:#fff;border-radius:6px;border:1px solid var(--line)}
+.old figcaption{font-size:10px;color:var(--muted);max-width:72px;overflow:hidden;text-overflow:ellipsis}
+.none{color:var(--muted);font-size:12px}
+</style></head>
+<body><main>
+<h1>Notifications icon review</h1>
+<p class="sub">ANTZ Rounded: every icon in the Notifications module. Line and filled at 16, 24 and 48px (48px sits on a tile), next to the old mobile SVGs they replace. Icons are inlined from <code>library/line</code> and <code>library/filled</code> when this sheet was generated. Old SVGs load live from <code>app/public/current</code>.</p>
+<div class="bar"><button type="button" id="theme">Toggle light / dark</button></div>
+<div class="wrap"><table>
+<thead><tr><th scope="col">Icon</th><th scope="col">Line 16 · 24 · 48</th><th scope="col">Filled 16 · 24 · 48</th><th scope="col">Metaphor</th><th scope="col">Old SVG</th></tr></thead>
+<tbody>
+<tr>
+  <th scope="row"><code>filter_applied</code><span class="lbl">Filter applied</span><span class="st st-draft">draft</span></th>
+  <td class="set"><span class="ic s16" title="line 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <mask id="filter_applied-line-0">
+    <rect width="24" height="24" fill="white" stroke="none"/>
+    <circle cx="18" cy="18" r="5" fill="black" stroke="none"/>
+  </mask>
+  <path d="M3 4H21L14 11V18A2 2 0 0 1 10 18V11Z" mask="url(#filter_applied-line-0)"/>
+  <circle cx="18" cy="18" r="2"/>
+</svg></span><span class="ic s24" title="line 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <mask id="filter_applied-line-1">
+    <rect width="24" height="24" fill="white" stroke="none"/>
+    <circle cx="18" cy="18" r="5" fill="black" stroke="none"/>
+  </mask>
+  <path d="M3 4H21L14 11V18A2 2 0 0 1 10 18V11Z" mask="url(#filter_applied-line-1)"/>
+  <circle cx="18" cy="18" r="2"/>
+</svg></span><span class="ic s48" title="line 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <mask id="filter_applied-line-2">
+    <rect width="24" height="24" fill="white" stroke="none"/>
+    <circle cx="18" cy="18" r="5" fill="black" stroke="none"/>
+  </mask>
+  <path d="M3 4H21L14 11V18A2 2 0 0 1 10 18V11Z" mask="url(#filter_applied-line-2)"/>
+  <circle cx="18" cy="18" r="2"/>
+</svg></span></td>
+  <td class="set"><span class="ic s16" title="filled 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="filter_applied-filled-3">
+    <rect width="24" height="24" fill="white"/>
+    <path d="M1 2H23V22H1Z" fill="black"/>
+    <path d="M3 4H21L14 11V18A2 2 0 0 1 10 18V11Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="18" cy="18" r="5" fill="black"/>
+    <circle cx="18" cy="18" r="3" fill="white"/>
+  </mask>
+  <g mask="url(#filter_applied-filled-3)">
+    <path d="M2 3H22V21H2Z"/>
+    <circle cx="18" cy="18" r="3"/>
+  </g>
+</svg></span><span class="ic s24" title="filled 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="filter_applied-filled-4">
+    <rect width="24" height="24" fill="white"/>
+    <path d="M1 2H23V22H1Z" fill="black"/>
+    <path d="M3 4H21L14 11V18A2 2 0 0 1 10 18V11Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="18" cy="18" r="5" fill="black"/>
+    <circle cx="18" cy="18" r="3" fill="white"/>
+  </mask>
+  <g mask="url(#filter_applied-filled-4)">
+    <path d="M2 3H22V21H2Z"/>
+    <circle cx="18" cy="18" r="3"/>
+  </g>
+</svg></span><span class="ic s48" title="filled 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="filter_applied-filled-5">
+    <rect width="24" height="24" fill="white"/>
+    <path d="M1 2H23V22H1Z" fill="black"/>
+    <path d="M3 4H21L14 11V18A2 2 0 0 1 10 18V11Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="18" cy="18" r="5" fill="black"/>
+    <circle cx="18" cy="18" r="3" fill="white"/>
+  </mask>
+  <g mask="url(#filter_applied-filled-5)">
+    <path d="M2 3H22V21H2Z"/>
+    <circle cx="18" cy="18" r="3"/>
+  </g>
+</svg></span></td>
+  <td class="meta">The shared filter funnel with a dot badge: a filter is applied.</td>
+  <td class="old"><figure><img src="../../app/public/current/mobile_NotificationFilterActive.svg" alt="old NotificationFilterActive"><figcaption>NotificationFilterActive</figcaption></figure><figure><img src="../../app/public/current/mobile_AssessmentOnFilter.svg" alt="old AssessmentOnFilter"><figcaption>AssessmentOnFilter</figcaption></figure></td>
+</tr>
+<tr>
+  <th scope="row"><code>necropsy</code><span class="lbl">Necropsy</span><span class="st st-draft">draft</span></th>
+  <td class="set"><span class="ic s16" title="line 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="7" y="3" width="4" height="10" rx="2"/>
+  <path d="M11 9H14A5 5 0 0 1 14 19V21M5 21H19M6 17H10"/>
+</svg></span><span class="ic s24" title="line 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="7" y="3" width="4" height="10" rx="2"/>
+  <path d="M11 9H14A5 5 0 0 1 14 19V21M5 21H19M6 17H10"/>
+</svg></span><span class="ic s48" title="line 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="7" y="3" width="4" height="10" rx="2"/>
+  <path d="M11 9H14A5 5 0 0 1 14 19V21M5 21H19M6 17H10"/>
+</svg></span></td>
+  <td class="set"><span class="ic s16" title="filled 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="necropsy-filled-9">
+    <rect width="24" height="24" fill="white"/>
+    <path d="M3 7H22V23H3Z" fill="black"/>
+    <path d="M11 9H14A5 5 0 0 1 14 19V21M5 21H19M6 17H10" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <path d="M4 8H21V22H4Z" mask="url(#necropsy-filled-9)"/>
+  <rect x="6" y="2" width="6" height="12" rx="3"/>
+</svg></span><span class="ic s24" title="filled 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="necropsy-filled-10">
+    <rect width="24" height="24" fill="white"/>
+    <path d="M3 7H22V23H3Z" fill="black"/>
+    <path d="M11 9H14A5 5 0 0 1 14 19V21M5 21H19M6 17H10" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <path d="M4 8H21V22H4Z" mask="url(#necropsy-filled-10)"/>
+  <rect x="6" y="2" width="6" height="12" rx="3"/>
+</svg></span><span class="ic s48" title="filled 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="necropsy-filled-11">
+    <rect width="24" height="24" fill="white"/>
+    <path d="M3 7H22V23H3Z" fill="black"/>
+    <path d="M11 9H14A5 5 0 0 1 14 19V21M5 21H19M6 17H10" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <path d="M4 8H21V22H4Z" mask="url(#necropsy-filled-11)"/>
+  <rect x="6" y="2" width="6" height="12" rx="3"/>
+</svg></span></td>
+  <td class="meta">Microscope (examination): the necropsy notification glyph.</td>
+  <td class="old"><figure><img src="../../app/public/current/mobile_notifications_necropsy.svg" alt="old notifications_necropsy"><figcaption>notifications_necropsy</figcaption></figure><figure><img src="../../app/public/current/mobile_necropsyCenter.svg" alt="old necropsyCenter"><figcaption>necropsyCenter</figcaption></figure></td>
+</tr>
+</tbody></table></div>
+</main>
+<script>
+document.getElementById('theme').addEventListener('click',()=>{const r=document.documentElement;const dark=r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;r.dataset.theme=dark?'light':'dark';});
+</script>
+</body></html>

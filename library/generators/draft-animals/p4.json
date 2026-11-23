@@ -1,0 +1,9 @@
+[
+["bp r4 x-end", "<circle cx='10' cy='14' r='4'/><circle cx='14' cy='10' r='4'/><path d='M7 17L3 21M3 19L5 21M17 7L21 3M17 3H21V7'/>"],
+["bp r4 cross", "<circle cx='10' cy='14' r='4'/><circle cx='14' cy='10' r='4'/><path d='M7 17L3 21M2 18L6 22M17 7L21 3M17 3H21V7'/>"],
+["bp horiz", "<circle cx='8' cy='10' r='5'/><circle cx='16' cy='10' r='5'/><path d='M8 15V21M5 18H11M20 6L22 4'/>"],
+["bp side", "<circle cx='8' cy='9' r='4'/><path d='M8 13V21M5 18H11'/><circle cx='15' cy='14' r='4'/><path d='M18 11L21 8M17 8H21V12'/>"],
+["globe a", "<circle cx='17' cy='17' r='4'/><path d='M13 17H21M17 13V21'/>"],
+["globe b", "<circle cx='17' cy='17' r='4'/><path d='M13 17H21M17 13A6 6 0 0 0 17 21'/>"],
+["travel", "<circle cx='11' cy='11' r='8'/><path d='M3 11H19M11 3A10 10 0 0 1 11 19A10 10 0 0 1 11 3'/>"]
+]

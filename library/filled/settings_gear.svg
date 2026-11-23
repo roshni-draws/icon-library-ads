@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="cut">
+    <circle cx="12" cy="12" r="7" fill="white"/>
+    <path d="M11 4H13V5H11ZM11 19H13V20H11ZM4 11H5V13H4ZM19 11H20V13H19ZM17 6H18V7H17ZM6 6H7V7H6ZM6 17H7V18H6ZM17 17H18V18H17Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="12" cy="12" r="3" fill="black"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#cut)"/>
+</svg>

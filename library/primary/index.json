@@ -1,0 +1,584 @@
+{
+  "version": 1,
+  "style": "primary-v2.1",
+  "schemes": [
+    "light",
+    "light-medium-contrast",
+    "light-high-contrast",
+    "dark",
+    "dark-medium-contrast",
+    "dark-high-contrast"
+  ],
+  "icons": [
+    {
+      "name": "home",
+      "order": 1,
+      "label": "Home",
+      "module": "Home",
+      "status": "draft",
+      "baseIcon": "home_health",
+      "loopMs": 4050,
+      "motion": "Welcome home: the door light switches off and glows back on with a flicker, then a puff of smoke rises from the chimney, then rest.",
+      "svg": "svg/home.svg",
+      "lottie": {
+        "light": "lottie/home.light.json",
+        "light-medium-contrast": "lottie/home.light-medium-contrast.json",
+        "light-high-contrast": "lottie/home.light-high-contrast.json",
+        "dark": "lottie/home.dark.json",
+        "dark-medium-contrast": "lottie/home.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie/home.dark-high-contrast.json"
+      }
+    },
+    {
+      "name": "dashboard",
+      "order": 2,
+      "label": "Dashboard",
+      "module": "Dashboard (web home)",
+      "status": "draft",
+      "baseIcon": "grid_view",
+      "loopMs": 4100,
+      "motion": "Dashboard: the widgets refresh one after another, each pulsing as its green mark flashes in, then rest.",
+      "svg": "svg/dashboard.svg",
+      "lottie": {
+        "light": "lottie/dashboard.light.json",
+        "light-medium-contrast": "lottie/dashboard.light-medium-contrast.json",
+        "light-high-contrast": "lottie/dashboard.light-high-contrast.json",
+        "dark": "lottie/dashboard.dark.json",
+        "dark-medium-contrast": "lottie/dashboard.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie/dashboard.dark-high-contrast.json"
+      }
+    },
+    {
+      "name": "animals",
+      "label": "Animals",
+      "module": "Animals and species",
+      "status": "draft",
+      "baseIcon": "animal",
+      "loopMs": 3400,
+      "motion": "Paw trail: the trail print fades in, then the front paw lifts and presses down with a puff of dust, then rest.",
+      "svg": "svg/animals.svg",
+      "lottie": {
+        "light": "lottie/animals.light.json",
+        "light-medium-contrast": "lottie/animals.light-medium-contrast.json",
+        "light-high-contrast": "lottie/animals.light-high-contrast.json",
+        "dark": "lottie/animals.dark.json",
+        "dark-medium-contrast": "lottie/animals.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie/animals.dark-high-contrast.json"
+      },
+      "order": 3
+    },
+    {
+      "name": "species",
+      "order": 4,
+      "label": "Species",
+      "module": "Species / taxonomy",
+      "status": "draft",
+      "baseIcon": "animal",
+      "loopMs": 3050,
+      "motion": "Taxonomy: the stacked level cards fan out, the paw on the front card pops, and the cards settle back, then rest.",
+      "svg": "svg/species.svg",
+      "lottie": {
+        "light": "lottie/species.light.json",
+        "light-medium-contrast": "lottie/species.light-medium-contrast.json",
+        "light-high-contrast": "lottie/species.light-high-contrast.json",
+        "dark": "lottie/species.dark.json",
+        "dark-medium-contrast": "lottie/species.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie/species.dark-high-contrast.json"
+      }
+    },
+    {
+      "name": "family_tree",
+      "order": 5,
+      "label": "Family tree",
+      "module": "Family tree / parentage",
+      "status": "draft",
+      "baseIcon": "breeding_pair",
+      "loopMs": 3100,
+      "motion": "Parentage: the pair leans together, a line drops from them and their offspring pops in at its end, then rest.",
+      "svg": "svg/family_tree.svg",
+      "lottie": {
+        "light": "lottie/family_tree.light.json",
+        "light-medium-contrast": "lottie/family_tree.light-medium-contrast.json",
+        "light-high-contrast": "lottie/family_tree.light-high-contrast.json",
+        "dark": "lottie/family_tree.dark.json",
+        "dark-medium-contrast": "lottie/family_tree.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie/family_tree.dark-high-contrast.json"
+      }
+    },
+    {
+      "name": "medical",
+      "label": "Medical",
+      "module": "Medical",
+      "status": "draft",
+      "baseIcon": "medical",
+      "loopMs": 3000,
+      "motion": "Heartbeat: the ECG line re-draws across the bag; the cross beats once (lub-dub) as the spike passes, then rest.",
+      "svg": "svg/medical.svg",
+      "lottie": {
+        "light": "lottie/medical.light.json",
+        "light-medium-contrast": "lottie/medical.light-medium-contrast.json",
+        "light-high-contrast": "lottie/medical.light-high-contrast.json",
+        "dark": "lottie/medical.dark.json",
+        "dark-medium-contrast": "lottie/medical.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie/medical.dark-high-contrast.json"
+      },
+      "order": 6
+    },
+    {
+      "name": "hospital",
+      "order": 7,
+      "label": "Hospital",
+      "module": "Hospital admissions",
+      "status": "draft",
+      "baseIcon": "local_hospital",
+      "loopMs": 3150,
+      "motion": "Admission: a paw print walks up and in through the door, then the cross beats once, then rest.",
+      "svg": "svg/hospital.svg",
+      "lottie": {
+        "light": "lottie/hospital.light.json",
+        "light-medium-contrast": "lottie/hospital.light-medium-contrast.json",
+        "light-high-contrast": "lottie/hospital.light-high-contrast.json",
+        "dark": "lottie/hospital.dark.json",
+        "dark-medium-contrast": "lottie/hospital.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie/hospital.dark-high-contrast.json"
+      }
+    },
+    {
+      "name": "pharmacy",
+      "order": 8,
+      "label": "Pharmacy",
+      "module": "Pharmacy",
+      "status": "draft",
+      "baseIcon": "medication",
+      "loopMs": 3200,
+      "motion": "Dispense: the cap flips up, a capsule pops out of the bottle and the cap snaps shut, then rest.",
+      "svg": "svg/pharmacy.svg",
+      "lottie": {
+        "light": "lottie/pharmacy.light.json",
+        "light-medium-contrast": "lottie/pharmacy.light-medium-contrast.json",
+        "light-high-contrast": "lottie/pharmacy.light-high-contrast.json",
+        "dark": "lottie/pharmacy.dark.json",
+        "dark-medium-contrast": "lottie/pharmacy.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie/pharmacy.dark-high-contrast.json"
+      }
+    },
+    {
+      "name": "lab",
+      "label": "Lab",
+      "module": "Lab",
+      "status": "draft",
+      "baseIcon": "lab_request",
+      "loopMs": 3800,
+      "motion": "Experiment: the liquid sloshes and settles while three bubbles rise from it one after another, then rest.",
+      "svg": "svg/lab.svg",
+      "lottie": {
+        "light": "lottie/lab.light.json",
+        "light-medium-contrast": "lottie/lab.light-medium-contrast.json",
+        "light-high-contrast": "lottie/lab.light-high-contrast.json",
+        "dark": "lottie/lab.dark.json",
+        "dark-medium-contrast": "lottie/lab.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie/lab.dark-high-contrast.json"
+      },
+      "order": 9
+    },
+    {
+      "name": "eggs",
+      "label": "Eggs",
+      "module": "Eggs",
+      "status": "draft",
+      "baseIcon": "egg",
+      "loopMs": 4200,
+      "motion": "Hatching: the egg wobbles in its nest, a crack draws across, the top lifts and a chick peeks out, then it settles closed.",
+      "svg": "svg/eggs.svg",
+      "lottie": {
+        "light": "lottie/eggs.light.json",
+        "light-medium-contrast": "lottie/eggs.light-medium-contrast.json",
+        "light-high-contrast": "lottie/eggs.light-high-contrast.json",
+        "dark": "lottie/eggs.dark.json",
+        "dark-medium-contrast": "lottie/eggs.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie/eggs.dark-high-contrast.json"
+      },
+      "order": 10
+    },
+    {
+      "name": "housing",
+      "order": 11,
+      "label": "Housing",
+      "module": "Housing: site, section, enclosure",
+      "status": "draft",
+      "baseIcon": "enclosure",
+      "loopMs": 3250,
+      "motion": "Enclosure: the fence pickets are hammered in one after another, then the shelter window lights up green, then rest.",
+      "svg": "svg/housing.svg",
+      "lottie": {
+        "light": "lottie/housing.light.json",
+        "light-medium-contrast": "lottie/housing.light-medium-contrast.json",
+        "light-high-contrast": "lottie/housing.light-high-contrast.json",
+        "dark": "lottie/housing.dark.json",
+        "dark-medium-contrast": "lottie/housing.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie/housing.dark-high-contrast.json"
+      }
+    },
+    {
+      "name": "move_animal",
+      "order": 12,
+      "label": "Move animal",
+      "module": "Move animal between enclosures",
+      "status": "draft",
+      "baseIcon": "move_in",
+      "loopMs": 3300,
+      "motion": "Move: the arrow draws back, then pushes in through the door and the paw slides in with it, then rest.",
+      "svg": "svg/move_animal.svg",
+      "lottie": {
+        "light": "lottie/move_animal.light.json",
+        "light-medium-contrast": "lottie/move_animal.light-medium-contrast.json",
+        "light-high-contrast": "lottie/move_animal.light-high-contrast.json",
+        "dark": "lottie/move_animal.dark.json",
+        "dark-medium-contrast": "lottie/move_animal.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie/move_animal.dark-high-contrast.json"
+      }
+    },
+    {
+      "name": "diet",
+      "order": 13,
+      "label": "Diet",
+      "module": "Diet plans / feeding",
+      "status": "draft",
+      "baseIcon": "dietitian",
+      "loopMs": 3350,
+      "motion": "Feeding: the apple lifts out of the bowl and drops back in, and the food bounces as it lands, then rest.",
+      "svg": "svg/diet.svg",
+      "lottie": {
+        "light": "lottie/diet.light.json",
+        "light-medium-contrast": "lottie/diet.light-medium-contrast.json",
+        "light-high-contrast": "lottie/diet.light-high-contrast.json",
+        "dark": "lottie/diet.dark.json",
+        "dark-medium-contrast": "lottie/diet.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie/diet.dark-high-contrast.json"
+      }
+    },
+    {
+      "name": "kitchen",
+      "order": 14,
+      "label": "Kitchen",
+      "module": "Kitchen / food prep",
+      "status": "draft",
+      "baseIcon": "cooking_pot",
+      "loopMs": 3450,
+      "motion": "Cooking: the pot lid lifts and tilts as steam rises from under it, then the lid settles, then rest.",
+      "svg": "svg/kitchen.svg",
+      "lottie": {
+        "light": "lottie/kitchen.light.json",
+        "light-medium-contrast": "lottie/kitchen.light-medium-contrast.json",
+        "light-high-contrast": "lottie/kitchen.light-high-contrast.json",
+        "dark": "lottie/kitchen.dark.json",
+        "dark-medium-contrast": "lottie/kitchen.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie/kitchen.dark-high-contrast.json"
+      }
+    },
+    {
+      "name": "mortality",
+      "order": 15,
+      "label": "Mortality",
+      "module": "Mortality",
+      "status": "draft",
+      "baseIcon": "mortality",
+      "loopMs": 3500,
+      "motion": "Remembrance: a single leaf drifts slowly down beside the still skull, swaying, and fades, then rest.",
+      "svg": "svg/mortality.svg",
+      "lottie": {
+        "light": "lottie/mortality.light.json",
+        "light-medium-contrast": "lottie/mortality.light-medium-contrast.json",
+        "light-high-contrast": "lottie/mortality.light-high-contrast.json",
+        "dark": "lottie/mortality.dark.json",
+        "dark-medium-contrast": "lottie/mortality.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie/mortality.dark-high-contrast.json"
+      }
+    },
+    {
+      "name": "necropsy",
+      "order": 16,
+      "label": "Necropsy",
+      "module": "Necropsy",
+      "status": "draft",
+      "baseIcon": "necropsy",
+      "loopMs": 3550,
+      "motion": "Examination: the scalpel lifts and glides along the tray as its marking line re-draws, then rest.",
+      "svg": "svg/necropsy.svg",
+      "lottie": {
+        "light": "lottie/necropsy.light.json",
+        "light-medium-contrast": "lottie/necropsy.light-medium-contrast.json",
+        "light-high-contrast": "lottie/necropsy.light-high-contrast.json",
+        "dark": "lottie/necropsy.dark.json",
+        "dark-medium-contrast": "lottie/necropsy.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie/necropsy.dark-high-contrast.json"
+      }
+    },
+    {
+      "name": "assessments",
+      "order": 17,
+      "label": "Assessments",
+      "module": "Assessments",
+      "status": "draft",
+      "baseIcon": "assessment",
+      "loopMs": 3600,
+      "motion": "Checklist: the board is picked up, its two checks tick in one after another, then it settles, then rest.",
+      "svg": "svg/assessments.svg",
+      "lottie": {
+        "light": "lottie/assessments.light.json",
+        "light-medium-contrast": "lottie/assessments.light-medium-contrast.json",
+        "light-high-contrast": "lottie/assessments.light-high-contrast.json",
+        "dark": "lottie/assessments.dark.json",
+        "dark-medium-contrast": "lottie/assessments.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie/assessments.dark-high-contrast.json"
+      }
+    },
+    {
+      "name": "transfers",
+      "order": 18,
+      "label": "Transfers",
+      "module": "Transfers: animal, egg, carcass",
+      "status": "draft",
+      "baseIcon": "transfer",
+      "loopMs": 3650,
+      "motion": "Hand-off: the crate slides off to the right along the arrow and arrives back from the left, then rest.",
+      "svg": "svg/transfers.svg",
+      "lottie": {
+        "light": "lottie/transfers.light.json",
+        "light-medium-contrast": "lottie/transfers.light-medium-contrast.json",
+        "light-high-contrast": "lottie/transfers.light-high-contrast.json",
+        "dark": "lottie/transfers.dark.json",
+        "dark-medium-contrast": "lottie/transfers.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie/transfers.dark-high-contrast.json"
+      }
+    },
+    {
+      "name": "requests",
+      "order": 19,
+      "label": "Requests",
+      "module": "Requests and approvals",
+      "status": "draft",
+      "baseIcon": "request",
+      "loopMs": 3700,
+      "motion": "Approval: the stamp lifts and presses down on the slip, and the check pops in as it springs back, then rest.",
+      "svg": "svg/requests.svg",
+      "lottie": {
+        "light": "lottie/requests.light.json",
+        "light-medium-contrast": "lottie/requests.light-medium-contrast.json",
+        "light-high-contrast": "lottie/requests.light-high-contrast.json",
+        "dark": "lottie/requests.dark.json",
+        "dark-medium-contrast": "lottie/requests.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie/requests.dark-high-contrast.json"
+      }
+    },
+    {
+      "name": "notes",
+      "order": 20,
+      "label": "Notes",
+      "module": "Notes and journal",
+      "status": "draft",
+      "baseIcon": "note",
+      "loopMs": 3750,
+      "motion": "Journal: the pencil writes the newest line across the note, then lifts off, then rest.",
+      "svg": "svg/notes.svg",
+      "lottie": {
+        "light": "lottie/notes.light.json",
+        "light-medium-contrast": "lottie/notes.light-medium-contrast.json",
+        "light-high-contrast": "lottie/notes.light-high-contrast.json",
+        "dark": "lottie/notes.dark.json",
+        "dark-medium-contrast": "lottie/notes.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie/notes.dark-high-contrast.json"
+      }
+    },
+    {
+      "name": "announcements",
+      "order": 21,
+      "label": "Announcements",
+      "module": "Announcements",
+      "status": "draft",
+      "baseIcon": "announcement",
+      "loopMs": 3850,
+      "motion": "Broadcast: the megaphone draws back and pushes forward as its rays burst out, then rest.",
+      "svg": "svg/announcements.svg",
+      "lottie": {
+        "light": "lottie/announcements.light.json",
+        "light-medium-contrast": "lottie/announcements.light-medium-contrast.json",
+        "light-high-contrast": "lottie/announcements.light-high-contrast.json",
+        "dark": "lottie/announcements.dark.json",
+        "dark-medium-contrast": "lottie/announcements.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie/announcements.dark-high-contrast.json"
+      }
+    },
+    {
+      "name": "notifications",
+      "order": 22,
+      "label": "Notifications",
+      "module": "Notifications",
+      "status": "draft",
+      "baseIcon": "bell",
+      "loopMs": 3900,
+      "motion": "Alert: the bell swings and rings, its clapper lagging, with two ring arcs flashing out, then rest.",
+      "svg": "svg/notifications.svg",
+      "lottie": {
+        "light": "lottie/notifications.light.json",
+        "light-medium-contrast": "lottie/notifications.light-medium-contrast.json",
+        "light-high-contrast": "lottie/notifications.light-high-contrast.json",
+        "dark": "lottie/notifications.dark.json",
+        "dark-medium-contrast": "lottie/notifications.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie/notifications.dark-high-contrast.json"
+      }
+    },
+    {
+      "name": "chat",
+      "order": 23,
+      "label": "Chat",
+      "module": "Chat",
+      "status": "draft",
+      "baseIcon": "chat",
+      "loopMs": 3950,
+      "motion": "Typing: the three dots hop in a wave, twice, then the bubble pops as the message is sent, then rest.",
+      "svg": "svg/chat.svg",
+      "lottie": {
+        "light": "lottie/chat.light.json",
+        "light-medium-contrast": "lottie/chat.light-medium-contrast.json",
+        "light-high-contrast": "lottie/chat.light-high-contrast.json",
+        "dark": "lottie/chat.dark.json",
+        "dark-medium-contrast": "lottie/chat.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie/chat.dark-high-contrast.json"
+      }
+    },
+    {
+      "name": "reports",
+      "order": 24,
+      "label": "Reports",
+      "module": "Reports and insights",
+      "status": "draft",
+      "baseIcon": "bar_chart",
+      "loopMs": 4000,
+      "motion": "Insight: the bars grow up from the baseline one after another, then rest.",
+      "svg": "svg/reports.svg",
+      "lottie": {
+        "light": "lottie/reports.light.json",
+        "light-medium-contrast": "lottie/reports.light-medium-contrast.json",
+        "light-high-contrast": "lottie/reports.light-high-contrast.json",
+        "dark": "lottie/reports.dark.json",
+        "dark-medium-contrast": "lottie/reports.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie/reports.dark-high-contrast.json"
+      }
+    },
+    {
+      "name": "staff",
+      "order": 25,
+      "label": "Staff",
+      "module": "Staff",
+      "status": "draft",
+      "baseIcon": "people",
+      "loopMs": 4150,
+      "motion": "Team: a colleague ducks behind and steps back up beside the staff member, whose badge flashes, then rest.",
+      "svg": "svg/staff.svg",
+      "lottie": {
+        "light": "lottie/staff.light.json",
+        "light-medium-contrast": "lottie/staff.light-medium-contrast.json",
+        "light-high-contrast": "lottie/staff.light-high-contrast.json",
+        "dark": "lottie/staff.dark.json",
+        "dark-medium-contrast": "lottie/staff.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie/staff.dark-high-contrast.json"
+      }
+    },
+    {
+      "name": "department",
+      "order": 26,
+      "label": "Department",
+      "module": "Department",
+      "status": "draft",
+      "baseIcon": "account_tree",
+      "loopMs": 4250,
+      "motion": "Org chart: the teams fold into the head unit, it pulses, and the teams branch back out one after the other, then rest.",
+      "svg": "svg/department.svg",
+      "lottie": {
+        "light": "lottie/department.light.json",
+        "light-medium-contrast": "lottie/department.light-medium-contrast.json",
+        "light-high-contrast": "lottie/department.light-high-contrast.json",
+        "dark": "lottie/department.dark.json",
+        "dark-medium-contrast": "lottie/department.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie/department.dark-high-contrast.json"
+      }
+    },
+    {
+      "name": "security",
+      "order": 27,
+      "label": "Security",
+      "module": "Security / client ID",
+      "status": "draft",
+      "baseIcon": "encrypted",
+      "loopMs": 4300,
+      "motion": "Verified: the shield’s check re-draws and the shield seals with one pulse, then rest.",
+      "svg": "svg/security.svg",
+      "lottie": {
+        "light": "lottie/security.light.json",
+        "light-medium-contrast": "lottie/security.light-medium-contrast.json",
+        "light-high-contrast": "lottie/security.light-high-contrast.json",
+        "dark": "lottie/security.dark.json",
+        "dark-medium-contrast": "lottie/security.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie/security.dark-high-contrast.json"
+      }
+    },
+    {
+      "name": "compliance",
+      "order": 28,
+      "label": "Compliance",
+      "module": "Compliance / audits",
+      "status": "draft",
+      "baseIcon": "verified",
+      "loopMs": 4350,
+      "motion": "Certify: the seal lifts off the page and stamps back down, and its check draws in, then rest.",
+      "svg": "svg/compliance.svg",
+      "lottie": {
+        "light": "lottie/compliance.light.json",
+        "light-medium-contrast": "lottie/compliance.light-medium-contrast.json",
+        "light-high-contrast": "lottie/compliance.light-high-contrast.json",
+        "dark": "lottie/compliance.dark.json",
+        "dark-medium-contrast": "lottie/compliance.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie/compliance.dark-high-contrast.json"
+      }
+    },
+    {
+      "name": "activity_log",
+      "order": 29,
+      "label": "Activity log",
+      "module": "Activity log",
+      "status": "draft",
+      "baseIcon": "history",
+      "loopMs": 4400,
+      "motion": "Log: the clock rewinds, then its hands sweep forward as the elapsed arc re-draws round the face, then rest.",
+      "svg": "svg/activity_log.svg",
+      "lottie": {
+        "light": "lottie/activity_log.light.json",
+        "light-medium-contrast": "lottie/activity_log.light-medium-contrast.json",
+        "light-high-contrast": "lottie/activity_log.light-high-contrast.json",
+        "dark": "lottie/activity_log.dark.json",
+        "dark-medium-contrast": "lottie/activity_log.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie/activity_log.dark-high-contrast.json"
+      }
+    },
+    {
+      "name": "settings",
+      "order": 30,
+      "label": "Settings",
+      "module": "Settings / profile",
+      "status": "draft",
+      "baseIcon": "settings_gear",
+      "loopMs": 4450,
+      "motion": "Tuning: the big gear winds back and turns forward, driving the small gear the other way, then settles, then rest.",
+      "svg": "svg/settings.svg",
+      "lottie": {
+        "light": "lottie/settings.light.json",
+        "light-medium-contrast": "lottie/settings.light-medium-contrast.json",
+        "light-high-contrast": "lottie/settings.light-high-contrast.json",
+        "dark": "lottie/settings.dark.json",
+        "dark-medium-contrast": "lottie/settings.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie/settings.dark-high-contrast.json"
+      }
+    }
+  ]
+}

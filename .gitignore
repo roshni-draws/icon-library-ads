@@ -1,0 +1,33 @@
+# Dependencies (app/ and library/generators/primary/)
+node_modules/
+
+# Build output
+dist/
+
+# Vite cache
+.vite/
+node_modules/.vite/
+
+# Backups
+*.bak
+*.bak-*
+*.bak.*
+index.json.bak-*
+
+# Env and secrets
+.env
+.env*
+
+# Logs
+*.log
+npm-debug.log*
+logs/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Temp files written by the dev API
+*.tmp

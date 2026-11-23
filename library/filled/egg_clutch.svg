@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="cut">
+    <rect width="24" height="24" fill="white"/>
+    <path d="M15 4C11 4 7 9.929 7 15A8 8 0 0 0 23 15C23 9.929 19 4 15 4Z" fill="black"/>
+  </mask>
+  <path d="M9 3C6 3 3 7.929 3 12A6 6 0 0 0 15 12C15 7.929 12 3 9 3Z" mask="url(#cut)"/>
+  <path d="M15 6C12 6 9 10.929 9 15A6 6 0 0 0 21 15C21 10.929 18 6 15 6Z"/>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" class="antz-p-dashboard" role="img" aria-label="Dashboard">
+<style>
+.antz-p-dashboard-f-accent{fill:var(--antz-on-primary-fixed-variant,#005226)}
+.antz-p-dashboard-f-fill{fill:var(--antz-tertiary-fixed,#CCE5FF)}
+.antz-p-dashboard-f-tile{fill:var(--antz-primary-container,#36BC69)}
+.antz-p-dashboard-s-ink{stroke:var(--antz-on-primary-container,#00451F)}
+@keyframes antz-p-dashboard-g1{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}6%{transform:translate(0px,0px) rotate(0deg) scale(1);}13%{transform:translate(0px,0px) rotate(0deg) scale(1.1);}21%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-dashboard-g1{transform-box:view-box;transform-origin:15.75px 15.75px;animation:antz-p-dashboard-g1 4100ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-dashboard-w1Mark{0%{opacity:1}2%{opacity:0}13%{opacity:1}25%{opacity:1}31%{opacity:1}100%{opacity:1}}
+.antz-p-dashboard-w1Mark{animation:antz-p-dashboard-w1Mark 4100ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-dashboard-g2{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}16%{transform:translate(0px,0px) rotate(0deg) scale(1);}23%{transform:translate(0px,0px) rotate(0deg) scale(1.1);}31%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-dashboard-g2{transform-box:view-box;transform-origin:32.25px 15.75px;animation:antz-p-dashboard-g2 4100ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-dashboard-w2Mark{0%{opacity:0}12%{opacity:0}23%{opacity:1}35%{opacity:1}41%{opacity:0}100%{opacity:0}}
+.antz-p-dashboard-w2Mark{animation:antz-p-dashboard-w2Mark 4100ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-dashboard-g3{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}26%{transform:translate(0px,0px) rotate(0deg) scale(1);}33%{transform:translate(0px,0px) rotate(0deg) scale(1.1);}41%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-dashboard-g3{transform-box:view-box;transform-origin:15.75px 32.25px;animation:antz-p-dashboard-g3 4100ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-dashboard-w3Mark{0%{opacity:0}22%{opacity:0}33%{opacity:1}45%{opacity:1}51%{opacity:0}100%{opacity:0}}
+.antz-p-dashboard-w3Mark{animation:antz-p-dashboard-w3Mark 4100ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-dashboard-g4{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}36%{transform:translate(0px,0px) rotate(0deg) scale(1);}43%{transform:translate(0px,0px) rotate(0deg) scale(1.1);}51%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-dashboard-g4{transform-box:view-box;transform-origin:32.25px 32.25px;animation:antz-p-dashboard-g4 4100ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-dashboard-w4Mark{0%{opacity:0}32%{opacity:0}43%{opacity:1}55%{opacity:1}61%{opacity:0}100%{opacity:0}}
+.antz-p-dashboard-w4Mark{animation:antz-p-dashboard-w4Mark 4100ms cubic-bezier(.45,0,.55,1) infinite}
+@media (prefers-reduced-motion:reduce){.antz-p-dashboard *{animation:none!important}}
+</style>
+  <rect x="0" y="0" width="48" height="48" rx="14" class="antz-p-dashboard-f-tile" fill="#36BC69"/>
+  <g class="antz-p-dashboard-g1">
+    <path d="M13 10H18.5C20.157 10 21.5 11.343 21.5 13V18.5C21.5 20.157 20.157 21.5 18.5 21.5H13C11.343 21.5 10 20.157 10 18.5V13C10 11.343 11.343 10 13 10Z" class="antz-p-dashboard-f-fill antz-p-dashboard-s-ink" fill="#CCE5FF" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <g class="antz-p-dashboard-w1Mark">
+      <path d="M14.25 12.75H17.25C18.078 12.75 18.75 13.422 18.75 14.25V17.25C18.75 18.078 18.078 18.75 17.25 18.75H14.25C13.422 18.75 12.75 18.078 12.75 17.25V14.25C12.75 13.422 13.422 12.75 14.25 12.75Z" class="antz-p-dashboard-f-accent" fill="#005226"/>
+    </g>
+  </g>
+  <g class="antz-p-dashboard-g2">
+    <path d="M29.5 10H35C36.657 10 38 11.343 38 13V18.5C38 20.157 36.657 21.5 35 21.5H29.5C27.843 21.5 26.5 20.157 26.5 18.5V13C26.5 11.343 27.843 10 29.5 10Z" class="antz-p-dashboard-f-fill antz-p-dashboard-s-ink" fill="#CCE5FF" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <g class="antz-p-dashboard-w2Mark" opacity="0">
+      <path d="M30.75 12.75H33.75C34.578 12.75 35.25 13.422 35.25 14.25V17.25C35.25 18.078 34.578 18.75 33.75 18.75H30.75C29.922 18.75 29.25 18.078 29.25 17.25V14.25C29.25 13.422 29.922 12.75 30.75 12.75Z" class="antz-p-dashboard-f-accent" fill="#005226"/>
+    </g>
+  </g>
+  <g class="antz-p-dashboard-g3">
+    <path d="M13 26.5H18.5C20.157 26.5 21.5 27.843 21.5 29.5V35C21.5 36.657 20.157 38 18.5 38H13C11.343 38 10 36.657 10 35V29.5C10 27.843 11.343 26.5 13 26.5Z" class="antz-p-dashboard-f-fill antz-p-dashboard-s-ink" fill="#CCE5FF" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <g class="antz-p-dashboard-w3Mark" opacity="0">
+      <path d="M14.25 29.25H17.25C18.078 29.25 18.75 29.922 18.75 30.75V33.75C18.75 34.578 18.078 35.25 17.25 35.25H14.25C13.422 35.25 12.75 34.578 12.75 33.75V30.75C12.75 29.922 13.422 29.25 14.25 29.25Z" class="antz-p-dashboard-f-accent" fill="#005226"/>
+    </g>
+  </g>
+  <g class="antz-p-dashboard-g4">
+    <path d="M29.5 26.5H35C36.657 26.5 38 27.843 38 29.5V35C38 36.657 36.657 38 35 38H29.5C27.843 38 26.5 36.657 26.5 35V29.5C26.5 27.843 27.843 26.5 29.5 26.5Z" class="antz-p-dashboard-f-fill antz-p-dashboard-s-ink" fill="#CCE5FF" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <g class="antz-p-dashboard-w4Mark" opacity="0">
+      <path d="M30.75 29.25H33.75C34.578 29.25 35.25 29.922 35.25 30.75V33.75C35.25 34.578 34.578 35.25 33.75 35.25H30.75C29.922 35.25 29.25 34.578 29.25 33.75V30.75C29.25 29.922 29.922 29.25 30.75 29.25Z" class="antz-p-dashboard-f-accent" fill="#005226"/>
+    </g>
+  </g>
+</svg>

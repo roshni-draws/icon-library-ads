@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" class="antz-p-department" role="img" aria-label="Department">
+<style>
+.antz-p-department-f-accent{fill:var(--antz-on-primary-fixed-variant,#005226)}
+.antz-p-department-f-fill{fill:var(--antz-tertiary-fixed,#CCE5FF)}
+.antz-p-department-f-tile{fill:var(--antz-primary-container,#36BC69)}
+.antz-p-department-s-ink{stroke:var(--antz-on-primary-container,#00451F)}
+@keyframes antz-p-department-top{0%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:1}4%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:1}13%{transform:translate(-4px,0px) rotate(0deg) scale(1);opacity:0}22%{transform:translate(-4px,0px) rotate(0deg) scale(1);opacity:0}31%{transform:translate(1px,0px) rotate(0deg) scale(1);opacity:1}37%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:1}100%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:1}}
+.antz-p-department-top{transform-box:view-box;transform-origin:24px 24px;animation:antz-p-department-top 4250ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-department-bottom{0%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:1}4%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:1}13%{transform:translate(-4px,0px) rotate(0deg) scale(1);opacity:0}30%{transform:translate(-4px,0px) rotate(0deg) scale(1);opacity:0}39%{transform:translate(1px,0px) rotate(0deg) scale(1);opacity:1}45%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:1}100%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:1}}
+.antz-p-department-bottom{transform-box:view-box;transform-origin:24px 24px;animation:antz-p-department-bottom 4250ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-department-head{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}12%{transform:translate(0px,0px) rotate(0deg) scale(1);}18%{transform:translate(0px,0px) rotate(0deg) scale(1.1);}24%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-department-head{transform-box:view-box;transform-origin:13.5px 24px;animation:antz-p-department-head 4250ms cubic-bezier(.45,0,.55,1) infinite}
+@media (prefers-reduced-motion:reduce){.antz-p-department *{animation:none!important}}
+</style>
+  <rect x="0" y="0" width="48" height="48" rx="14" class="antz-p-department-f-tile" fill="#36BC69"/>
+  <path d="M18.75 24H25.75M29.25 13.5A3.5 3.5 0 0 0 25.75 17V31A3.5 3.5 0 0 0 29.25 34.5" class="antz-p-department-s-ink" fill="none" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g class="antz-p-department-top">
+    <path d="M32.75 8.25H36.25C38.183 8.25 39.75 9.817 39.75 11.75V15.25C39.75 17.183 38.183 18.75 36.25 18.75H32.75C30.817 18.75 29.25 17.183 29.25 15.25V11.75C29.25 9.817 30.817 8.25 32.75 8.25Z" class="antz-p-department-f-fill antz-p-department-s-ink" fill="#CCE5FF" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g class="antz-p-department-bottom">
+    <path d="M32.75 29.25H36.25C38.183 29.25 39.75 30.817 39.75 32.75V36.25C39.75 38.183 38.183 39.75 36.25 39.75H32.75C30.817 39.75 29.25 38.183 29.25 36.25V32.75C29.25 30.817 30.817 29.25 32.75 29.25Z" class="antz-p-department-f-fill antz-p-department-s-ink" fill="#CCE5FF" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g class="antz-p-department-head">
+    <path d="M11.75 18.75H15.25C17.183 18.75 18.75 20.317 18.75 22.25V25.75C18.75 27.683 17.183 29.25 15.25 29.25H11.75C9.817 29.25 8.25 27.683 8.25 25.75V22.25C8.25 20.317 9.817 18.75 11.75 18.75Z" class="antz-p-department-f-fill antz-p-department-s-ink" fill="#CCE5FF" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M12.75 22.25H14.25C14.802 22.25 15.25 22.698 15.25 23.25V24.75C15.25 25.302 14.802 25.75 14.25 25.75H12.75C12.198 25.75 11.75 25.302 11.75 24.75V23.25C11.75 22.698 12.198 22.25 12.75 22.25Z" class="antz-p-department-f-accent" fill="#005226"/>
+  </g>
+</svg>

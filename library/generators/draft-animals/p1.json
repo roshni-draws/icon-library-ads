@@ -1,0 +1,20 @@
+[
+["ear A L", "<path d='M15 21C9 20 4 14 4 8C4 5 6 3 9 3C15 3 19 9 19 15C19 18 17 21 15 21Z'/><circle cx='5' cy='9' r='2'/>"],
+["ear A R", "<path d='M9 21C15 20 20 14 20 8C20 5 18 3 15 3C9 3 5 9 5 15C5 18 7 21 9 21Z'/><circle cx='19' cy='9' r='2'/>"],
+["ear B L", "<mask id='cut'><rect width='24' height='24' fill='white' stroke='none'/><circle cx='6' cy='12' r='5' fill='black' stroke='none'/></mask><g mask='url(#cut)'><path d='M20 21H16C9 21 4 15 4 9V5A2 2 0 0 1 6 3H8C15 3 20 9 20 16Z'/></g><circle cx='6' cy='12' r='2'/>"],
+["leaf45 L hi", "<mask id='cut'><rect width='24' height='24' fill='white' stroke='none'/><circle cx='5' cy='11' r='5' fill='black' stroke='none'/></mask><g mask='url(#cut)'><path d='M4 4C12 4 20 8 20 20C8 20 4 12 4 4Z'/><path d='M8 8L14 14'/></g><circle cx='5' cy='11' r='2'/>"],
+["leaf45 L lo", "<mask id='cut'><rect width='24' height='24' fill='white' stroke='none'/><circle cx='9' cy='17' r='5' fill='black' stroke='none'/></mask><g mask='url(#cut)'><path d='M4 4C12 4 20 8 20 20C8 20 4 12 4 4Z'/><path d='M8 8L14 14'/></g><circle cx='9' cy='17' r='2'/>"],
+["ovo", "<path d='M12 3C8.5 3 5 9 5 14A7 7 0 0 0 19 14C19 9 15.5 3 12 3Z'/><path d='M12 10A3 3 0 1 0 15 13'/>"],
+["ovo2", "<path d='M12 3C8.5 3 5 9 5 14A7 7 0 0 0 19 14C19 9 15.5 3 12 3Z'/><path d='M13 11A3 3 0 1 0 15 15'/><path d='M14 10V10'/>"],
+["vivi1", "<circle cx='14' cy='8' r='4'/><path d='M10 12A7 7 0 1 0 20 17'/>"],
+["vivi2", "<circle cx='13' cy='8' r='4'/><path d='M8 10C5 13 5 18 9 20C13 22 18 20 19 16'/><path d='M13 16H15'/>"],
+["unknown", "<path d='M12 3C8.5 3 5 9 5 14A7 7 0 0 0 19 14C19 9 15.5 3 12 3Z'/><path d='M10 10A2 2 0 1 1 12 12V13M12 17V17'/>"],
+["apple", "<path d='M12 9C10 7 4 7 4 13C4 18 8 21 12 21C16 21 20 18 20 13C20 7 14 7 12 9Z'/><path d='M12 9L15 6'/><path d='M12 5Q12 2 16 2'/>"],
+["compost", "<path d='M20 12A8 8 0 1 1 12 4'/><path d='M12 1L15 4L12 7'/><path d='M9 15C9 11 11 9 15 9C15 13 13 15 9 15Z'/>"],
+["fence", "<path d='M4 21V7L5 6L6 7V21ZM11 21V7L12 6L13 7V21ZM18 21V7L19 6L20 7V21ZM3 11H21M3 16H21'/>"],
+["tag pub", "<mask id='cut'><rect width='24' height='24' fill='white' stroke='none'/><circle cx='17' cy='17' r='7' fill='black' stroke='none'/></mask><g mask='url(#cut)'><path d='M3 10L8 5H19A2 2 0 0 1 21 7V13A2 2 0 0 1 19 15H8Z'/><circle cx='10' cy='10' r='1'/></g><circle cx='17' cy='17' r='4'/><path d='M13 17H21M17 13A6 6 0 0 1 17 21A6 6 0 0 1 17 13'/>"],
+["tag priv", "<mask id='cut'><rect width='24' height='24' fill='white' stroke='none'/><circle cx='17' cy='17' r='7' fill='black' stroke='none'/></mask><g mask='url(#cut)'><path d='M3 10L8 5H19A2 2 0 0 1 21 7V13A2 2 0 0 1 19 15H8Z'/><circle cx='10' cy='10' r='1'/></g><rect x='13' y='16' width='8' height='5' rx='2'/><path d='M15 16V15A2 2 0 0 1 19 15V16'/>"],
+["travel", "<mask id='cut'><rect width='24' height='24' fill='white' stroke='none'/><circle cx='16' cy='16' r='6' fill='black' stroke='none'/></mask><g mask='url(#cut)'><circle cx='11' cy='11' r='8'/><path d='M3 11H19M11 3A12 12 0 0 1 11 19A12 12 0 0 1 11 3'/></g><circle cx='16' cy='16' r='3'/><path d='M18 18L21 21'/>"],
+["person_search", "<mask id='cut'><rect width='24' height='24' fill='white' stroke='none'/><circle cx='16' cy='16' r='6' fill='black' stroke='none'/></mask><g mask='url(#cut)'><circle cx='9' cy='7' r='3'/><path d='M3 21V17A3 3 0 0 1 6 14H12A3 3 0 0 1 15 17V21'/></g><circle cx='16' cy='16' r='3'/><path d='M18 18L21 21'/>"],
+["bandage", "<path d='M3 15L15 3Q16 2 17 3L21 7Q22 8 21 9L9 21Q8 22 7 21L3 17Q2 16 3 15Z'/><path d='M7 11L13 17M11 7L17 13'/>"]
+]

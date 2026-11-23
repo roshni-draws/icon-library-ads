@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="cut">
+    <rect x="2" y="4" width="20" height="18" rx="3" fill="white"/>
+    <rect x="7" y="2" width="2" height="4" rx="1" fill="white"/>
+    <rect x="15" y="2" width="2" height="4" rx="1" fill="white"/>
+    <path d="M4 9H20" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="17" cy="17" r="7" fill="black"/>
+    <circle cx="17" cy="17" r="5" fill="white"/>
+    <path d="M17 14V20M14 17H20" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <path d="M2 2H22V22H2Z" mask="url(#cut)"/>
+</svg>

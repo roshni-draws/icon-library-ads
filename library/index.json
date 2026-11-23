@@ -1,0 +1,2668 @@
+{
+  "version": 1,
+  "style": "antz-rounded",
+  "icons": [
+    {
+      "name": "checkbox_checked",
+      "label": "Checkbox, checked",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "Checkbox",
+        "necropsy_Checkbox-select"
+      ],
+      "reference": "check_box",
+      "tags": [],
+      "notes": "Also used in: Animals and species · Checked state; unchecked is check_box_outline_blank · Checked"
+    },
+    {
+      "name": "chronic",
+      "label": "Chronic condition",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "Chronic",
+        "Chronic_white"
+      ],
+      "reference": "chronic",
+      "tags": [],
+      "notes": "On dark fill: same icon, colour onPrimary"
+    },
+    {
+      "name": "time",
+      "label": "Time / schedule",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "Clock",
+        "necropsy_schedule",
+        "TimeIcon"
+      ],
+      "reference": "schedule",
+      "tags": [],
+      "notes": "Also used in: Animals and species; Assessments"
+    },
+    {
+      "name": "controlled_substance",
+      "label": "Controlled substance",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "Control_substance_dark",
+        "control_substance_tag"
+      ],
+      "reference": null,
+      "tags": [],
+      "notes": "Also used in: Shared across modules · Dark variant: same icon, colour by role · Earlier custom draft: controlled_substance"
+    },
+    {
+      "name": "document",
+      "label": "Document",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "Document",
+        "document_alt",
+        "description",
+        "necropsy_description"
+      ],
+      "reference": "description",
+      "tags": [],
+      "notes": "Also used in: Animals and species · Alternate drawing: merge with Document"
+    },
+    {
+      "name": "filter",
+      "label": "Filter",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "Filter",
+        "filter_white",
+        "NotificationFilter",
+        "request_filter_new",
+        "AssessmentFilter"
+      ],
+      "reference": "filter_list",
+      "tags": [],
+      "notes": "Also used in: Housing and diet; Notifications; Shared controls (filter, sort, media); Shared across modules · On dark fill: same icon, colour onPrimary"
+    },
+    {
+      "name": "medical",
+      "label": "Medical / first aid",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "FirstAid",
+        "medicalservices",
+        "notifications_medical",
+        "homesvg_first_aid_green"
+      ],
+      "reference": "medical_services",
+      "tags": [],
+      "notes": "Also used in: Eggs; Notifications; Home, navigation and insights"
+    },
+    {
+      "name": "medical_record",
+      "label": "Medical record",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "Med_Advice",
+        "medical_record_icon",
+        "necropsy_MedicalHistory",
+        "single_medical"
+      ],
+      "reference": "medical_information",
+      "tags": [],
+      "notes": "Also used in: Mortality and necropsy; Home, navigation and insights"
+    },
+    {
+      "name": "attach_file",
+      "label": "Attach file",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "Med_Attachments",
+        "attach_file"
+      ],
+      "reference": "attach_file",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "category",
+      "label": "Category",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "Med_Casetype",
+        "category"
+      ],
+      "reference": "category",
+      "tags": [],
+      "notes": "Also used in: Requests, approvals and transfers"
+    },
+    {
+      "name": "symptoms",
+      "label": "Symptoms / complaints",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "Med_Complaints",
+        "mood_bad",
+        "recordSymtoms"
+      ],
+      "reference": "sick",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "diagnosis",
+      "label": "Diagnosis",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "Med_Diagnosis"
+      ],
+      "reference": "diagnosis",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "event_repeat",
+      "label": "Follow-up date",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "Med_Followup"
+      ],
+      "reference": "event_repeat",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "lab_request",
+      "label": "Lab request / tests",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "Med_Lab",
+        "test_tube",
+        "labs1",
+        "labs"
+      ],
+      "reference": "science",
+      "tags": [],
+      "notes": "Also used in: Lab; Animals and species; Home, navigation and insights"
+    },
+    {
+      "name": "clinical_notes",
+      "label": "Clinical notes",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "Med_Notes",
+        "clinical_notes"
+      ],
+      "reference": "clinical_notes",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "prescription",
+      "label": "Prescription",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "Med_Prescription",
+        "prescriptionMedical",
+        "Prescription",
+        "Prescription1",
+        "prescriptions"
+      ],
+      "reference": "prescriptions",
+      "tags": [],
+      "notes": "Also used in: Pharmacy; Animals and species"
+    },
+    {
+      "name": "note",
+      "label": "Note",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "Notes",
+        "Notes_alt",
+        "notifications_note"
+      ],
+      "reference": "sticky_note_2",
+      "tags": [],
+      "notes": "Also used in: Notifications · Alternate drawing: merge with Notes"
+    },
+    {
+      "name": "edit_note",
+      "label": "Add or edit note",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "Notes_icon"
+      ],
+      "reference": "edit_note",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "note_add",
+      "label": "Add note",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "Notes_new",
+        "notesNew"
+      ],
+      "reference": "note_add",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "skip",
+      "label": "Skip dose",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "SkipWhiteSvg",
+        "skipBlackSvg",
+        "skipRedIcon",
+        "skipVaccine"
+      ],
+      "reference": "skip_next",
+      "tags": [],
+      "notes": "On dark fill: same icon, colour onPrimary · Skipped: filled, error role"
+    },
+    {
+      "name": "sell",
+      "label": "Tag / label",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "TagSimple"
+      ],
+      "reference": "sell",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "add_circle",
+      "label": "Add (circle)",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "administer_add",
+        "add_complaints"
+      ],
+      "reference": "add_circle",
+      "tags": [],
+      "notes": "Also used in: Shared controls (filter, sort, media)"
+    },
+    {
+      "name": "done",
+      "label": "Done / approved",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "administer_done",
+        "approved_request",
+        "necropsy_check_circle",
+        "checkCircle",
+        "approved_request1",
+        "check_circle"
+      ],
+      "reference": "check_circle",
+      "tags": [],
+      "notes": "Also used in: Animals and species; Mortality and necropsy; Eggs; Requests, approvals and transfers · Done state: filled · Duplicate: merge with approved_request · Example drawn by the builder agent to prove the pipeline."
+    },
+    {
+      "name": "wb_sunny",
+      "label": "Afternoon dose slot",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "afternoon"
+      ],
+      "reference": "wb_sunny",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "repeat",
+      "label": "Alternate-day dosing",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "alternative_blue"
+      ],
+      "reference": "repeat",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "animal",
+      "label": "Animal",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "animal_paw_outline",
+        "notifications_pets",
+        "homesvg_pets",
+        "ModeOfReproductionIcons_ViviparousIcon"
+      ],
+      "reference": "pets",
+      "tags": [],
+      "notes": "Also used in: Notifications; Home, navigation and insights · Merged: repro_viviparous (Viviparous). Paw = live-bearing animal in reproduction-mode contexts."
+    },
+    {
+      "name": "animal_batch",
+      "label": "Batch of animals",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "batchIcon",
+        "batch_medical",
+        "lab_batch_medical"
+      ],
+      "reference": null,
+      "tags": [],
+      "notes": "Also used in: Home, navigation and insights; Shared across modules · Earlier custom draft: animal_batch · Batch medical: batch icon, pair with medical_services in context · Batch lab request: batch icon, pair with science in context"
+    },
+    {
+      "name": "error",
+      "label": "Missing batch number",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "batch_missing"
+      ],
+      "reference": "error",
+      "tags": [],
+      "notes": "Missing value: error role"
+    },
+    {
+      "name": "pill",
+      "label": "Medicine / capsule",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "capsule"
+      ],
+      "reference": "pill",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "swap",
+      "label": "Swap / change",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "change",
+        "notifications_transfer"
+      ],
+      "reference": "swap_horiz",
+      "tags": [],
+      "notes": "Also used in: Notifications"
+    },
+    {
+      "name": "vaccine",
+      "label": "Vaccine / vaccination",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "completedVaccine",
+        "directVaccine",
+        "pendingVaccine",
+        "recordVaccination",
+        "vaccineIcon",
+        "vaccineRecord",
+        "vaccination_black",
+        "vaccination_green",
+        "notifications_vaccination",
+        "injection"
+      ],
+      "reference": "vaccines",
+      "tags": [],
+      "notes": "Also used in: Animals and species; Notifications; Home, navigation and insights · Completed: filled, success role · Pending: line, caution role · Inactive: line · Active: filled, primary role"
+    },
+    {
+      "name": "route",
+      "label": "Route of administration",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "deliveryRoute"
+      ],
+      "reference": "route",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "deworming",
+      "label": "Deworming",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "dewormingRecord",
+        "deworming_svg",
+        "recordDeworming",
+        "deworming_black",
+        "deworming_green",
+        "notifications_deworming"
+      ],
+      "reference": null,
+      "tags": [],
+      "notes": "Also used in: Animals and species; Notifications · Earlier custom draft: deworming · Active: filled, primary role"
+    },
+    {
+      "name": "file_word",
+      "label": "Word document",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "doc",
+        "MediaDoc"
+      ],
+      "reference": "description",
+      "tags": [],
+      "notes": "Also used in: Shared controls (filter, sort, media) · File type: Word (add a file-type label if needed) · File type: Word"
+    },
+    {
+      "name": "medication",
+      "label": "Medication / dose",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "dosageSvg",
+        "recordAdminister",
+        "Dose",
+        "PharmaDispense",
+        "notifications_medicine"
+      ],
+      "reference": "medication",
+      "tags": [],
+      "notes": "Also used in: Pharmacy; Notifications · Illustration: keep the illustration or use this icon"
+    },
+    {
+      "name": "expand_more",
+      "label": "Expand",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "expand_more",
+        "ExpandMore"
+      ],
+      "reference": "keyboard_arrow_down",
+      "tags": [],
+      "notes": "Also used in: Assessments"
+    },
+    {
+      "name": "add_a_photo",
+      "label": "Photo proof of dose",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "galleryAdminister"
+      ],
+      "reference": "add_a_photo",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "history",
+      "label": "History",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "history"
+      ],
+      "reference": "history",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "home_health",
+      "label": "Hospital / home health",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "homesvg_home_health"
+      ],
+      "reference": "home_health",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "hospital_transfer",
+      "label": "Hospital transfer",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "hospital_transfer",
+        "notifications_hospital-transfer"
+      ],
+      "reference": "ambulance",
+      "tags": [],
+      "notes": "Also used in: Notifications"
+    },
+    {
+      "name": "image",
+      "label": "Image attachment",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "imagesmode"
+      ],
+      "reference": "image",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "like",
+      "label": "Like",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "likeicon",
+        "LikeNewSvg",
+        "like_on",
+        "unlike"
+      ],
+      "reference": "thumb_up",
+      "tags": [],
+      "notes": "Also used in: Notes, journal and announcements · Liked: filled · Not liked: line"
+    },
+    {
+      "name": "lab_microscope",
+      "label": "Lab test / microscope",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "microscopegrey",
+        "images_microscope"
+      ],
+      "reference": "biotech",
+      "tags": [],
+      "notes": "Also used in: Lab · Inactive: line, onSurfaceVariant"
+    },
+    {
+      "name": "wb_twilight",
+      "label": "Morning dose slot",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "morning"
+      ],
+      "reference": "wb_twilight",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "bedtime",
+      "label": "Night dose slot",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "night"
+      ],
+      "reference": "bedtime",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "file_pdf",
+      "label": "PDF file",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "pdf",
+        "necropsy_pdf",
+        "MediaPdf"
+      ],
+      "reference": "picture_as_pdf",
+      "tags": [],
+      "notes": "Also used in: Animals and species; Housing and diet"
+    },
+    {
+      "name": "print",
+      "label": "Print",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "printer"
+      ],
+      "reference": "print",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "assessment",
+      "label": "Assessment record",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "recordAssessment",
+        "necropsy_Assessment",
+        "actionTaken"
+      ],
+      "reference": "assignment",
+      "tags": [],
+      "notes": "Also used in: Mortality and necropsy · Merged: assignment_turned_in (Action taken)"
+    },
+    {
+      "name": "lab_profile",
+      "label": "Lab record",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "recordLab"
+      ],
+      "reference": "lab_profile",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "calendar_add_on",
+      "label": "Schedule vaccine",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "scheduleVaccine"
+      ],
+      "reference": "calendar_add_on",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "stop_circle",
+      "label": "Stop vaccine course",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "stopVaccine"
+      ],
+      "reference": "stop_circle",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "supplement",
+      "label": "Supplement",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "supplement_module",
+        "supplement",
+        "supplement_black",
+        "notifications_supplements"
+      ],
+      "reference": "nutrition",
+      "tags": [],
+      "notes": "Also used in: Animals and species; Notifications · Dark variant: same icon, colour by role"
+    },
+    {
+      "name": "event_upcoming",
+      "label": "Upcoming",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "upcoming"
+      ],
+      "reference": "event_upcoming",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "event_note",
+      "label": "Visit type",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "visit_type"
+      ],
+      "reference": "event_note",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "vital_signs",
+      "label": "Vital signs",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "vital_signs"
+      ],
+      "reference": "vital_signs",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "warning",
+      "label": "Warning",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "warning",
+        "necropsy_Alert",
+        "images_warning"
+      ],
+      "reference": "warning",
+      "tags": [],
+      "notes": "Also used in: Animals and species; Login, account and staff"
+    },
+    {
+      "name": "report",
+      "label": "Complaint warning",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "warning_complaint"
+      ],
+      "reference": "report",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "monitor_weight",
+      "label": "Weight / weight-based dose",
+      "module": "Medical",
+      "status": "draft",
+      "sources": [
+        "weightScale"
+      ],
+      "reference": "monitor_weight",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "priority_high",
+      "label": "High priority",
+      "module": "Pharmacy",
+      "status": "draft",
+      "sources": [
+        "HighPR",
+        "HighPRT",
+        "priroty_request_priority_high",
+        "priroty_high",
+        "priroty_icon_priority_high_filled"
+      ],
+      "reference": "keyboard_arrow_up",
+      "tags": [],
+      "notes": "Also used in: Lab; Animals and species; Shared across modules · Priority level: high · Alternate drawing: merge with HighPR · Selected: filled, warning role"
+    },
+    {
+      "name": "emergency",
+      "label": "Emergency priority",
+      "module": "Pharmacy",
+      "status": "draft",
+      "sources": [
+        "HighPrior",
+        "OutlineEmergency",
+        "fire",
+        "fire_red"
+      ],
+      "reference": "emergency",
+      "tags": [],
+      "notes": "Outline: line style · Merged: urgent (Urgent case)"
+    },
+    {
+      "name": "assignment_add",
+      "label": "Pharmacy request",
+      "module": "Pharmacy",
+      "status": "draft",
+      "sources": [
+        "PharmaRequest"
+      ],
+      "reference": "assignment_add",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "add_photo",
+      "label": "Add photo",
+      "module": "Pharmacy",
+      "status": "draft",
+      "sources": [
+        "gallery-add_2",
+        "gallery-add",
+        "Image-Upload-section",
+        "add_photo_alternate"
+      ],
+      "reference": "add_photo_alternate",
+      "tags": [],
+      "notes": "Also used in: Eggs; Requests, approvals and transfers; Shared controls (filter, sort, media)"
+    },
+    {
+      "name": "priority_low",
+      "label": "Low priority",
+      "module": "Pharmacy",
+      "status": "draft",
+      "sources": [
+        "priroty_icon_priority_low",
+        "priroty_low",
+        "priroty_icon_priority_low_filled"
+      ],
+      "reference": "keyboard_arrow_down",
+      "tags": [],
+      "notes": "Also used in: Animals and species; Shared across modules · Priority level: low · Selected: filled, success role"
+    },
+    {
+      "name": "archive",
+      "label": "Archive",
+      "module": "Lab",
+      "status": "draft",
+      "sources": [
+        "archiveIcon",
+        "archiveIconSelected"
+      ],
+      "reference": "archive",
+      "tags": [],
+      "notes": "Tab, not selected: line · Tab selected: filled"
+    },
+    {
+      "name": "request",
+      "label": "Request / approval",
+      "module": "Lab",
+      "status": "draft",
+      "sources": [
+        "requestsDefault",
+        "requestsSelected",
+        "notifications_approvals",
+        "notifications_requests"
+      ],
+      "reference": "approval",
+      "tags": [],
+      "notes": "Also used in: Notifications · Tab, not selected: line · Tab selected: filled"
+    },
+    {
+      "name": "lab_sample",
+      "label": "Lab sample",
+      "module": "Lab",
+      "status": "draft",
+      "sources": [
+        "samplesDefault",
+        "samplesSelected",
+        "testtube"
+      ],
+      "reference": "labs",
+      "tags": [],
+      "notes": "Tab, not selected: line · Tab selected: filled"
+    },
+    {
+      "name": "search",
+      "label": "Search",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "ActiveSearch",
+        "Search",
+        "necropsy_search"
+      ],
+      "reference": "search",
+      "tags": [],
+      "notes": "Active: primary role"
+    },
+    {
+      "name": "open_in_full",
+      "label": "Expand card",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "Expand_icon"
+      ],
+      "reference": "open_in_full",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "star",
+      "label": "Favourite",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "FavouritePlain",
+        "Favourite"
+      ],
+      "reference": "star",
+      "tags": [],
+      "notes": "Also used in: Home, navigation and insights · Not favourited: line · Favourited: filled"
+    },
+    {
+      "name": "repro_ovoviviparous",
+      "label": "Ovoviviparous",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "ModeOfReproductionIcons_Ovoviviparousicon"
+      ],
+      "reference": null,
+      "tags": [],
+      "notes": "Earlier custom draft: repro_ovoviviparous"
+    },
+    {
+      "name": "repro_unknown",
+      "label": "Reproduction mode unknown",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "ModeOfReproductionIcons_UnKnownIcon"
+      ],
+      "reference": null,
+      "tags": [],
+      "notes": "Earlier custom draft: repro_unknown"
+    },
+    {
+      "name": "mortality",
+      "label": "Mortality / deceased",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "Mortality",
+        "death",
+        "notifications_nacropsy"
+      ],
+      "reference": "skull",
+      "tags": [],
+      "notes": "Also used in: Notifications"
+    },
+    {
+      "name": "account_tree",
+      "label": "Taxonomy",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "TaxonomyIcon"
+      ],
+      "reference": "account_tree",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "family_history",
+      "label": "Add parent / female",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "add_parent"
+      ],
+      "reference": "family_history",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "arrow_shape_up_stack",
+      "label": "Tag move up / bulk",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "arrow_shape_up_stack"
+      ],
+      "reference": "arrow_shape_up_stack",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "beenhere",
+      "label": "Tagged / saved",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "beenhere"
+      ],
+      "reference": "beenhere",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "delete",
+      "label": "Delete",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "dustbin",
+        "necropsy_delete",
+        "SecondaryTrash",
+        "delete",
+        "delete_chatmodule"
+      ],
+      "reference": "delete",
+      "tags": [],
+      "notes": "Also used in: Assessments; Requests, approvals and transfers; Chat"
+    },
+    {
+      "name": "enclosure",
+      "label": "Enclosure / housing",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "enclosure",
+        "home_housing"
+      ],
+      "reference": "fence",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "person_search",
+      "label": "Found by",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "foundBy"
+      ],
+      "reference": "person_search",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "male",
+      "label": "Male",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "gender_male"
+      ],
+      "reference": "male",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "grid_view",
+      "label": "Grid view",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "gridPrimary",
+        "gridSurface"
+      ],
+      "reference": "grid_view",
+      "tags": [],
+      "notes": "Active: filled, primary role · Inactive: line"
+    },
+    {
+      "name": "hard_drive",
+      "label": "Records / storage",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "hard_disk"
+      ],
+      "reference": "hard_drive",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "health_and_safety",
+      "label": "Health assessment",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "healthAssessment"
+      ],
+      "reference": "health_and_safety",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "ear_tag_high_left",
+      "label": "Ear tag, high, left",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "highLefttag"
+      ],
+      "reference": null,
+      "tags": [],
+      "notes": "Earlier custom draft: ear_tag_high_left"
+    },
+    {
+      "name": "ear_tag_high_right",
+      "label": "Ear tag, high, right",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "highRighttag"
+      ],
+      "reference": null,
+      "tags": [],
+      "notes": "Earlier custom draft: ear_tag_high_right"
+    },
+    {
+      "name": "add",
+      "label": "Add",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "necropsy_AddIcon",
+        "Add"
+      ],
+      "reference": "add",
+      "tags": [],
+      "notes": "Also used in: Shared across modules"
+    },
+    {
+      "name": "calendar",
+      "label": "Date / calendar",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "necropsy_Calendar",
+        "DateIcon",
+        "Calendar"
+      ],
+      "reference": "calendar_month",
+      "tags": [],
+      "notes": "Also used in: Assessments; Shared across modules"
+    },
+    {
+      "name": "checkbox_unchecked",
+      "label": "Checkbox, unchecked",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "necropsy_Checkbox-unselect"
+      ],
+      "reference": "check_box_outline_blank",
+      "tags": [],
+      "notes": "Unchecked"
+    },
+    {
+      "name": "close",
+      "label": "Close",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "necropsy_Close"
+      ],
+      "reference": "close",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "edit",
+      "label": "Edit",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "necropsy_edit",
+        "necropsy_EditIcon",
+        "edit_food_wastage"
+      ],
+      "reference": "edit",
+      "tags": [],
+      "notes": "Also used in: Mortality and necropsy; Housing and diet"
+    },
+    {
+      "name": "info",
+      "label": "Information",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "info"
+      ],
+      "reference": "info",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "personal_injury",
+      "label": "Injury details",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "injuryDetails"
+      ],
+      "reference": "personal_injury",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "ear_tag_low_left",
+      "label": "Ear tag, low, left",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "lowLefttag"
+      ],
+      "reference": null,
+      "tags": [],
+      "notes": "Earlier custom draft: ear_tag_low_left"
+    },
+    {
+      "name": "ear_tag_low_right",
+      "label": "Ear tag, low, right",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "lowRighttag"
+      ],
+      "reference": null,
+      "tags": [],
+      "notes": "Earlier custom draft: ear_tag_low_right"
+    },
+    {
+      "name": "ear_tag_moderate_left",
+      "label": "Ear tag, moderate, left",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "moderateLefttag"
+      ],
+      "reference": null,
+      "tags": [],
+      "notes": "Earlier custom draft: ear_tag_moderate_left"
+    },
+    {
+      "name": "ear_tag_moderate_right",
+      "label": "Ear tag, moderate, right",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "moderateRighttag"
+      ],
+      "reference": null,
+      "tags": [],
+      "notes": "Earlier custom draft: ear_tag_moderate_right"
+    },
+    {
+      "name": "moved_location",
+      "label": "Moved location",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "moved_location",
+        "moved_location_white"
+      ],
+      "reference": "move_location",
+      "tags": [],
+      "notes": "Also used in: Housing and diet · On dark fill: same icon, colour onPrimary"
+    },
+    {
+      "name": "breeding_pair",
+      "label": "Breeding pair",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "pair_icon"
+      ],
+      "reference": null,
+      "tags": [],
+      "notes": "Earlier custom draft: breeding_pair"
+    },
+    {
+      "name": "close_fullscreen",
+      "label": "Collapse card",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "shrink-svgrepo-com"
+      ],
+      "reference": "close_fullscreen",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "format_list_numbered",
+      "label": "Steps taken",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "stepsList"
+      ],
+      "reference": "format_list_numbered",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "tag_public",
+      "label": "Public tag",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "tagglobal"
+      ],
+      "reference": null,
+      "tags": [],
+      "notes": "Earlier custom draft: tag_public"
+    },
+    {
+      "name": "travel_explore",
+      "label": "Search public tags",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "tagglobalsearch"
+      ],
+      "reference": "travel_explore",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "tag_private",
+      "label": "Private tag",
+      "module": "Animals and species",
+      "status": "draft",
+      "sources": [
+        "tagprivate"
+      ],
+      "reference": null,
+      "tags": [],
+      "notes": "Earlier custom draft: tag_private"
+    },
+    {
+      "name": "carcass_pickup",
+      "label": "Carcass pickup / report mortality",
+      "module": "Mortality and necropsy",
+      "status": "draft",
+      "sources": [
+        "Ambulance",
+        "AmbulanceFAB"
+      ],
+      "reference": "ambulance",
+      "tags": [],
+      "notes": "Floating button: same icon in a FAB container"
+    },
+    {
+      "name": "carcass_transfer",
+      "label": "Carcass transfer",
+      "module": "Mortality and necropsy",
+      "status": "draft",
+      "sources": [
+        "CarcassTransferFAB",
+        "notifications_carcass-transfer"
+      ],
+      "reference": null,
+      "tags": [],
+      "notes": "Also used in: Notifications · Floating button: same icon in a FAB container · Earlier custom draft: carcass"
+    },
+    {
+      "name": "hourglass_bottom",
+      "label": "Delayed",
+      "module": "Mortality and necropsy",
+      "status": "draft",
+      "sources": [
+        "delayIcon"
+      ],
+      "reference": "hourglass_bottom",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "fish_bones",
+      "label": "Mortality / carcass",
+      "module": "Mortality and necropsy",
+      "status": "draft",
+      "sources": [
+        "fish-bones"
+      ],
+      "reference": null,
+      "tags": [],
+      "notes": "Earlier custom draft: fish_bones"
+    },
+    {
+      "name": "timeline",
+      "label": "Timeline",
+      "module": "Mortality and necropsy",
+      "status": "draft",
+      "sources": [
+        "necropsy_Timeline"
+      ],
+      "reference": "timeline",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "block",
+      "label": "Blocked / not allowed",
+      "module": "Mortality and necropsy",
+      "status": "draft",
+      "sources": [
+        "necropsy_block"
+      ],
+      "reference": "block",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "download",
+      "label": "Download",
+      "module": "Mortality and necropsy",
+      "status": "draft",
+      "sources": [
+        "necropsy_download",
+        "homesvg_download"
+      ],
+      "reference": "download",
+      "tags": [],
+      "notes": "Also used in: Home, navigation and insights"
+    },
+    {
+      "name": "draft",
+      "label": "Draft",
+      "module": "Mortality and necropsy",
+      "status": "draft",
+      "sources": [
+        "necropsy_draft"
+      ],
+      "reference": "draft",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "cancelled",
+      "label": "Cancelled / rejected",
+      "module": "Mortality and necropsy",
+      "status": "draft",
+      "sources": [
+        "notIcon",
+        "cancel_request"
+      ],
+      "reference": "cancel",
+      "tags": [],
+      "notes": "Also used in: Requests, approvals and transfers"
+    },
+    {
+      "name": "refresh",
+      "label": "Refresh",
+      "module": "Mortality and necropsy",
+      "status": "draft",
+      "sources": [
+        "refresh"
+      ],
+      "reference": "refresh",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "egg_clutch",
+      "label": "Egg clutch",
+      "module": "Eggs",
+      "status": "draft",
+      "sources": [
+        "Union",
+        "clutchEgg"
+      ],
+      "reference": null,
+      "tags": [],
+      "notes": "Earlier custom draft: egg_clutch"
+    },
+    {
+      "name": "egg_collected",
+      "label": "Egg collected",
+      "module": "Eggs",
+      "status": "draft",
+      "sources": [
+        "collectedEgg"
+      ],
+      "reference": null,
+      "tags": [],
+      "notes": "Earlier custom draft: egg_collected"
+    },
+    {
+      "name": "egg_discarded",
+      "label": "Egg discarded",
+      "module": "Eggs",
+      "status": "draft",
+      "sources": [
+        "discardedEgg",
+        "eggDiscardRed",
+        "eggDiscardSvg",
+        "eggdiscard"
+      ],
+      "reference": null,
+      "tags": [],
+      "notes": "Earlier custom draft: egg_discarded · Error role"
+    },
+    {
+      "name": "egg",
+      "label": "Egg",
+      "module": "Eggs",
+      "status": "draft",
+      "sources": [
+        "egg",
+        "egg1",
+        "eggVectorImage",
+        "notifications_eggs",
+        "ModeOfReproductionIcons_OviparousIcon"
+      ],
+      "reference": "egg",
+      "tags": [],
+      "notes": "Also used in: Notifications · Illustration: keep the illustration or use this icon · Example drawn by the builder agent to prove the pipeline. · Merged: repro_oviparous (Oviparous (lays eggs))"
+    },
+    {
+      "name": "egg_add",
+      "label": "Add egg",
+      "module": "Eggs",
+      "status": "draft",
+      "sources": [
+        "eggAdd"
+      ],
+      "reference": null,
+      "tags": [],
+      "notes": "Earlier custom draft: egg_add"
+    },
+    {
+      "name": "egg_nest",
+      "label": "Egg in nest",
+      "module": "Eggs",
+      "status": "draft",
+      "sources": [
+        "eggnest",
+        "nestEgg"
+      ],
+      "reference": null,
+      "tags": [],
+      "notes": "Earlier custom draft: egg_nest"
+    },
+    {
+      "name": "egg_nursery",
+      "label": "Egg nursery",
+      "module": "Eggs",
+      "status": "draft",
+      "sources": [
+        "eggnursery",
+        "nurseryEgg"
+      ],
+      "reference": null,
+      "tags": [],
+      "notes": "Earlier custom draft: egg_nursery"
+    },
+    {
+      "name": "egg_golden",
+      "label": "Special egg",
+      "module": "Eggs",
+      "status": "draft",
+      "sources": [
+        "golden-egg"
+      ],
+      "reference": null,
+      "tags": [],
+      "notes": "Earlier custom draft: egg_golden"
+    },
+    {
+      "name": "chick_hatched",
+      "label": "Hatched chick",
+      "module": "Eggs",
+      "status": "draft",
+      "sources": [
+        "hatched_bird"
+      ],
+      "reference": null,
+      "tags": [],
+      "notes": "Earlier custom draft: chick_hatched"
+    },
+    {
+      "name": "egg_hatched",
+      "label": "Hatched egg",
+      "module": "Eggs",
+      "status": "draft",
+      "sources": [
+        "hatchedegg"
+      ],
+      "reference": null,
+      "tags": [],
+      "notes": "Earlier custom draft: egg_hatched"
+    },
+    {
+      "name": "egg_infertile",
+      "label": "Infertile egg",
+      "module": "Eggs",
+      "status": "draft",
+      "sources": [
+        "infertileegg"
+      ],
+      "reference": null,
+      "tags": [],
+      "notes": "Earlier custom draft: egg_infertile"
+    },
+    {
+      "name": "location",
+      "label": "Location",
+      "module": "Eggs",
+      "status": "draft",
+      "sources": [
+        "location",
+        "location_on"
+      ],
+      "reference": "location_on",
+      "tags": [],
+      "notes": "Also used in: Requests, approvals and transfers · Example drawn by the builder agent to prove the pipeline."
+    },
+    {
+      "name": "select_all",
+      "label": "Select all",
+      "module": "Eggs",
+      "status": "draft",
+      "sources": [
+        "select_all_discard",
+        "select_all"
+      ],
+      "reference": "select_all",
+      "tags": [],
+      "notes": "Also used in: Shared across modules"
+    },
+    {
+      "name": "site",
+      "label": "Site",
+      "module": "Eggs",
+      "status": "draft",
+      "sources": [
+        "siteLocation",
+        "notifications_sites"
+      ],
+      "reference": "location_city",
+      "tags": [],
+      "notes": "Also used in: Notifications"
+    },
+    {
+      "name": "dietitian",
+      "label": "Dietitian",
+      "module": "Housing and diet",
+      "status": "draft",
+      "sources": [
+        "Dietitian"
+      ],
+      "reference": "nutrition",
+      "tags": [],
+      "notes": "Illustration: keep the illustration or use this icon"
+    },
+    {
+      "name": "transfer",
+      "label": "Transfer",
+      "module": "Housing and diet",
+      "status": "draft",
+      "sources": [
+        "compare_arrows_white",
+        "compare_arrows"
+      ],
+      "reference": "compare_arrows",
+      "tags": [],
+      "notes": "Also used in: Shared across modules · On dark fill: same icon, colour onPrimary"
+    },
+    {
+      "name": "compost",
+      "label": "Food wastage count",
+      "module": "Housing and diet",
+      "status": "draft",
+      "sources": [
+        "food_wastage_count"
+      ],
+      "reference": "compost",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "bar_chart",
+      "label": "Graph view",
+      "module": "Housing and diet",
+      "status": "draft",
+      "sources": [
+        "food_wastage_graph",
+        "food_wastage_graph_active"
+      ],
+      "reference": "bar_chart",
+      "tags": [],
+      "notes": "Inactive: line · Active: filled"
+    },
+    {
+      "name": "list",
+      "label": "List view",
+      "module": "Housing and diet",
+      "status": "draft",
+      "sources": [
+        "food_wastage_list",
+        "food_wastage_list_in_active"
+      ],
+      "reference": "list",
+      "tags": [],
+      "notes": "Active: primary role · Inactive: onSurfaceVariant"
+    },
+    {
+      "name": "line_end_circle",
+      "label": "Timeline end point (circle)",
+      "module": "Housing and diet",
+      "status": "draft",
+      "sources": [
+        "line_end_circle"
+      ],
+      "reference": "line_end_circle",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "move_in",
+      "label": "Move in",
+      "module": "Housing and diet",
+      "status": "draft",
+      "sources": [
+        "move_down_white",
+        "move_down",
+        "homesvg_move"
+      ],
+      "reference": "move_down",
+      "tags": [],
+      "notes": "Also used in: Requests, approvals and transfers; Home, navigation and insights · On dark fill: same icon, colour onPrimary"
+    },
+    {
+      "name": "expand_less",
+      "label": "Collapse",
+      "module": "Assessments",
+      "status": "draft",
+      "sources": [
+        "CompressMore"
+      ],
+      "reference": "keyboard_arrow_up",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "event_available",
+      "label": "Scheduled / date confirmed",
+      "module": "Assessments",
+      "status": "draft",
+      "sources": [
+        "calendar_check"
+      ],
+      "reference": "event_available",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "assignment_ind",
+      "label": "Assigned to",
+      "module": "Requests, approvals and transfers",
+      "status": "draft",
+      "sources": [
+        "assignment_ind"
+      ],
+      "reference": "assignment_ind",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "pending",
+      "label": "Awaiting",
+      "module": "Requests, approvals and transfers",
+      "status": "draft",
+      "sources": [
+        "awaitingTertiary",
+        "awaiting_approval_request"
+      ],
+      "reference": "pending",
+      "tags": [],
+      "notes": "Caution role · Merged: pending_actions (Awaiting approval)"
+    },
+    {
+      "name": "contact_support",
+      "label": "Clarification needed",
+      "module": "Requests, approvals and transfers",
+      "status": "draft",
+      "sources": [
+        "clarify"
+      ],
+      "reference": "contact_support",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "task_alt",
+      "label": "Completed",
+      "module": "Requests, approvals and transfers",
+      "status": "draft",
+      "sources": [
+        "completed_request"
+      ],
+      "reference": "task_alt",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "content_copy",
+      "label": "Copy",
+      "module": "Requests, approvals and transfers",
+      "status": "draft",
+      "sources": [
+        "content_copy"
+      ],
+      "reference": "content_copy",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "delete_forever",
+      "label": "Deleted",
+      "module": "Requests, approvals and transfers",
+      "status": "draft",
+      "sources": [
+        "deleted_request"
+      ],
+      "reference": "delete_forever",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "emergency_announcement",
+      "label": "Emergency announcement",
+      "module": "Requests, approvals and transfers",
+      "status": "draft",
+      "sources": [
+        "emergency_home_fill",
+        "emergency_home",
+        "white_emergency"
+      ],
+      "reference": "emergency_home",
+      "tags": [],
+      "notes": "Also used in: Notes, journal and announcements · Filled · On dark fill: same icon, colour onPrimary"
+    },
+    {
+      "name": "priority_flag",
+      "label": "Priority flag",
+      "module": "Requests, approvals and transfers",
+      "status": "draft",
+      "sources": [
+        "flag_priority_emergency",
+        "priroty_flag_priority_high",
+        "priroty_flag_priority_low",
+        "priroty_flag_priority_critical",
+        "priroty_flag_priority_medium"
+      ],
+      "reference": "flag",
+      "tags": [],
+      "notes": "Also used in: Notes, journal and announcements · Critical: filled, error role · High: filled, warning role · Low: line, success role · Medium: filled, caution role"
+    },
+    {
+      "name": "gallery",
+      "label": "Gallery",
+      "module": "Requests, approvals and transfers",
+      "status": "draft",
+      "sources": [
+        "galleryIcon",
+        "Gallery"
+      ],
+      "reference": "photo_library",
+      "tags": [],
+      "notes": "Also used in: Shared across modules"
+    },
+    {
+      "name": "people",
+      "label": "People / team",
+      "module": "Requests, approvals and transfers",
+      "status": "draft",
+      "sources": [
+        "group_alt",
+        "Persons_group"
+      ],
+      "reference": "group",
+      "tags": [],
+      "notes": "Also used in: Login, account and staff"
+    },
+    {
+      "name": "groups",
+      "label": "Groups",
+      "module": "Requests, approvals and transfers",
+      "status": "draft",
+      "sources": [
+        "groups",
+        "Group",
+        "group_iocn_chat"
+      ],
+      "reference": "groups",
+      "tags": [],
+      "notes": "Also used in: Notes, journal and announcements; Chat"
+    },
+    {
+      "name": "progress_activity",
+      "label": "In progress",
+      "module": "Requests, approvals and transfers",
+      "status": "draft",
+      "sources": [
+        "in_progress_request"
+      ],
+      "reference": "progress_activity",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "line_end_square",
+      "label": "Timeline end point",
+      "module": "Requests, approvals and transfers",
+      "status": "draft",
+      "sources": [
+        "line_end_square_white",
+        "line_end_square"
+      ],
+      "reference": "line_end_square",
+      "tags": [],
+      "notes": "Also used in: Shared across modules · On dark fill: same icon, colour onPrimary"
+    },
+    {
+      "name": "request_quote",
+      "label": "Price quotation",
+      "module": "Requests, approvals and transfers",
+      "status": "draft",
+      "sources": [
+        "quote"
+      ],
+      "reference": "request_quote",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "do_not_disturb_on",
+      "label": "Rejected",
+      "module": "Requests, approvals and transfers",
+      "status": "draft",
+      "sources": [
+        "rejected_request"
+      ],
+      "reference": "do_not_disturb_on",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "start",
+      "label": "Start point",
+      "module": "Requests, approvals and transfers",
+      "status": "draft",
+      "sources": [
+        "start"
+      ],
+      "reference": "start",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "today",
+      "label": "Today / date",
+      "module": "Requests, approvals and transfers",
+      "status": "draft",
+      "sources": [
+        "today"
+      ],
+      "reference": "today",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "fullscreen",
+      "label": "Full screen",
+      "module": "Notes, journal and announcements",
+      "status": "draft",
+      "sources": [
+        "Fullscreen"
+      ],
+      "reference": "fullscreen",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "support_agent",
+      "label": "Helpdesk",
+      "module": "Notes, journal and announcements",
+      "status": "draft",
+      "sources": [
+        "Helpdesk",
+        "Helpdesk-Focus",
+        "homesvg_HelpDesk"
+      ],
+      "reference": "support_agent",
+      "tags": [],
+      "notes": "Also used in: Home, navigation and insights · Active tab: filled"
+    },
+    {
+      "name": "videocam",
+      "label": "Video",
+      "module": "Notes, journal and announcements",
+      "status": "draft",
+      "sources": [
+        "Video"
+      ],
+      "reference": "videocam",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "announcement",
+      "label": "Announcement",
+      "module": "Notes, journal and announcements",
+      "status": "draft",
+      "sources": [
+        "campaign_white",
+        "errorAnnouncement",
+        "warningAnnouncement",
+        "notifications_announcement",
+        "homesvg_announcementHome",
+        "campaign"
+      ],
+      "reference": "campaign",
+      "tags": [],
+      "notes": "Also used in: Notifications; Home, navigation and insights; Login, account and staff · On dark fill: same icon, colour onPrimary · Error role · Warning role"
+    },
+    {
+      "name": "chat_bubble",
+      "label": "Chat / reply",
+      "module": "Notes, journal and announcements",
+      "status": "draft",
+      "sources": [
+        "chatIcon"
+      ],
+      "reference": "chat_bubble",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "comment",
+      "label": "Comment",
+      "module": "Notes, journal and announcements",
+      "status": "draft",
+      "sources": [
+        "comment",
+        "commentIcon"
+      ],
+      "reference": "comment",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "chat",
+      "label": "Chat",
+      "module": "Notes, journal and announcements",
+      "status": "draft",
+      "sources": [
+        "user_module_chat",
+        "chat",
+        "sms"
+      ],
+      "reference": "chat",
+      "tags": [],
+      "notes": "Also used in: Login, account and staff · Merged: sms (SMS)"
+    },
+    {
+      "name": "filter_applied",
+      "label": "Filter applied",
+      "module": "Notifications",
+      "status": "draft",
+      "sources": [
+        "NotificationFilterActive",
+        "AssessmentOnFilter"
+      ],
+      "reference": "filter_alt",
+      "tags": [],
+      "notes": "Also used in: Shared controls (filter, sort, media) · Filter applied: filled"
+    },
+    {
+      "name": "necropsy",
+      "label": "Necropsy",
+      "module": "Notifications",
+      "status": "draft",
+      "sources": [
+        "notifications_necropsy",
+        "necropsyCenter"
+      ],
+      "reference": "biotech",
+      "tags": [],
+      "notes": "Also used in: Login, account and staff"
+    },
+    {
+      "name": "user",
+      "label": "User / profile",
+      "module": "Chat",
+      "status": "draft",
+      "sources": [
+        "account_circle",
+        "User_menu"
+      ],
+      "reference": "account_circle",
+      "tags": [],
+      "notes": "Also used in: Home, navigation and insights"
+    },
+    {
+      "name": "admin_panel_settings",
+      "label": "Group admin",
+      "module": "Chat",
+      "status": "draft",
+      "sources": [
+        "admin"
+      ],
+      "reference": "admin_panel_settings",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "add_comment",
+      "label": "New chat",
+      "module": "Chat",
+      "status": "draft",
+      "sources": [
+        "floting_button_chat"
+      ],
+      "reference": "add_comment",
+      "tags": [],
+      "notes": "Floating button: same icon in a FAB container"
+    },
+    {
+      "name": "person_remove",
+      "label": "Remove member",
+      "module": "Chat",
+      "status": "draft",
+      "sources": [
+        "remove"
+      ],
+      "reference": "person_remove",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "add_column_right",
+      "label": "Add column (reports)",
+      "module": "Home, navigation and insights",
+      "status": "draft",
+      "sources": [
+        "add_column_right"
+      ],
+      "reference": "add_column_right",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "forum",
+      "label": "Chat",
+      "module": "Home, navigation and insights",
+      "status": "draft",
+      "sources": [
+        "chatIconBottomTab",
+        "chatIconBottomTabFocused"
+      ],
+      "reference": "forum",
+      "tags": [],
+      "notes": "Tab, not selected: line · Tab selected: filled"
+    },
+    {
+      "name": "folder",
+      "label": "Folder / collection",
+      "module": "Home, navigation and insights",
+      "status": "draft",
+      "sources": [
+        "folder"
+      ],
+      "reference": "folder",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "sort",
+      "label": "Sort",
+      "module": "Home, navigation and insights",
+      "status": "draft",
+      "sources": [
+        "food_wastage_sort"
+      ],
+      "reference": "sort",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "encrypted",
+      "label": "Security",
+      "module": "Home, navigation and insights",
+      "status": "draft",
+      "sources": [
+        "homesvg_encrypted"
+      ],
+      "reference": "encrypted",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "fetal_death",
+      "label": "Fetal death",
+      "module": "Home, navigation and insights",
+      "status": "draft",
+      "sources": [
+        "homesvg_fetal_death_master"
+      ],
+      "reference": "skull",
+      "tags": [],
+      "notes": "Consider a custom fetal-death icon · Paw from animal (live-bearing animal); slash = not viable"
+    },
+    {
+      "name": "arrow_forward",
+      "label": "Forward / next",
+      "module": "Home, navigation and insights",
+      "status": "draft",
+      "sources": [
+        "homesvg_forward"
+      ],
+      "reference": "arrow_forward",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "person",
+      "label": "People",
+      "module": "Home, navigation and insights",
+      "status": "draft",
+      "sources": [
+        "homesvg_person"
+      ],
+      "reference": "person",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "visibility",
+      "label": "Show / visible",
+      "module": "Home, navigation and insights",
+      "status": "draft",
+      "sources": [
+        "homesvg_visibility",
+        "images_visible"
+      ],
+      "reference": "visibility",
+      "tags": [],
+      "notes": "Also used in: Login, account and staff"
+    },
+    {
+      "name": "monitoring",
+      "label": "Insights: collection",
+      "module": "Home, navigation and insights",
+      "status": "draft",
+      "sources": [
+        "insights_collection_icon"
+      ],
+      "reference": "monitoring",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "query_stats",
+      "label": "Insights: home stats",
+      "module": "Home, navigation and insights",
+      "status": "draft",
+      "sources": [
+        "insights_home_icon"
+      ],
+      "reference": "query_stats",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "qr_code_scanner",
+      "label": "Scan QR code",
+      "module": "Home, navigation and insights",
+      "status": "draft",
+      "sources": [
+        "qr_code_scanner"
+      ],
+      "reference": "qr_code_scanner",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "redo",
+      "label": "Redo",
+      "module": "Home, navigation and insights",
+      "status": "draft",
+      "sources": [
+        "redoIcon"
+      ],
+      "reference": "redo",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "person_off",
+      "label": "Account inactive",
+      "module": "Login, account and staff",
+      "status": "draft",
+      "sources": [
+        "Account_status_indicator"
+      ],
+      "reference": "person_off",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "verified",
+      "label": "Verified badge",
+      "module": "Login, account and staff",
+      "status": "draft",
+      "sources": [
+        "badge"
+      ],
+      "reference": "verified",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "call",
+      "label": "Call",
+      "module": "Login, account and staff",
+      "status": "draft",
+      "sources": [
+        "call"
+      ],
+      "reference": "call",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "local_hospital",
+      "label": "Hospital",
+      "module": "Login, account and staff",
+      "status": "draft",
+      "sources": [
+        "hospital"
+      ],
+      "reference": "local_hospital",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "fingerprint",
+      "label": "Fingerprint login",
+      "module": "Login, account and staff",
+      "status": "draft",
+      "sources": [
+        "images_finger-print"
+      ],
+      "reference": "fingerprint",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "lock",
+      "label": "Password",
+      "module": "Login, account and staff",
+      "status": "draft",
+      "sources": [
+        "images_lock"
+      ],
+      "reference": "lock",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "logout",
+      "label": "Log out",
+      "module": "Login, account and staff",
+      "status": "draft",
+      "sources": [
+        "images_logout"
+      ],
+      "reference": "logout",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "mail",
+      "label": "Email",
+      "module": "Login, account and staff",
+      "status": "draft",
+      "sources": [
+        "images_mail",
+        "mail"
+      ],
+      "reference": "mail",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "visibility_off",
+      "label": "Hide password",
+      "module": "Login, account and staff",
+      "status": "draft",
+      "sources": [
+        "images_visibility_off"
+      ],
+      "reference": "visibility_off",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "person_pin_circle",
+      "label": "Assigned location",
+      "module": "Login, account and staff",
+      "status": "draft",
+      "sources": [
+        "person_pin_circle"
+      ],
+      "reference": "person_pin_circle",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "file_excel",
+      "label": "Excel file",
+      "module": "Shared controls (filter, sort, media)",
+      "status": "draft",
+      "sources": [
+        "MediaExcel"
+      ],
+      "reference": "table_chart",
+      "tags": [],
+      "notes": "File type: Excel"
+    },
+    {
+      "name": "play_circle",
+      "label": "Play video",
+      "module": "Shared controls (filter, sort, media)",
+      "status": "draft",
+      "sources": [
+        "PlayIcon"
+      ],
+      "reference": "play_circle",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "sort_a_to_z",
+      "label": "Sort A to Z",
+      "module": "Shared controls (filter, sort, media)",
+      "status": "draft",
+      "sources": [
+        "alphabeticalAsc",
+        "sortIcons_AtoZ"
+      ],
+      "reference": "sort_by_alpha",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "sort_z_to_a",
+      "label": "Sort Z to A",
+      "module": "Shared controls (filter, sort, media)",
+      "status": "draft",
+      "sources": [
+        "alphabeticalDes",
+        "sortIcons_ZtoA"
+      ],
+      "reference": "sort_by_alpha",
+      "tags": [],
+      "notes": "Descending: same icon, pair with a direction arrow"
+    },
+    {
+      "name": "article",
+      "label": "Details",
+      "module": "Shared controls (filter, sort, media)",
+      "status": "draft",
+      "sources": [
+        "detailsIcon"
+      ],
+      "reference": "article",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "unfold_more",
+      "label": "Expand all",
+      "module": "Shared controls (filter, sort, media)",
+      "status": "draft",
+      "sources": [
+        "expand_all"
+      ],
+      "reference": "unfold_more",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "sort_oldest_first",
+      "label": "Sort oldest first",
+      "module": "Shared controls (filter, sort, media)",
+      "status": "draft",
+      "sources": [
+        "oldFirst"
+      ],
+      "reference": "history",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "priority_critical",
+      "label": "Critical priority",
+      "module": "Shared controls (filter, sort, media)",
+      "status": "draft",
+      "sources": [
+        "priroty_icon_priority_critical",
+        "priroty_icon_priority_critical_filled"
+      ],
+      "reference": "keyboard_double_arrow_up",
+      "tags": [],
+      "notes": "Priority level: critical · Selected: filled, error role"
+    },
+    {
+      "name": "priority_medium",
+      "label": "Medium priority",
+      "module": "Shared controls (filter, sort, media)",
+      "status": "draft",
+      "sources": [
+        "priroty_icon_priority_medium_filled",
+        "priroty_modrate"
+      ],
+      "reference": "drag_handle",
+      "tags": [],
+      "notes": "Selected: filled, caution role · Priority level: medium"
+    },
+    {
+      "name": "sort_newest_first",
+      "label": "Sort newest first",
+      "module": "Shared controls (filter, sort, media)",
+      "status": "draft",
+      "sources": [
+        "recentFirst"
+      ],
+      "reference": "update",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "arrow_right_alt",
+      "label": "Sort direction arrow",
+      "module": "Shared controls (filter, sort, media)",
+      "status": "draft",
+      "sources": [
+        "sortIcons_arrowRight"
+      ],
+      "reference": "arrow_right_alt",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "bookmark_added",
+      "label": "Bookmarked / favourite",
+      "module": "Shared across modules",
+      "status": "draft",
+      "sources": [
+        "BookmarkAdded"
+      ],
+      "reference": "bookmark_added",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "checkbox_partial",
+      "label": "Checkbox, partly selected",
+      "module": "Shared across modules",
+      "status": "draft",
+      "sources": [
+        "Subtract"
+      ],
+      "reference": "indeterminate_check_box",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "line_start_circle",
+      "label": "Timeline start point",
+      "module": "Shared across modules",
+      "status": "draft",
+      "sources": [
+        "line_start_circle"
+      ],
+      "reference": "line_start_circle",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "note_alt",
+      "label": "Assessment / notes",
+      "module": "Shared across modules",
+      "status": "draft",
+      "sources": [
+        "note_alt"
+      ],
+      "reference": "note_alt",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "name": "bell",
+      "label": "Bell / notifications",
+      "module": "Notifications",
+      "status": "draft",
+      "sources": [],
+      "reference": "notifications",
+      "tags": [
+        "bell",
+        "notification",
+        "alert"
+      ],
+      "notes": "Drawn for the Primary notifications tile (family base). Shared across modules."
+    },
+    {
+      "name": "settings_gear",
+      "label": "Settings gear",
+      "module": "Shared across modules",
+      "status": "draft",
+      "sources": [],
+      "reference": "settings",
+      "tags": [
+        "settings",
+        "gear",
+        "preferences"
+      ],
+      "notes": "Drawn for the Primary settings tile (family base)."
+    },
+    {
+      "name": "cooking_pot",
+      "label": "Cooking pot / kitchen",
+      "module": "Shared across modules",
+      "status": "draft",
+      "sources": [],
+      "reference": "cooking",
+      "tags": [
+        "kitchen",
+        "cooking",
+        "pot",
+        "food prep"
+      ],
+      "notes": "Drawn for the Primary kitchen tile (family base)."
+    }
+  ]
+}

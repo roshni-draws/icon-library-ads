@@ -1,0 +1,3520 @@
+{
+  "style": "primary-v2.1",
+  "schemes": [
+    "light",
+    "light-medium-contrast",
+    "light-high-contrast",
+    "dark",
+    "dark-medium-contrast",
+    "dark-high-contrast"
+  ],
+  "roles": {
+    "tile": {
+      "scheme": "primaryContainer",
+      "cssVar": "--antz-primary-container",
+      "opacity": 1,
+      "values": [
+        "#36BC69",
+        "#007E3E",
+        "#005528",
+        "#36BC69",
+        "#36BC69",
+        "#5ADC84"
+      ]
+    },
+    "ink": {
+      "scheme": "onPrimaryContainer",
+      "cssVar": "--antz-on-primary-container",
+      "opacity": 1,
+      "values": [
+        "#00451F",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#00451F",
+        "#00210C",
+        "#000E03"
+      ]
+    },
+    "fill": {
+      "scheme": "tertiaryFixed",
+      "cssVar": "--antz-tertiary-fixed",
+      "opacity": 1,
+      "values": [
+        "#CCE5FF",
+        "#50708C",
+        "#2B4C67",
+        "#CCE5FF",
+        "#CCE5FF",
+        "#CCE5FF"
+      ]
+    },
+    "shade": {
+      "scheme": "onPrimaryContainer",
+      "cssVar": "--antz-on-primary-container",
+      "opacity": 0.2,
+      "values": [
+        "#00451F",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#00451F",
+        "#00210C",
+        "#000E03"
+      ]
+    },
+    "accent": {
+      "scheme": "onPrimaryFixedVariant",
+      "cssVar": "--antz-on-primary-fixed-variant",
+      "opacity": 1,
+      "values": [
+        "#005226",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#005226",
+        "#00401D",
+        "#001506"
+      ]
+    }
+  },
+  "pairs": {
+    "ink/tile": [
+      4.57,
+      5.18,
+      9.01,
+      4.57,
+      7,
+      11.28
+    ],
+    "ink/fill": [
+      8.67,
+      5.2,
+      9,
+      8.67,
+      13.26,
+      15.24
+    ],
+    "accent/fill": [
+      7.26,
+      5.2,
+      9,
+      7.26,
+      9.26,
+      14.61
+    ],
+    "fill/tile": [
+      1.9,
+      1,
+      1,
+      1.9,
+      1.9,
+      1.35
+    ],
+    "accent/ink": [
+      1.19,
+      1,
+      1,
+      1.19,
+      1.43,
+      1.04
+    ],
+    "accent/tile": [
+      3.83,
+      5.18,
+      9.01,
+      3.83,
+      4.89,
+      10.82
+    ]
+  },
+  "lint": [
+    {
+      "icon": "home",
+      "layer": "chimney",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "home",
+      "layer": "house",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "home",
+      "layer": "house",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "home",
+      "layer": "light",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "home",
+      "layer": "door",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "home",
+      "layer": "smoke1",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "home",
+      "layer": "smoke2",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "dashboard",
+      "layer": "w1",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "dashboard",
+      "layer": "w1",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "dashboard",
+      "layer": "w1Mark",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "dashboard",
+      "layer": "w2",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "dashboard",
+      "layer": "w2",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "dashboard",
+      "layer": "w2Mark",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "dashboard",
+      "layer": "w3",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "dashboard",
+      "layer": "w3",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "dashboard",
+      "layer": "w3Mark",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "dashboard",
+      "layer": "w4",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "dashboard",
+      "layer": "w4",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "dashboard",
+      "layer": "w4Mark",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "animals",
+      "layer": "trail",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "animals",
+      "layer": "pad",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "animals",
+      "layer": "pad",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "animals",
+      "layer": "toes",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "animals",
+      "layer": "dust1",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "animals",
+      "layer": "dust2",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "species",
+      "layer": "back",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "species",
+      "layer": "back",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "species",
+      "layer": "middle",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "species",
+      "layer": "middle",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "species",
+      "layer": "front",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "species",
+      "layer": "front",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "species",
+      "layer": "tab",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "species",
+      "layer": "pad",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "species",
+      "layer": "pad",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "species",
+      "layer": "toe1",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "species",
+      "layer": "toe2",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "species",
+      "layer": "toe3",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "species",
+      "layer": "toe4",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "family_tree",
+      "layer": "mate",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "family_tree",
+      "layer": "descent",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "family_tree",
+      "layer": "sire",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "family_tree",
+      "layer": "sire",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "family_tree",
+      "layer": "dam",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "family_tree",
+      "layer": "dam",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "family_tree",
+      "layer": "child",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "family_tree",
+      "layer": "child",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "family_tree",
+      "layer": "core",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "medical",
+      "layer": "handle",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "medical",
+      "layer": "bag",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "medical",
+      "layer": "bag",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "medical",
+      "layer": "cross",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "medical",
+      "layer": "ecg",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "hospital",
+      "layer": "paw",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "hospital",
+      "layer": "building",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "hospital",
+      "layer": "building",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "hospital",
+      "layer": "door",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "hospital",
+      "layer": "door",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "hospital",
+      "layer": "ground",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "hospital",
+      "layer": "ground",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "hospital",
+      "layer": "cross",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "pharmacy",
+      "layer": "capsule",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "pharmacy",
+      "layer": "bottle",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "pharmacy",
+      "layer": "bottle",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "pharmacy",
+      "layer": "label",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "pharmacy",
+      "layer": "cross",
+      "paint": "fill",
+      "on": "accent",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "pharmacy",
+      "layer": "capShell",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "pharmacy",
+      "layer": "capShell",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "pharmacy",
+      "layer": "ridges",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "lab",
+      "layer": "liquid",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "lab",
+      "layer": "shine",
+      "paint": "fill",
+      "on": "accent",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "lab",
+      "layer": "bubble1",
+      "paint": "fill",
+      "on": "accent",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "lab",
+      "layer": "bubble1",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "lab",
+      "layer": "bubble2",
+      "paint": "fill",
+      "on": "accent",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "lab",
+      "layer": "bubble2",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "lab",
+      "layer": "bubble3",
+      "paint": "fill",
+      "on": "accent",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "lab",
+      "layer": "bubble3",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "lab",
+      "layer": "flask",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "lab",
+      "layer": "flask",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "eggs",
+      "layer": "shell",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "eggs",
+      "layer": "shell",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "eggs",
+      "layer": "head",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "eggs",
+      "layer": "eyes",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "eggs",
+      "layer": "beak",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "eggs",
+      "layer": "crack",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "eggs",
+      "layer": "cap",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "eggs",
+      "layer": "cap",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "eggs",
+      "layer": "nest",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "eggs",
+      "layer": "nest",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "eggs",
+      "layer": "straw",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "housing",
+      "layer": "shelter",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "housing",
+      "layer": "shelter",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "housing",
+      "layer": "window",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "housing",
+      "layer": "rail",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "housing",
+      "layer": "rail",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "housing",
+      "layer": "post1",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "housing",
+      "layer": "post1",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "housing",
+      "layer": "post2",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "housing",
+      "layer": "post2",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "housing",
+      "layer": "post3",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "housing",
+      "layer": "post3",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "move_animal",
+      "layer": "floor",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "move_animal",
+      "layer": "paw",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "move_animal",
+      "layer": "walls",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "move_animal",
+      "layer": "walls",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "move_animal",
+      "layer": "arrow",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "move_animal",
+      "layer": "arrow",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "diet",
+      "layer": "rim",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "diet",
+      "layer": "rim",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "diet",
+      "layer": "food",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "diet",
+      "layer": "stem",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "diet",
+      "layer": "leaf",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "diet",
+      "layer": "leaf",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "diet",
+      "layer": "fruit",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "diet",
+      "layer": "fruit",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "diet",
+      "layer": "bowl",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "diet",
+      "layer": "bowl",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "kitchen",
+      "layer": "steam1",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "kitchen",
+      "layer": "steam2",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "kitchen",
+      "layer": "handles",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "kitchen",
+      "layer": "pot",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "kitchen",
+      "layer": "pot",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "kitchen",
+      "layer": "band",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "kitchen",
+      "layer": "lid",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "mortality",
+      "layer": "skull",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "mortality",
+      "layer": "skull",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "mortality",
+      "layer": "eyes",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "mortality",
+      "layer": "tooth",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "mortality",
+      "layer": "leaf",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "mortality",
+      "layer": "leaf",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "mortality",
+      "layer": "rib",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "necropsy",
+      "layer": "tray",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "necropsy",
+      "layer": "tray",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "necropsy",
+      "layer": "mark",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "necropsy",
+      "layer": "handle",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "necropsy",
+      "layer": "blade",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "necropsy",
+      "layer": "blade",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "assessments",
+      "layer": "board",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "assessments",
+      "layer": "board",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "assessments",
+      "layer": "clip",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "assessments",
+      "layer": "clip",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "assessments",
+      "layer": "lines",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "assessments",
+      "layer": "check1",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "assessments",
+      "layer": "check2",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "transfers",
+      "layer": "arrow",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "transfers",
+      "layer": "box",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "transfers",
+      "layer": "box",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "transfers",
+      "layer": "lid",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "transfers",
+      "layer": "tag",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "requests",
+      "layer": "slip",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "requests",
+      "layer": "slip",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "requests",
+      "layer": "check",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "requests",
+      "layer": "knob",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "requests",
+      "layer": "knob",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "requests",
+      "layer": "head",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "requests",
+      "layer": "head",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "notes",
+      "layer": "note",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "notes",
+      "layer": "note",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "notes",
+      "layer": "fold",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "notes",
+      "layer": "fold",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "notes",
+      "layer": "text",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "notes",
+      "layer": "entry",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "notes",
+      "layer": "pencil",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "notes",
+      "layer": "pencil",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "announcements",
+      "layer": "handle",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "announcements",
+      "layer": "body",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "announcements",
+      "layer": "body",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "announcements",
+      "layer": "band",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "announcements",
+      "layer": "rays",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "notifications",
+      "layer": "ringL",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "notifications",
+      "layer": "ringR",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "notifications",
+      "layer": "knob",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "notifications",
+      "layer": "clapper",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "notifications",
+      "layer": "body",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "notifications",
+      "layer": "body",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "notifications",
+      "layer": "band",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "chat",
+      "layer": "bubble",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "chat",
+      "layer": "bubble",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "chat",
+      "layer": "dot1",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "chat",
+      "layer": "dot2",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "chat",
+      "layer": "dot3",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "reports",
+      "layer": "card",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "reports",
+      "layer": "card",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "reports",
+      "layer": "baseline",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "reports",
+      "layer": "bar0",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "reports",
+      "layer": "bar2",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "reports",
+      "layer": "bar1",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "staff",
+      "layer": "backBody",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "staff",
+      "layer": "backBody",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "staff",
+      "layer": "backHead",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "staff",
+      "layer": "backHead",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "staff",
+      "layer": "frontBody",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "staff",
+      "layer": "frontBody",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "staff",
+      "layer": "frontHead",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "staff",
+      "layer": "frontHead",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "staff",
+      "layer": "badge",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "department",
+      "layer": "link",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "department",
+      "layer": "top",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "department",
+      "layer": "top",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "department",
+      "layer": "bottom",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "department",
+      "layer": "bottom",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "department",
+      "layer": "headBox",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "department",
+      "layer": "headBox",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "department",
+      "layer": "headMark",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "security",
+      "layer": "body",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "security",
+      "layer": "body",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "security",
+      "layer": "check",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "compliance",
+      "layer": "page",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "compliance",
+      "layer": "page",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "compliance",
+      "layer": "text",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "compliance",
+      "layer": "rosette",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "compliance",
+      "layer": "rosette",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "compliance",
+      "layer": "centre",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "compliance",
+      "layer": "check",
+      "paint": "fill",
+      "on": "accent",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "activity_log",
+      "layer": "elapsed",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "activity_log",
+      "layer": "hands",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "activity_log",
+      "layer": "arc",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "activity_log",
+      "layer": "arc",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "activity_log",
+      "layer": "arrow",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "settings",
+      "layer": "small",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "settings",
+      "layer": "small",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "settings",
+      "layer": "teeth",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "settings",
+      "layer": "teeth",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "settings",
+      "layer": "bigGear",
+      "paint": "ink",
+      "on": "tile",
+      "min": 4.57,
+      "values": [
+        4.57,
+        5.18,
+        9.01,
+        4.57,
+        7,
+        11.28
+      ]
+    },
+    {
+      "icon": "settings",
+      "layer": "bigGear",
+      "paint": "ink",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        8.67,
+        5.2,
+        9,
+        8.67,
+        13.26,
+        15.24
+      ]
+    },
+    {
+      "icon": "settings",
+      "layer": "hub",
+      "paint": "accent",
+      "on": "fill",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    },
+    {
+      "icon": "settings",
+      "layer": "axle",
+      "paint": "fill",
+      "on": "accent",
+      "min": 5.2,
+      "values": [
+        7.26,
+        5.2,
+        9,
+        7.26,
+        9.26,
+        14.61
+      ]
+    }
+  ]
+}

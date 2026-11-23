@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pharmacy icons</title>
+<style>
+:root{--bg:#fbfbf9;--surface:#fff;--ink:#1c1f1d;--muted:#5d6661;--line:#e3e6e3;--tile:#f2f4f2}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121413;--surface:#1a1d1b;--ink:#e6e9e6;--muted:#9aa39e;--line:#2c312e;--tile:#232724}}
+:root[data-theme="dark"]{--bg:#121413;--surface:#1a1d1b;--ink:#e6e9e6;--muted:#9aa39e;--line:#2c312e;--tile:#232724}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:1180px;margin:0 auto;padding:32px 16px 64px}
+h1{font-size:22px;margin:0 0 4px}
+p.sub{margin:0 0 20px;color:var(--muted);max-width:70ch}
+.bar{display:flex;gap:8px;margin-bottom:16px}
+.bar button{font:inherit;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:6px 12px;cursor:pointer}
+.wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:900px}
+th,td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+thead th{font-size:12px;font-weight:600;color:var(--muted);background:var(--tile)}
+tbody tr:last-child>*{border-bottom:0}
+th[scope=row]{width:190px;font-weight:400}
+th code{font:600 13px ui-monospace,SFMono-Regular,Menlo,monospace;display:block}
+.lbl{display:block;color:var(--muted);font-size:12px}
+.st{display:inline-block;margin-top:4px;font-size:11px;padding:1px 8px;border-radius:99px;background:var(--tile);color:var(--muted)}
+.set{white-space:nowrap}
+.ic{display:inline-grid;place-items:center;margin-right:10px;vertical-align:middle;color:var(--ink)}
+.ic svg{width:100%;height:100%;display:block}
+.s16{width:16px;height:16px}.s24{width:24px;height:24px}
+.s48{width:48px;height:48px;background:var(--tile);border-radius:6px;padding:0;outline:1px dashed var(--line)}
+.meta{color:var(--muted);font-size:13px;max-width:260px}
+.old{white-space:nowrap}
+.old figure{display:inline-block;margin:0 10px 0 0;text-align:center}
+.old img{width:40px;height:40px;object-fit:contain;display:block;margin:0 auto;background:#fff;border-radius:6px;border:1px solid var(--line)}
+.old figcaption{font-size:10px;color:var(--muted);max-width:72px;overflow:hidden;text-overflow:ellipsis}
+.none{color:var(--muted);font-size:12px}
+</style></head>
+<body><main>
+<h1>Pharmacy icon review</h1>
+<p class="sub">ANTZ Rounded draft batch: every icon in the Pharmacy module. Line and filled at 16, 24 and 48px (48px sits on a tile), next to the old mobile SVGs they replace. Icons are inlined from <code>library/line</code> and <code>library/filled</code> when this sheet was generated. Old SVGs load live from <code>app/public/current</code>.</p>
+<div class="bar"><button type="button" id="theme">Toggle light / dark</button></div>
+<div class="wrap"><table>
+<thead><tr><th scope="col">Icon</th><th scope="col">Line 16 · 24 · 48</th><th scope="col">Filled 16 · 24 · 48</th><th scope="col">Metaphor</th><th scope="col">Old SVG</th></tr></thead>
+<tbody>
+<tr>
+  <th scope="row"><code>priority_high</code><span class="lbl">High priority</span><span class="st st-draft">draft</span></th>
+  <td class="set"><span class="ic s16" title="line 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="9"/>
+  <path d="M8 14L12 10L16 14"/>
+</svg></span><span class="ic s24" title="line 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="9"/>
+  <path d="M8 14L12 10L16 14"/>
+</svg></span><span class="ic s48" title="line 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="9"/>
+  <path d="M8 14L12 10L16 14"/>
+</svg></span></td>
+  <td class="set"><span class="ic s16" title="filled 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="priority_high-filled-3">
+    <circle cx="12" cy="12" r="10" fill="white"/>
+    <path d="M8 14L12 10L16 14" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <circle cx="12" cy="12" r="10" mask="url(#priority_high-filled-3)"/>
+</svg></span><span class="ic s24" title="filled 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="priority_high-filled-4">
+    <circle cx="12" cy="12" r="10" fill="white"/>
+    <path d="M8 14L12 10L16 14" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <circle cx="12" cy="12" r="10" mask="url(#priority_high-filled-4)"/>
+</svg></span><span class="ic s48" title="filled 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="priority_high-filled-5">
+    <circle cx="12" cy="12" r="10" fill="white"/>
+    <path d="M8 14L12 10L16 14" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <circle cx="12" cy="12" r="10" mask="url(#priority_high-filled-5)"/>
+</svg></span></td>
+  <td class="meta">Circle container with an up chevron. Family: critical = double chevron, medium = two bars, low = down chevron. Pair with the Warning role when selected.</td>
+  <td class="old"><figure><img src="../../app/public/current/mobile_HighPR.svg" alt="old HighPR"><figcaption>HighPR</figcaption></figure><figure><img src="../../app/public/current/mobile_HighPRT.svg" alt="old HighPRT"><figcaption>HighPRT</figcaption></figure><figure><img src="../../app/public/current/mobile_priroty_request_priority_high.svg" alt="old priroty_request_priority_high"><figcaption>priroty_request_priority_high</figcaption></figure><figure><img src="../../app/public/current/mobile_priroty_high.svg" alt="old priroty_high"><figcaption>priroty_high</figcaption></figure><figure><img src="../../app/public/current/mobile_priroty_icon_priority_high_filled.svg" alt="old priroty_icon_priority_high_filled"><figcaption>priroty_icon_priority_high_filled</figcaption></figure></td>
+</tr>
+<tr>
+  <th scope="row"><code>emergency</code><span class="lbl">Emergency priority</span><span class="st st-draft">draft</span></th>
+  <td class="set"><span class="ic s16" title="line 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M11 3C9 6 6 9 6 14A6 6 0 0 0 18 14C18 11 17.5 8.5 17 7C16 9 15 10 13 11C13 8 12.5 5 11 3Z"/>
+</svg></span><span class="ic s24" title="line 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M11 3C9 6 6 9 6 14A6 6 0 0 0 18 14C18 11 17.5 8.5 17 7C16 9 15 10 13 11C13 8 12.5 5 11 3Z"/>
+</svg></span><span class="ic s48" title="line 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M11 3C9 6 6 9 6 14A6 6 0 0 0 18 14C18 11 17.5 8.5 17 7C16 9 15 10 13 11C13 8 12.5 5 11 3Z"/>
+</svg></span></td>
+  <td class="set"><span class="ic s16" title="filled 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="emergency-filled-9">
+    <path d="M11 3C9 6 6 9 6 14A6 6 0 0 0 18 14C18 11 17.5 8.5 17 7C16 9 15 10 13 11C13 8 12.5 5 11 3Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#emergency-filled-9)"/>
+</svg></span><span class="ic s24" title="filled 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="emergency-filled-10">
+    <path d="M11 3C9 6 6 9 6 14A6 6 0 0 0 18 14C18 11 17.5 8.5 17 7C16 9 15 10 13 11C13 8 12.5 5 11 3Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#emergency-filled-10)"/>
+</svg></span><span class="ic s48" title="filled 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="emergency-filled-11">
+    <path d="M11 3C9 6 6 9 6 14A6 6 0 0 0 18 14C18 11 17.5 8.5 17 7C16 9 15 10 13 11C13 8 12.5 5 11 3Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#emergency-filled-11)"/>
+</svg></span></td>
+  <td class="meta">A flame with a second tongue: urgent / hot. Replaces the old flame-in-circle.</td>
+  <td class="old"><figure><img src="../../app/public/current/mobile_HighPrior.svg" alt="old HighPrior"><figcaption>HighPrior</figcaption></figure><figure><img src="../../app/public/current/mobile_OutlineEmergency.svg" alt="old OutlineEmergency"><figcaption>OutlineEmergency</figcaption></figure></td>
+</tr>
+<tr>
+  <th scope="row"><code>assignment_add</code><span class="lbl">Pharmacy request</span><span class="st st-draft">draft</span></th>
+  <td class="set"><span class="ic s16" title="line 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <mask id="assignment_add-line-12">
+    <rect width="24" height="24" fill="white" stroke="none"/>
+    <circle cx="17" cy="17" r="7" fill="black" stroke="none"/>
+  </mask>
+  <g mask="url(#assignment_add-line-12)">
+    <path d="M9 5H7A2 2 0 0 0 5 7V19A2 2 0 0 0 7 21H17A2 2 0 0 0 19 19V7A2 2 0 0 0 17 5H15"/>
+    <rect x="9" y="3" width="6" height="4" rx="2"/>
+  </g>
+  <path d="M17 13V21M13 17H21"/>
+</svg></span><span class="ic s24" title="line 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <mask id="assignment_add-line-13">
+    <rect width="24" height="24" fill="white" stroke="none"/>
+    <circle cx="17" cy="17" r="7" fill="black" stroke="none"/>
+  </mask>
+  <g mask="url(#assignment_add-line-13)">
+    <path d="M9 5H7A2 2 0 0 0 5 7V19A2 2 0 0 0 7 21H17A2 2 0 0 0 19 19V7A2 2 0 0 0 17 5H15"/>
+    <rect x="9" y="3" width="6" height="4" rx="2"/>
+  </g>
+  <path d="M17 13V21M13 17H21"/>
+</svg></span><span class="ic s48" title="line 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <mask id="assignment_add-line-14">
+    <rect width="24" height="24" fill="white" stroke="none"/>
+    <circle cx="17" cy="17" r="7" fill="black" stroke="none"/>
+  </mask>
+  <g mask="url(#assignment_add-line-14)">
+    <path d="M9 5H7A2 2 0 0 0 5 7V19A2 2 0 0 0 7 21H17A2 2 0 0 0 19 19V7A2 2 0 0 0 17 5H15"/>
+    <rect x="9" y="3" width="6" height="4" rx="2"/>
+  </g>
+  <path d="M17 13V21M13 17H21"/>
+</svg></span></td>
+  <td class="set"><span class="ic s16" title="filled 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="assignment_add-filled-15">
+    <rect x="4" y="4" width="16" height="18" rx="3" fill="white"/>
+    <rect x="8" y="2" width="8" height="6" rx="3" fill="white"/>
+    <path d="M9 5A2 2 0 0 0 11 7H13A2 2 0 0 0 15 5" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="17" cy="17" r="7" fill="black"/>
+    <circle cx="17" cy="17" r="5" fill="white"/>
+    <path d="M17 14V20M14 17H20" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#assignment_add-filled-15)"/>
+</svg></span><span class="ic s24" title="filled 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="assignment_add-filled-16">
+    <rect x="4" y="4" width="16" height="18" rx="3" fill="white"/>
+    <rect x="8" y="2" width="8" height="6" rx="3" fill="white"/>
+    <path d="M9 5A2 2 0 0 0 11 7H13A2 2 0 0 0 15 5" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="17" cy="17" r="7" fill="black"/>
+    <circle cx="17" cy="17" r="5" fill="white"/>
+    <path d="M17 14V20M14 17H20" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#assignment_add-filled-16)"/>
+</svg></span><span class="ic s48" title="filled 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="assignment_add-filled-17">
+    <rect x="4" y="4" width="16" height="18" rx="3" fill="white"/>
+    <rect x="8" y="2" width="8" height="6" rx="3" fill="white"/>
+    <path d="M9 5A2 2 0 0 0 11 7H13A2 2 0 0 0 15 5" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="17" cy="17" r="7" fill="black"/>
+    <circle cx="17" cy="17" r="5" fill="white"/>
+    <path d="M17 14V20M14 17H20" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#assignment_add-filled-17)"/>
+</svg></span></td>
+  <td class="meta">Clipboard (shared base) + add badge = new pharmacy request.</td>
+  <td class="old"><figure><img src="../../app/public/current/mobile_PharmaRequest.svg" alt="old PharmaRequest"><figcaption>PharmaRequest</figcaption></figure></td>
+</tr>
+<tr>
+  <th scope="row"><code>add_photo</code><span class="lbl">Add photo</span><span class="st st-draft">draft</span></th>
+  <td class="set"><span class="ic s16" title="line 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <mask id="add_photo-line-18">
+    <rect width="24" height="24" fill="white" stroke="none"/>
+    <circle cx="17" cy="17" r="7" fill="black" stroke="none"/>
+  </mask>
+  <g mask="url(#add_photo-line-18)">
+    <rect x="3" y="3" width="18" height="18" rx="2"/>
+    <circle cx="8" cy="8" r="1"/>
+    <path d="M3 19L9 13L15 19"/>
+  </g>
+  <path d="M17 13V21M13 17H21"/>
+</svg></span><span class="ic s24" title="line 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <mask id="add_photo-line-19">
+    <rect width="24" height="24" fill="white" stroke="none"/>
+    <circle cx="17" cy="17" r="7" fill="black" stroke="none"/>
+  </mask>
+  <g mask="url(#add_photo-line-19)">
+    <rect x="3" y="3" width="18" height="18" rx="2"/>
+    <circle cx="8" cy="8" r="1"/>
+    <path d="M3 19L9 13L15 19"/>
+  </g>
+  <path d="M17 13V21M13 17H21"/>
+</svg></span><span class="ic s48" title="line 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <mask id="add_photo-line-20">
+    <rect width="24" height="24" fill="white" stroke="none"/>
+    <circle cx="17" cy="17" r="7" fill="black" stroke="none"/>
+  </mask>
+  <g mask="url(#add_photo-line-20)">
+    <rect x="3" y="3" width="18" height="18" rx="2"/>
+    <circle cx="8" cy="8" r="1"/>
+    <path d="M3 19L9 13L15 19"/>
+  </g>
+  <path d="M17 13V21M13 17H21"/>
+</svg></span></td>
+  <td class="set"><span class="ic s16" title="filled 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="add_photo-filled-21">
+    <rect x="2" y="2" width="20" height="20" rx="3" fill="white"/>
+    <circle cx="8" cy="8" r="2" fill="black"/>
+    <path d="M3 19L9 13L15 19" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="17" cy="17" r="7" fill="black"/>
+    <circle cx="17" cy="17" r="5" fill="white"/>
+    <path d="M17 14V20M14 17H20" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#add_photo-filled-21)"/>
+</svg></span><span class="ic s24" title="filled 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="add_photo-filled-22">
+    <rect x="2" y="2" width="20" height="20" rx="3" fill="white"/>
+    <circle cx="8" cy="8" r="2" fill="black"/>
+    <path d="M3 19L9 13L15 19" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="17" cy="17" r="7" fill="black"/>
+    <circle cx="17" cy="17" r="5" fill="white"/>
+    <path d="M17 14V20M14 17H20" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#add_photo-filled-22)"/>
+</svg></span><span class="ic s48" title="filled 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="add_photo-filled-23">
+    <rect x="2" y="2" width="20" height="20" rx="3" fill="white"/>
+    <circle cx="8" cy="8" r="2" fill="black"/>
+    <path d="M3 19L9 13L15 19" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="17" cy="17" r="7" fill="black"/>
+    <circle cx="17" cy="17" r="5" fill="white"/>
+    <path d="M17 14V20M14 17H20" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <rect x="2" y="2" width="20" height="20" rx="2" mask="url(#add_photo-filled-23)"/>
+</svg></span></td>
+  <td class="meta">Picture frame (sun dot, mountain) + add badge.</td>
+  <td class="old"><figure><img src="../../app/public/current/mobile_gallery-add_2.svg" alt="old gallery-add_2"><figcaption>gallery-add_2</figcaption></figure><figure><img src="../../app/public/current/mobile_gallery-add.svg" alt="old gallery-add"><figcaption>gallery-add</figcaption></figure><figure><img src="../../app/public/current/mobile_Image-Upload-section.svg" alt="old Image-Upload-section"><figcaption>Image-Upload-section</figcaption></figure><figure><img src="../../app/public/current/mobile_add_photo_alternate.svg" alt="old add_photo_alternate"><figcaption>add_photo_alternate</figcaption></figure></td>
+</tr>
+<tr>
+  <th scope="row"><code>priority_low</code><span class="lbl">Low priority</span><span class="st st-draft">draft</span></th>
+  <td class="set"><span class="ic s16" title="line 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="9"/>
+  <path d="M8 10L12 14L16 10"/>
+</svg></span><span class="ic s24" title="line 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="9"/>
+  <path d="M8 10L12 14L16 10"/>
+</svg></span><span class="ic s48" title="line 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="9"/>
+  <path d="M8 10L12 14L16 10"/>
+</svg></span></td>
+  <td class="set"><span class="ic s16" title="filled 16px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="priority_low-filled-27">
+    <circle cx="12" cy="12" r="10" fill="white"/>
+    <path d="M8 10L12 14L16 10" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <circle cx="12" cy="12" r="10" mask="url(#priority_low-filled-27)"/>
+</svg></span><span class="ic s24" title="filled 24px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="priority_low-filled-28">
+    <circle cx="12" cy="12" r="10" fill="white"/>
+    <path d="M8 10L12 14L16 10" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <circle cx="12" cy="12" r="10" mask="url(#priority_low-filled-28)"/>
+</svg></span><span class="ic s48" title="filled 48px"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+  <mask id="priority_low-filled-29">
+    <circle cx="12" cy="12" r="10" fill="white"/>
+    <path d="M8 10L12 14L16 10" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <circle cx="12" cy="12" r="10" mask="url(#priority_low-filled-29)"/>
+</svg></span></td>
+  <td class="meta">Circle container with a down chevron (pair with the Success role when selected).</td>
+  <td class="old"><figure><img src="../../app/public/current/mobile_priroty_icon_priority_low.svg" alt="old priroty_icon_priority_low"><figcaption>priroty_icon_priority_low</figcaption></figure><figure><img src="../../app/public/current/mobile_priroty_low.svg" alt="old priroty_low"><figcaption>priroty_low</figcaption></figure><figure><img src="../../app/public/current/mobile_priroty_icon_priority_low_filled.svg" alt="old priroty_icon_priority_low_filled"><figcaption>priroty_icon_priority_low_filled</figcaption></figure></td>
+</tr>
+</tbody></table></div>
+</main>
+<script>
+document.getElementById('theme').addEventListener('click',()=>{const r=document.documentElement;const dark=r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;r.dataset.theme=dark?'light':'dark';});
+</script>
+</body></html>
