@@ -37,6 +37,8 @@ export default {
   loopMs: 4450,
   peaks: [0.12, 0.34], // wound back · turned forward 12°
   restAt: 0.85,
+  // Stroke variant: no hub ring (rings within rings at 48px); the axle stays as a solid ink dot.
+  stroke: { drop: ['hub'] },
   layers: [
     { id: 'tile', shapes: [{ rect: [0, 0, 48, 48, 14] }], fill: 'tile' },
     {

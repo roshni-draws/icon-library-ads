@@ -22,6 +22,9 @@ export default {
   loopMs: 3200,
   peaks: [0.22, 0.34], // cap open, capsule rising · capsule out, cap closing
   restAt: 0.85,
+  // Stroke variant: the green label goes (an outlined box round the cross is too busy at 48px); the cross is
+  // drawn straight on the bottle in ink (the automatic rule turns a light mark on green into ink).
+  stroke: { drop: ['label'] },
   layers: [
     { id: 'tile', shapes: [{ rect: [0, 0, 48, 48, 14] }], fill: 'tile' },
     {

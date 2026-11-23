@@ -1,32 +1,42 @@
-// Hospital: the library hospital building (library/line/local_hospital.svg) admitting an animal.
-// Scene: the light building in an ink outline on its ground line, the ink cross on its face, and a green door
-// (accent inside a light door frame). The building is shifted 3.5px right of centre to leave a path on the left.
-// Story: a small ink paw print walks up the ground line and in through the wall (it is drawn behind the building),
-// then the cross beats once (lub-dub) as the patient is admitted; then rest. Static pose: building, cross, green
-// door, no paw.
+// Hospital: the library hospital building (library/line/local_hospital.svg) admitting an elephant.
+// Scene: the elephant is the hero, a big light elephant in an ink outline on the left 60% of the tile, side view,
+// facing right (rounded back, big rounded ear in an ink outline, trunk hanging down and curling forward, ink eye,
+// two chunky leg pairs); the building is a narrow light wing at the right on the same ground line, with the ink
+// cross on its face and a green door (accent inside an ink frame).
+// Story: the elephant walks toward the door (+4px with a 1px step bob) and lifts its trunk; its head slips behind
+// the door frame, then the cross beats once (lub-dub); the elephant steps back to its place, then rest. It never
+// fades. Static pose: building, cross, door, elephant fully visible at the left.
 import svgpath from 'svgpath';
+import { disc } from '../lib/shapes.mjs';
 
 const WALLS = 'M5 21V5A2 2 0 0 1 7 3H17A2 2 0 0 1 19 5V21';
 const GROUND = 'M3 21H21';
 const CROSS = 'M12 7V13M9 10H15';
-const T = (d) => svgpath(d).scale(1.5).translate(9.5, 4.5).round(3).toString(); // x 17–38, ground y 36
+// The building: a narrow wing, x 31–42 (11/14×), y 11–39.5 (28.5/18×): 14px wide over its outline.
+const BX0 = 31, BX1 = 42, BY0 = 11, GY = 39.5;
+const SX = (BX1 - BX0) / 14, SY = (GY - BY0) / 18;
+const T = (d) => svgpath(d).scale(SX, SY).translate(BX0 - 5 * SX, GY - 21 * SY).round(3).toString();
 const BODY = T(WALLS) + 'Z';
-const DOOR = 'M23.5 36V30.5A1.5 1.5 0 0 1 25 29H30A1.5 1.5 0 0 1 31.5 30.5V36Z'; // a square double door
+const CX = 36.5, CY = 19.5; // cross centre, on the upper face
+const CROSS48 = svgpath(CROSS).translate(-12, -10).scale(0.8).translate(CX, CY).round(3).toString();
+const DOOR = 'M34 39.5V34A1.5 1.5 0 0 1 35.5 32.5H37.5A1.5 1.5 0 0 1 39 34V39.5Z';
 
-// The library paw (line/animal.svg), solid ink, turned 90° so its toes point right (walking toward the door).
-const PAD = 'M12 12C9 12 6 16 6 18A3 3 0 0 0 9 21H15A3 3 0 0 0 18 18C18 16 15 12 12 12Z';
-const TOES = [[5, 10], [9, 5], [15, 5], [19, 10]];
-const r3 = (v) => +v.toFixed(3);
-function paw(cx, cy, k, deg) {
-  const pad = svgpath(PAD).translate(-12, -15).scale(k).rotate(deg).translate(cx, cy).round(3).toString();
-  const a = (deg * Math.PI) / 180;
-  const toes = TOES.map(([x, y]) => {
-    const [dx, dy] = [k * (x - 12), k * (y - 15)];
-    return [r3(cx + dx * Math.cos(a) - dy * Math.sin(a)), r3(cy + dx * Math.sin(a) + dy * Math.cos(a))];
-  });
-  return { pad, toes };
-}
-const PAW = paw(9.5, 29, 0.7, 90);
+// The elephant, facing right, drawn directly on the 48 grid with its feet on the ground line (y 38, the top of the
+// 3px ground stroke). One silhouette = rounded back, domed head and two chunky leg pairs (light, 2.5px ink
+// outline); a big rounded ear over the neck (light, ink outline); a solid ink trunk that hangs down and curls
+// forward; an ink eye. At rest its ink ends at x ≈ 28, clear of the wall (ink from x 29).
+const EL = {
+  body:
+    'M5.8 29C5.8 23.2 9 19.8 13.5 19.8C15.2 19.8 16.3 19.5 17.1 18.8C18.3 16.6 20.3 15.2 22.6 15.2' +
+    'C25.4 15.2 27.4 17.5 27.4 20.6C27.4 22.6 26.8 24 25.8 25C24.6 26 22.8 26.5 20.6 26.7V36.4' +
+    'C20.6 37.3 19.9 38 19 38H17.4C16.5 38 15.8 37.3 15.8 36.4V33H11.4V36.4C11.4 37.3 10.7 38 9.8 38' +
+    'H7.8C6.9 38 6.2 37.3 6.2 36.4V32.6C6 31.6 5.8 30.4 5.8 29Z',
+  ear: 'M14.6 20.4C16.8 18.2 20.9 18.6 21.1 22.6C21.3 26.4 19.8 29.4 17.3 29.4C15.4 29.4 14.4 27.6 14.4 25.2' +
+    'C14.4 23.2 14.3 21.6 14.6 20.4Z',
+  trunk: 'M25.6 23C26.8 26.2 26.9 30 26 33C25.6 34.6 26.5 35.6 27.5 34.6',
+  eye: disc(23.7, 19.8, 1.15),
+};
+const TRUNK_BASE = [25.6, 23];
 
 export default {
   name: 'hospital',
@@ -35,39 +45,58 @@ export default {
   module: 'Hospital admissions',
   baseIcon: 'local_hospital',
   base: [WALLS, GROUND, CROSS],
-  motion: 'Admission: a paw print walks up and in through the door, then the cross beats once, then rest.',
+  motion: 'Admission: an elephant walks up to the door, lifting its trunk, then the cross beats once, then rest.',
   loopMs: 3150,
-  peaks: [0.18, 0.44], // paw on the path · cross at 1.1
+  peaks: [0.28, 0.36], // elephant at the door, trunk lifted · cross at 1.1
   restAt: 0.85,
   layers: [
     { id: 'tile', shapes: [{ rect: [0, 0, 48, 48, 14] }], fill: 'tile' },
     {
-      id: 'paw',
-      particle: true,
-      shapes: [{ path: PAW.pad }, ...PAW.toes.map(([x, y], i) => ({ circle: [x, y, i === 1 || i === 2 ? 1.9 : 1.75] }))],
-      fill: 'ink',
-      on: ['tile'],
+      id: 'elephant',
       anim: {
-        origin: [9.5, 29],
+        origin: [15, 38],
         keys: [
-          { t: 0, o: 0, x: -1 }, { t: 0.04, o: 0, x: -1 }, { t: 0.1, o: 1, x: 0 }, { t: 0.18, o: 1, x: 2.5, y: -1 },
-          { t: 0.26, o: 1, x: 5, y: 0 }, { t: 0.34, o: 0, x: 7.5 }, { t: 0.35, o: 0, x: -1 }, { t: 1, o: 0, x: -1 },
+          { t: 0, x: 0, y: 0 },
+          { t: 0.04, x: 0, y: 0 },
+          { t: 0.1, x: 1, y: -1 },
+          { t: 0.16, x: 2, y: 0 },
+          { t: 0.22, x: 3, y: -1 },
+          { t: 0.28, x: 4, y: 0 },
+          { t: 0.5, x: 4, y: 0 },
+          { t: 0.58, x: 2, y: -1 },
+          { t: 0.66, x: 0, y: 0 },
+          { t: 1 },
         ],
       },
+      children: [
+        { id: 'el', shapes: [{ path: EL.body }], fill: 'fill', stroke: 'ink', strokeWidth: 2.5, on: { stroke: ['tile', 'fill'] } },
+        {
+          id: 'trunk',
+          shapes: [{ path: EL.trunk }],
+          stroke: 'ink',
+          on: ['tile', 'fill'],
+          anim: {
+            origin: TRUNK_BASE,
+            keys: [{ t: 0 }, { t: 0.06, r: 0 }, { t: 0.2, r: -8 }, { t: 0.5, r: -8 }, { t: 0.62, r: 0 }, { t: 1 }],
+          },
+        },
+        { id: 'ear', shapes: [{ path: EL.ear }], fill: 'fill', stroke: 'ink', strokeWidth: 2.25, on: { stroke: ['fill'] } },
+        { id: 'eye', shapes: [{ path: EL.eye }], fill: 'ink', on: ['fill'] },
+      ],
     },
     { id: 'building', shapes: [{ path: BODY }], fill: 'fill', stroke: 'ink', on: { stroke: ['tile', 'fill'] } },
-    { id: 'buildingShade', shapes: [{ path: 'M33 12.5H34.5A1.5 1.5 0 0 1 36 14V34.5H33Z' }], fill: 'shade' },
-    { id: 'door', shapes: [{ path: DOOR }], fill: 'accent', stroke: 'ink', on: { fill: ['fill'], stroke: ['fill'] } },
-    { id: 'ground', shapes: [{ path: 'M6 36H41.5' }], stroke: 'ink', on: ['tile', 'fill'] },
+    { id: 'buildingShade', shapes: [{ path: 'M39 13.5H39.2A1.3 1.3 0 0 1 40.5 14.8V38H39Z' }], fill: 'shade' },
+    { id: 'door', shapes: [{ path: DOOR }], fill: 'accent', stroke: 'ink', strokeWidth: 2.5, on: { fill: ['fill'], stroke: ['fill'] } },
+    { id: 'ground', shapes: [{ path: `M4.5 ${GY}H42` }], stroke: 'ink', on: ['tile', 'fill'] },
     {
       id: 'cross',
-      shapes: [{ path: T(CROSS) }],
+      shapes: [{ path: CROSS48 }],
       stroke: 'ink',
-      strokeWidth: 3.5,
+      strokeWidth: 2.5,
       on: ['fill'],
       anim: {
-        origin: [27.5, 19.5],
-        keys: [{ t: 0 }, { t: 0.36, s: 1 }, { t: 0.42, s: 1.1 }, { t: 0.47, s: 1 }, { t: 0.52, s: 1.06 }, { t: 0.58, s: 1 }, { t: 1 }],
+        origin: [CX, CY],
+        keys: [{ t: 0 }, { t: 0.3, s: 1 }, { t: 0.36, s: 1.1 }, { t: 0.41, s: 1 }, { t: 0.46, s: 1.06 }, { t: 0.52, s: 1 }, { t: 1 }],
       },
     },
   ],

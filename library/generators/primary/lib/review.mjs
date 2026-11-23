@@ -1,10 +1,11 @@
 // Offline review page for the Primary icons: inline SVG at 48/64/96, <img> fallback, the scheme's own Lottie
-// file side by side, six colour schemes, reduced-motion toggle, a scrubber, the role/contrast table.
+// file side by side, six colour schemes, a Filled/Stroke variant toggle, reduced-motion toggle, a scrubber, the
+// role/contrast table.
 // lottie-web (svg-only "light" build) is inlined.
 const kebab = (s) => s.replace(/[A-Z]/g, (c) => '-' + c.toLowerCase());
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
 
-export function reviewHtml({ specs, svgs, lotties, schemes, schemeKeys, roleTable, lottieJs }) {
+export function reviewHtml({ specs, svgs, lotties, svgsStroke = {}, lottiesStroke = {}, schemes, schemeKeys, roleTable, lottieJs }) {
   const vars = {};
   for (const k of schemeKeys) vars[k] = Object.fromEntries(Object.entries(schemes[k]).map(([r, v]) => [`--antz-${kebab(r)}`, v]));
   const short = (k) => k.replace('light', 'Light').replace('dark', 'Dark').replace('-medium-contrast', ' MC').replace('-high-contrast', ' HC');
@@ -18,16 +19,20 @@ export function reviewHtml({ specs, svgs, lotties, schemes, schemeKeys, roleTabl
     .join('');
   const cards = specs.map((s) => {
     const svg = svgs[s.name];
+    const svgS = svgsStroke[s.name] || svg;
+    // Both variants are inlined; body.stroke shows the stroke ones (.vs) and hides the filled ones (.vf).
+    const both = (size) => `<div class="sz vf" style="--s:${size}px">${svg}</div><div class="sz vs" style="--s:${size}px">${svgS}</div>`;
     const uri = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+    const uriS = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svgS);
     return `<article class="card">
   <header><h2>${esc(s.label)}</h2><span class="meta">${s.name} · base <code>${s.baseIcon}</code> · ${s.loopMs} ms · peaks ${s.peaks.map((t) => Math.round(t * 100) + '%').join(', ')}</span></header>
   <p class="motion">${esc(s.motion || '')}</p>
   <div class="row">
-    <figure><div class="sz" style="--s:48px">${svg}</div><figcaption>48</figcaption></figure>
-    <figure><div class="sz" style="--s:64px">${svg}</div><figcaption>64</figcaption></figure>
-    <figure><div class="sz" style="--s:96px">${svg}</div><figcaption>96 · SVG</figcaption></figure>
+    <figure>${both(48)}<figcaption>48</figcaption></figure>
+    <figure>${both(64)}<figcaption>64</figcaption></figure>
+    <figure>${both(96)}<figcaption>96 · SVG</figcaption></figure>
     <figure><div class="lot" data-name="${s.name}"></div><figcaption>96 · Lottie <span class="lf"></span></figcaption></figure>
-    <figure><img src="${uri}" width="64" height="64" alt="${esc(s.label)}"><figcaption>img (light fallback)</figcaption></figure>
+    <figure><img class="vf" src="${uri}" width="64" height="64" alt="${esc(s.label)}"><img class="vs" src="${uriS}" width="64" height="64" alt="${esc(s.label)} (stroke)"><figcaption>img (light fallback)</figcaption></figure>
   </div>
 </article>`;
   }).join('\n');
@@ -65,6 +70,7 @@ figcaption{font-size:12px;color:var(--antz-on-surface-variant);font-variant-nume
 .wall figure{gap:4px}.wall figcaption{font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
 .wall svg{width:48px;height:48px;display:block;margin:auto}
 body.wallview .grid,body.wallview .cardsonly{display:none}
+body:not(.stroke) .vs,body.stroke .vf{display:none!important}
 h3{font-size:15px;margin:28px 0 10px}
 .tw{overflow-x:auto}
 table{border-collapse:collapse;font-size:12px;font-variant-numeric:tabular-nums}td,th{padding:4px 10px 4px 0;text-align:left;white-space:nowrap}
@@ -77,10 +83,11 @@ body.seek .sz svg *,body.seek .wall svg *{animation-play-state:paused!important}
 </head>
 <body>
 <main>
-<h1>ANTZ Primary icons: v2.1 (style locked), ${specs.length} icons</h1>
-<p class="sub">Illustrative tile badges, 48 grid, a short story beat then rest. v2.1: the accent is the brand green (<code>onPrimaryFixedVariant</code>) and sits only on the light fill, never on the tile. SVG (CSS keyframes, themed by --antz-* variables) next to the Lottie file for the selected scheme. Draft for review.</p>
+<h1>ANTZ Primary icons: v2.1 (style locked), ${specs.length} icons, Filled and Stroke</h1>
+<p class="sub">Illustrative tile badges, 48 grid, a short story beat then rest. v2.1: the accent is the brand green (<code>onPrimaryFixedVariant</code>) and sits only on the light fill, never on the tile. SVG (CSS keyframes, themed by --antz-* variables) next to the Lottie file for the selected scheme. Stroke variant: the same scenes and motion, outline only in ink on the tile (no light fill, no accent); files in <code>svg-stroke/</code> and <code>lottie-stroke/</code>. Draft for review.</p>
 <div class="bar" role="group" aria-label="Preview settings">
   <span class="seg" role="group" aria-label="Colour scheme">${schemeKeys.map((k, i) => `<button type="button" data-scheme="${k}" aria-pressed="${i === 0}">${short(k)}</button>`).join('')}</span>
+  <span class="seg" role="group" aria-label="Variant"><button type="button" data-variant="filled" aria-pressed="true">Filled</button><button type="button" data-variant="stroke" aria-pressed="false">Stroke</button></span>
   <span class="seg" role="group" aria-label="View"><button type="button" data-view="cards" aria-pressed="true">Cards</button><button type="button" data-view="wall" aria-pressed="false">Wall</button></span>
   <label><input type="checkbox" id="rm"> Reduced motion</label>
   <label>Scrub <input type="range" id="scrub" min="0" max="100" value="0" aria-label="Scrub loop position"> <span id="pct">play</span></label>
@@ -99,17 +106,17 @@ ${cards}
 <script>${lottieJs}</script>
 <script>
 const SCHEMES=${JSON.stringify(vars)};
-const LOTTIE=${JSON.stringify(lotties)};
-const WALL=${JSON.stringify(specs.map((s) => [s.label, svgs[s.name].replace(/id="([^"]+)"/g, 'id="$1-wall"').replace(/url\(#([^)]+)\)/g, 'url(#$1-wall)').replace(/href="#([^"]+)"/g, 'href="#$1-wall"')]))};
+const LOTTIE={filled:${JSON.stringify(lotties)},stroke:${JSON.stringify(Object.keys(lottiesStroke).length ? lottiesStroke : lotties)}};
+const WALL=${JSON.stringify(specs.map((s) => [s.label, ...[svgs[s.name], svgsStroke[s.name] || svgs[s.name]].map((v) => v.replace(/id="([^"]+)"/g, 'id="$1-wall"').replace(/url\(#([^)]+)\)/g, 'url(#$1-wall)').replace(/href="#([^"]+)"/g, 'href="#$1-wall"'))]))};
 const LOOPS=${JSON.stringify(Object.fromEntries(specs.map((s) => [s.name, s.loopMs])))};
-let scheme='${schemeKeys[0]}',anims=[],seek=null;
+let scheme='${schemeKeys[0]}',variant='filled',anims=[],seek=null;
 const osRM=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const rmBox=document.getElementById('rm');rmBox.checked=osRM;
 const wall=document.getElementById('wall');
-for(const [label,svg] of WALL){const f=document.createElement('figure');f.innerHTML=svg+'<figcaption></figcaption>';f.lastChild.textContent=label;wall.appendChild(f);}
+for(const [label,svg,svgS] of WALL){const f=document.createElement('figure');f.innerHTML='<div class="vf">'+svg+'</div><div class="vs">'+svgS+'</div><figcaption></figcaption>';f.lastChild.textContent=label;wall.appendChild(f);}
 function seekSvgs(){
   document.querySelectorAll('.sz svg,.wall svg').forEach(svg=>{
-    const name=(svg.getAttribute('class')||'').replace('antz-p-','');const loop=LOOPS[name]||3000;
+    const name=(svg.getAttribute('class')||'').replace('antz-p-','').replace(/-stroke$/,'');const loop=LOOPS[name]||3000;
     svg.querySelectorAll('[class*="antz-p-"]').forEach(el=>{el.style.animationDelay=seek===null?'':(-seek*loop)+'ms';});
   });
 }
@@ -118,12 +125,13 @@ function apply(){
   for(const k in v)r.setProperty(k,v[k]);
   document.documentElement.style.colorScheme=scheme.startsWith('dark')?'dark':'light';
   document.body.classList.toggle('rm',rmBox.checked);
+  document.body.classList.toggle('stroke',variant==='stroke');
   document.body.classList.toggle('seek',seek!==null);
   seekSvgs();
   anims.forEach(a=>a.destroy());anims=[];
   document.querySelectorAll('.lot').forEach(el=>{
-    const data=LOTTIE[el.dataset.name][scheme];
-    el.nextElementSibling.querySelector('.lf').textContent=el.dataset.name+'.'+scheme+'.json';
+    const data=LOTTIE[variant][el.dataset.name][scheme];
+    el.nextElementSibling.querySelector('.lf').textContent=(variant==='stroke'?'lottie-stroke/':'lottie/')+el.dataset.name+'.'+scheme+'.json';
     const still=rmBox.checked||seek!==null;
     const a=lottie.loadAnimation({container:el,renderer:'svg',loop:true,autoplay:!still,animationData:data});
     if(still)a.goToAndStop(rmBox.checked?0:seek*data.op,true);
@@ -132,6 +140,7 @@ function apply(){
 }
 document.querySelectorAll('[data-scheme]').forEach(b=>b.addEventListener('click',()=>{scheme=b.dataset.scheme;document.querySelectorAll('[data-scheme]').forEach(x=>x.setAttribute('aria-pressed',x===b));apply();}));
 rmBox.addEventListener('change',apply);
+document.querySelectorAll('[data-variant]').forEach(b=>b.addEventListener('click',()=>{variant=b.dataset.variant;document.querySelectorAll('[data-variant]').forEach(x=>x.setAttribute('aria-pressed',x===b));apply();}));
 document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-view]').forEach(x=>x.setAttribute('aria-pressed',x===b));document.body.classList.toggle('wallview',b.dataset.view==='wall');}));
 const scrub=document.getElementById('scrub'),pct=document.getElementById('pct');
 scrub.addEventListener('input',()=>{seek=+scrub.value/100;pct.textContent=scrub.value+'%';apply();});

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" class="antz-p-notifications-stroke" role="img" aria-label="Notifications">
+<style>
+.antz-p-notifications-stroke-f-tile{fill:var(--antz-primary-container,#36BC69)}
+.antz-p-notifications-stroke-s-ink{stroke:var(--antz-on-primary-container,#00451F)}
+@keyframes antz-p-notifications-stroke-ringL{0%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:0}10%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:0}16%{transform:translate(-0.75px,0px) rotate(0deg) scale(1);opacity:1}30%{transform:translate(-1.5px,0px) rotate(0deg) scale(1);opacity:1}40%{transform:translate(-2.25px,0px) rotate(0deg) scale(1);opacity:0}41%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:0}100%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:0}}
+.antz-p-notifications-stroke-ringL{transform-box:view-box;transform-origin:24px 24px;animation:antz-p-notifications-stroke-ringL 3900ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-notifications-stroke-ringR{0%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:0}10%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:0}16%{transform:translate(0.75px,0px) rotate(0deg) scale(1);opacity:1}30%{transform:translate(1.5px,0px) rotate(0deg) scale(1);opacity:1}40%{transform:translate(2.25px,0px) rotate(0deg) scale(1);opacity:0}41%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:0}100%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:0}}
+.antz-p-notifications-stroke-ringR{transform-box:view-box;transform-origin:24px 24px;animation:antz-p-notifications-stroke-ringR 3900ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-notifications-stroke-bell{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}4%{transform:translate(0px,0px) rotate(0deg) scale(1);}14%{transform:translate(0px,0px) rotate(-10deg) scale(1);}26%{transform:translate(0px,0px) rotate(9deg) scale(1);}37%{transform:translate(0px,0px) rotate(-5deg) scale(1);}46%{transform:translate(0px,0px) rotate(2deg) scale(1);}54%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-notifications-stroke-bell{transform-box:view-box;transform-origin:24px 10.5px;animation:antz-p-notifications-stroke-bell 3900ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-notifications-stroke-clapper{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}6%{transform:translate(0px,0px) rotate(0deg) scale(1);}17%{transform:translate(2px,0px) rotate(0deg) scale(1);}29%{transform:translate(-2px,0px) rotate(0deg) scale(1);}40%{transform:translate(1.2px,0px) rotate(0deg) scale(1);}50%{transform:translate(-0.4px,0px) rotate(0deg) scale(1);}58%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-notifications-stroke-clapper{transform-box:view-box;transform-origin:24px 37.5px;animation:antz-p-notifications-stroke-clapper 3900ms cubic-bezier(.45,0,.55,1) infinite}
+@media (prefers-reduced-motion:reduce){.antz-p-notifications-stroke *{animation:none!important}}
+</style>
+  <rect x="0" y="0" width="48" height="48" rx="14" class="antz-p-notifications-stroke-f-tile" fill="#36BC69"/>
+  <g class="antz-p-notifications-stroke-ringL" opacity="0">
+    <path d="M9 15.5Q6.8 20 9 24.5" class="antz-p-notifications-stroke-s-ink" fill="none" stroke="#00451F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g class="antz-p-notifications-stroke-ringR" opacity="0">
+    <path d="M39 15.5Q41.2 20 39 24.5" class="antz-p-notifications-stroke-s-ink" fill="none" stroke="#00451F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g class="antz-p-notifications-stroke-bell">
+    <path d="M24 10.5V13.5" class="antz-p-notifications-stroke-s-ink" fill="none" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <g class="antz-p-notifications-stroke-clapper">
+      <path d="M21 37.5H27" class="antz-p-notifications-stroke-s-ink" fill="none" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <path d="M24 13.5A9 9 0 0 0 15 22.5V27L12 31.5H36L33 27V22.5A9 9 0 0 0 24 13.5Z" class="antz-p-notifications-stroke-f-tile antz-p-notifications-stroke-s-ink" fill="#36BC69" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="18" y="23.5" width="12" height="3.5" rx="1.75" class="antz-p-notifications-stroke-f-tile antz-p-notifications-stroke-s-ink" fill="#36BC69" stroke="#00451F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

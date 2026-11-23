@@ -8,13 +8,15 @@ spec-writing recipe: `library/primary/STYLE-PRIMARY.md` (the style is locked at 
 specs/<name>.mjs   one declarative spec per icon (layers, roles, keyframes, peaks); format documented in lib/model.mjs
 lib/geo.mjs        24-grid → 48-tile scaling (L, P, D) and the shared egg() base
 lib/shapes.mjs     rrect() / disc(): rounded rects and circles as explicit cubic paths (SVG = Lottie pixels)
+lib/truck.mjs      truck(k, x, y): the shared transport truck (transfers, move_animal)
+lib/stroke.mjs     toStrokeSpec(): derives the Stroke variant from a spec (paint rules + per-spec `stroke: {...}`)
 lib/model.mjs      roles, motion limits, motion lint, contrast + accent-rule lint, scheme flattening
 lib/svg.mjs        spec → animated SVG (CSS keyframes, --antz-* variables with light fallbacks, trim via dasharray)
 lib/lottie.mjs     spec → Lottie JSON (own minimal emitter: shape + null layers, parenting, groups, sh/rc/el,
                    fl/st, tm trim paths, eased transforms, static or moving masks)
 lib/review.mjs     review.html (lottie-web inlined, works offline, 6 schemes, scrubber)
-build.mjs          node build.mjs [--out <dir>] [--names a,b] [--dry-run]
-validate.mjs       node validate.mjs [--out <dir>] [--names a,b] [--png <strip.png>] [--report <report.json>]
+build.mjs          node build.mjs [--out <dir>] [--names a,b] [--dry-run] [--variant both|filled|stroke]
+validate.mjs       node validate.mjs [--out <dir>] [--names a,b] [--png <strip.png>] [--report <report.json>] [--variant filled|stroke]
 ```
 
 ## Setup
@@ -44,14 +46,16 @@ node build.mjs --names eggs                         # rebuild one icon; index.js
 node build.mjs --names ward --dry-run               # lint only
 node build.mjs --out /tmp/primary-ward --names ward # build into a private folder (parallel agents)
 node validate.mjs --out /tmp/primary-ward --names ward --png /tmp/primary-ward/frames.png --report /tmp/primary-ward/report.json
-node validate.mjs --png /tmp/primary-frames.png     # everything in library/primary
+node validate.mjs --png /tmp/primary-frames.png     # everything in library/primary (validate in pages of ≤ 10 names)
+node validate.mjs --variant stroke --names home,dashboard,animals --png /tmp/stroke.png   # the Stroke variant
 ```
 
 `--out` defaults to `library/primary` for both scripts. `index.json` and `contrast.json` are read-modify-write: built
 icons replace their own entry (a hand-set `status` is kept) or are appended, and every other entry is kept. The v2
 positional forms (`build.mjs <outDir> [names...]`, `validate.mjs <dir> <png> [report]`) still work.
 
-Outputs per icon: `svg/<name>.svg` and `lottie/<name>.<scheme>.json` for the 6 scheme keys `light`,
+Outputs per icon, Filled: `svg/<name>.svg` and `lottie/<name>.<scheme>.json`; Stroke: `svg-stroke/<name>.svg` and
+`lottie-stroke/<name>.<scheme>.json` (index.json: `variants`, `svgStroke`, `lottieStroke`); for the 6 scheme keys `light`,
 `light-medium-contrast`, `light-high-contrast`, `dark`, `dark-medium-contrast` and `dark-high-contrast`.
 
 `build.mjs` fails (writes nothing) if a spec breaks:

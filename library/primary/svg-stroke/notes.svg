@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" class="antz-p-notes-stroke" role="img" aria-label="Notes">
+<style>
+.antz-p-notes-stroke-f-tile{fill:var(--antz-primary-container,#36BC69)}
+.antz-p-notes-stroke-s-ink{stroke:var(--antz-on-primary-container,#00451F)}
+@keyframes antz-p-notes-stroke-entry{0%{opacity:1}4%{opacity:1}10%{opacity:0}11%{opacity:0}25%{opacity:0}26%{opacity:1}48%{opacity:1}100%{opacity:1}}
+.antz-p-notes-stroke-entry{animation:antz-p-notes-stroke-entry 3750ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-notes-stroke-entry-trim{0%{stroke-dasharray:1 2;stroke-dashoffset:0}4%{stroke-dasharray:1 2;stroke-dashoffset:0}10%{stroke-dasharray:1 2;stroke-dashoffset:0}11%{stroke-dasharray:0 2;stroke-dashoffset:0}25%{stroke-dasharray:0 2;stroke-dashoffset:0}26%{stroke-dasharray:0.05 2;stroke-dashoffset:0}48%{stroke-dasharray:1 2;stroke-dashoffset:0}100%{stroke-dasharray:1 2;stroke-dashoffset:0}}
+.antz-p-notes-stroke-entry-trim{animation:antz-p-notes-stroke-entry-trim 3750ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-notes-stroke-pencil{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}6%{transform:translate(0px,0px) rotate(0deg) scale(1);}16%{transform:translate(-2px,-3.2px) rotate(6deg) scale(1);}25%{transform:translate(-4px,0px) rotate(0deg) scale(1);}32%{transform:translate(-2.5px,-0.8px) rotate(0deg) scale(1);}40%{transform:translate(-1.2px,0.3px) rotate(0deg) scale(1);}48%{transform:translate(0px,0px) rotate(0deg) scale(1);}58%{transform:translate(1.5px,-2.5px) rotate(-4deg) scale(1);}70%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-notes-stroke-pencil{transform-box:view-box;transform-origin:26.5px 25.5px;animation:antz-p-notes-stroke-pencil 3750ms cubic-bezier(.45,0,.55,1) infinite}
+@media (prefers-reduced-motion:reduce){.antz-p-notes-stroke *{animation:none!important}}
+</style>
+  <rect x="0" y="0" width="48" height="48" rx="14" class="antz-p-notes-stroke-f-tile" fill="#36BC69"/>
+  <path d="M36 28.5V15A3 3 0 0 0 33 12H15A3 3 0 0 0 12 15V33A3 3 0 0 0 15 36H28.5Z" class="antz-p-notes-stroke-f-tile antz-p-notes-stroke-s-ink" fill="#36BC69" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M28.5 36V31.5A3 3 0 0 1 31.5 28.5H36" class="antz-p-notes-stroke-s-ink" fill="none" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M18 19.5H25.5" class="antz-p-notes-stroke-s-ink" fill="none" stroke="#00451F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g class="antz-p-notes-stroke-entry">
+    <path d="M18 25.5H26.5" class="antz-p-notes-stroke-s-ink antz-p-notes-stroke-entry-trim" fill="none" stroke="#00451F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="1 2" stroke-dashoffset="0"/>
+  </g>
+  <g class="antz-p-notes-stroke-pencil">
+    <path d="M26.5 25.5L31.45 24.09L39.23 16.31L35.69 12.77L27.91 20.55Z" class="antz-p-notes-stroke-f-tile antz-p-notes-stroke-s-ink" fill="#36BC69" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

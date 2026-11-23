@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" class="antz-p-animals-stroke" role="img" aria-label="Animals">
+<style>
+.antz-p-animals-stroke-f-ink{fill:var(--antz-on-primary-container,#00451F)}
+.antz-p-animals-stroke-f-tile{fill:var(--antz-primary-container,#36BC69)}
+.antz-p-animals-stroke-s-ink{stroke:var(--antz-on-primary-container,#00451F)}
+@keyframes antz-p-animals-stroke-trail{0%{opacity:1}3%{opacity:1}10%{opacity:0}24%{opacity:1}100%{opacity:1}}
+.antz-p-animals-stroke-trail{animation:antz-p-animals-stroke-trail 3400ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-animals-stroke-front{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}20%{transform:translate(0px,0px) rotate(0deg) scale(1);}32%{transform:translate(0px,-3.5px) rotate(0deg) scale(0.92);}42%{transform:translate(0px,0.5px) rotate(0deg) scale(1.04);}50%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-animals-stroke-front{transform-box:view-box;transform-origin:30.5px 31.9px;animation:antz-p-animals-stroke-front 3400ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-animals-stroke-dust1{0%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:0}40%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:0}45%{transform:translate(-1px,0.9px) rotate(0deg) scale(1);opacity:1}54%{transform:translate(-2px,2.25px) rotate(0deg) scale(1);opacity:1}62%{transform:translate(-2.5px,3px) rotate(0deg) scale(1);opacity:0}63%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:0}100%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:0}}
+.antz-p-animals-stroke-dust1{transform-box:view-box;transform-origin:24px 31.9px;animation:antz-p-animals-stroke-dust1 3400ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-animals-stroke-dust2{0%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:0}40%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:0}45%{transform:translate(1.4px,0.75px) rotate(0deg) scale(1);opacity:1}54%{transform:translate(2.8px,1.875px) rotate(0deg) scale(1);opacity:1}62%{transform:translate(3.5px,2.5px) rotate(0deg) scale(1);opacity:0}63%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:0}100%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:0}}
+.antz-p-animals-stroke-dust2{transform-box:view-box;transform-origin:37px 31.9px;animation:antz-p-animals-stroke-dust2 3400ms cubic-bezier(.45,0,.55,1) infinite}
+@media (prefers-reduced-motion:reduce){.antz-p-animals-stroke *{animation:none!important}}
+</style>
+  <rect x="0" y="0" width="48" height="48" rx="14" class="antz-p-animals-stroke-f-tile" fill="#36BC69"/>
+  <g class="antz-p-animals-stroke-trail">
+    <path d="M13.208 32.055C11.263 31.347 8.374 33.232 7.902 34.529A2.07 2.07 0 0 0 9.139 37.182L13.029 38.598A2.07 2.07 0 0 0 15.682 37.361C16.154 36.064 15.153 32.763 13.208 32.055Z" class="antz-p-animals-stroke-f-ink" fill="#00451F"/>
+    <circle cx="9.141" cy="29.106" r="1.8" class="antz-p-animals-stroke-f-ink" fill="#00451F"/>
+    <circle cx="12.915" cy="26.808" r="1.95" class="antz-p-animals-stroke-f-ink" fill="#00451F"/>
+    <circle cx="16.805" cy="28.224" r="1.95" class="antz-p-animals-stroke-f-ink" fill="#00451F"/>
+    <circle cx="18.219" cy="32.41" r="1.8" class="antz-p-animals-stroke-f-ink" fill="#00451F"/>
+  </g>
+  <g class="antz-p-animals-stroke-front">
+    <path d="M30.5 21.55C27.05 21.55 23.6 26.15 23.6 28.45A3.45 3.45 0 0 0 27.05 31.9H33.95A3.45 3.45 0 0 0 37.4 28.45C37.4 26.15 33.95 21.55 30.5 21.55Z" class="antz-p-animals-stroke-f-tile antz-p-animals-stroke-s-ink" fill="#36BC69" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="22.45" cy="19.25" rx="2.9" ry="3.25" class="antz-p-animals-stroke-f-ink" fill="#00451F"/>
+    <ellipse cx="27.05" cy="13.5" rx="2.9" ry="3.5" class="antz-p-animals-stroke-f-ink" fill="#00451F"/>
+    <ellipse cx="33.95" cy="13.5" rx="2.9" ry="3.5" class="antz-p-animals-stroke-f-ink" fill="#00451F"/>
+    <ellipse cx="38.55" cy="19.25" rx="2.9" ry="3.25" class="antz-p-animals-stroke-f-ink" fill="#00451F"/>
+  </g>
+  <g class="antz-p-animals-stroke-dust1" opacity="0">
+    <circle cx="24" cy="32.9" r="1.9" class="antz-p-animals-stroke-f-ink" fill="#00451F"/>
+  </g>
+  <g class="antz-p-animals-stroke-dust2" opacity="0">
+    <circle cx="37" cy="32.9" r="1.9" class="antz-p-animals-stroke-f-ink" fill="#00451F"/>
+  </g>
+</svg>

@@ -45,6 +45,9 @@ export default {
   loopMs: 3800,
   peaks: [0.14, 0.32], // liquid surges up-left · bubbles in the neck, slosh back
   restAt: 0.85,
+  // Stroke variant: the shine only meant something on the green liquid; the liquid keeps its surface line.
+  // The bubbles stay rings (a tile knockout in their ink ring), not solid ink blobs.
+  stroke: { drop: ['shine'], patch: { bubble1: { fill: 'tile' }, bubble2: { fill: 'tile' }, bubble3: { fill: 'tile' } } },
   layers: [
     { id: 'tile', shapes: [{ rect: [0, 0, 48, 48, 14] }], fill: 'tile' },
     { id: 'glass', shapes: [{ path: INSIDE }], fill: 'fill' },

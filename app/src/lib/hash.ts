@@ -1,10 +1,11 @@
 import { SCHEME_KEYS, type SchemeKey } from './library';
+import { DEFAULT_BG, normBg } from './tile';
 
 /**
  * UI state kept in the URL hash, as routes:
  *   #/library/line?module=Eggs&status=draft&q=egg&size=32&sel=egg_nest
  *   #/library/filled?…
- *   #/library/primary?q=egg&cols=4&fmt=lottie&pgroup=1&wall=1&sel=eggs   (Primary icons: animated tile badges)
+ *   #/library/primary?q=egg&cols=4&fmt=lottie&pv=stroke&pgroup=1&wall=1&bg=teal&bgx=1&sel=eggs   (Primary icons: animated tile badges)
  *   #/builder?slot=egg_nest
  * App-wide display settings (scheme, colour, refs) ride along as params on any route.
  */
@@ -20,8 +21,14 @@ export interface UiState {
   module: string; status: string; q: string; sel: string; refs: boolean; slot: string;
   /** Primary icons page: icons per row, format, group by module, and the label-free wall view. */
   cols: number; fmt: 'svg' | 'lottie'; pgroup: boolean; wall: boolean;
+  /** Primary icons page: the Filled (default, left out of the URL) or Stroke variant, as `pv=stroke`. */
+  pv: 'filled' | 'stroke';
+  /** Primary icons page: tile colour, a preset id or #RRGGBB (`bg=teal`, `bg=%23AABBCC`; green is left out). */
+  bg: string;
+  /** Primary icons page: exports use the tile colour choice (`bgx=1`) instead of the theme default. */
+  bgx: boolean;
 }
-export const DEFAULT_STATE: UiState = { page: 'library', style: 'line', scheme: 'light', size: 24, colour: 'teal', module: '', status: '', q: '', sel: '', refs: true, slot: '', cols: 4, fmt: 'svg', pgroup: false, wall: false };
+export const DEFAULT_STATE: UiState = { page: 'library', style: 'line', scheme: 'light', size: 24, colour: 'teal', module: '', status: '', q: '', sel: '', refs: true, slot: '', cols: 4, fmt: 'svg', pgroup: false, wall: false, pv: 'filled', bg: DEFAULT_BG, bgx: false };
 
 export function parseHash(hash: string): UiState {
   const raw = hash.replace(/^#/, '');
@@ -45,8 +52,11 @@ export function parseHash(hash: string): UiState {
     const cols = Number(p.get('cols'));
     if ((PCOLS as readonly number[]).includes(cols)) s.cols = cols;
     if (p.get('fmt') === 'lottie') s.fmt = 'lottie';
+    if (p.get('pv') === 'stroke') s.pv = 'stroke';
     s.pgroup = p.get('pgroup') === '1';
     s.wall = p.get('wall') === '1';
+    s.bg = normBg(p.get('bg'));
+    s.bgx = p.get('bgx') === '1';
   } else if (s.page === 'library') {
     s.module = p.get('module') ?? '';
     const status = p.get('status') ?? '';
@@ -67,7 +77,7 @@ export function toHash(s: UiState): string {
     p.set(k, typeof s[k] === 'boolean' ? (s[k] ? '1' : '0') : String(s[k]));
   };
   if (s.page === 'library') (['module', 'status', 'q', 'sel', 'size'] as const).forEach(put);
-  else if (s.page === 'primary') (['q', 'sel', 'cols', 'fmt', 'pgroup', 'wall'] as const).forEach(put);
+  else if (s.page === 'primary') (['q', 'sel', 'cols', 'pv', 'fmt', 'pgroup', 'wall', 'bg', 'bgx'] as const).forEach(put);
   else put('slot');
   (['scheme', 'colour', 'refs'] as const).forEach(put);
   const q = p.toString();

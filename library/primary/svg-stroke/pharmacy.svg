@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" class="antz-p-pharmacy-stroke" role="img" aria-label="Pharmacy">
+<style>
+.antz-p-pharmacy-stroke-f-ink{fill:var(--antz-on-primary-container,#00451F)}
+.antz-p-pharmacy-stroke-f-tile{fill:var(--antz-primary-container,#36BC69)}
+.antz-p-pharmacy-stroke-s-ink{stroke:var(--antz-on-primary-container,#00451F)}
+@keyframes antz-p-pharmacy-stroke-capsule{0%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:0}12%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:0}18%{transform:translate(1px,-3px) rotate(-6deg) scale(1);opacity:1}30%{transform:translate(5px,-5.5px) rotate(10deg) scale(1);opacity:1}40%{transform:translate(7px,-3.5px) rotate(12deg) scale(1);opacity:0}41%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:0}100%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:0}}
+.antz-p-pharmacy-stroke-capsule{transform-box:view-box;transform-origin:24.2px 13px;animation:antz-p-pharmacy-stroke-capsule 3200ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-pharmacy-stroke-cap{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}6%{transform:translate(0px,0px) rotate(0deg) scale(1);}16%{transform:translate(0px,-3px) rotate(-12deg) scale(1);}28%{transform:translate(0px,-3px) rotate(-12deg) scale(1);}36%{transform:translate(0px,0.4px) rotate(1deg) scale(1);}42%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-pharmacy-stroke-cap{transform-box:view-box;transform-origin:18px 16px;animation:antz-p-pharmacy-stroke-cap 3200ms cubic-bezier(.45,0,.55,1) infinite}
+@media (prefers-reduced-motion:reduce){.antz-p-pharmacy-stroke *{animation:none!important}}
+</style>
+  <rect x="0" y="0" width="48" height="48" rx="14" class="antz-p-pharmacy-stroke-f-tile" fill="#36BC69"/>
+  <g class="antz-p-pharmacy-stroke-capsule" opacity="0">
+    <path d="M21.2 12.6L25.4 10.2A1.9 1.9 0 0 1 27.3 13.5L23.1 15.9A1.9 1.9 0 0 1 21.2 12.6Z" class="antz-p-pharmacy-stroke-f-ink" fill="#00451F"/>
+  </g>
+  <path d="M20.5 17H27.5C29.433 17 31 18.567 31 20.5V35.5C31 37.433 29.433 39 27.5 39H20.5C18.567 39 17 37.433 17 35.5V20.5C17 18.567 18.567 17 20.5 17Z" class="antz-p-pharmacy-stroke-f-tile antz-p-pharmacy-stroke-s-ink" fill="#36BC69" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M24 24V30M21 27H27" class="antz-p-pharmacy-stroke-s-ink" fill="none" stroke="#00451F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g class="antz-p-pharmacy-stroke-cap">
+    <path d="M20.5 8.5H27.5C28.881 8.5 30 9.619 30 11V13.5C30 14.881 28.881 16 27.5 16H20.5C19.119 16 18 14.881 18 13.5V11C18 9.619 19.119 8.5 20.5 8.5Z" class="antz-p-pharmacy-stroke-f-tile antz-p-pharmacy-stroke-s-ink" fill="#36BC69" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M22 9.5V15M26 9.5V15" class="antz-p-pharmacy-stroke-s-ink" fill="none" stroke="#00451F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

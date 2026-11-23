@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" class="antz-p-transfers-stroke" role="img" aria-label="Transfers">
+<style>
+.antz-p-transfers-stroke-f-ink{fill:var(--antz-on-primary-container,#00451F)}
+.antz-p-transfers-stroke-f-tile{fill:var(--antz-primary-container,#36BC69)}
+.antz-p-transfers-stroke-s-ink{stroke:var(--antz-on-primary-container,#00451F)}
+.antz-p-transfers-stroke-s-tile{stroke:var(--antz-primary-container,#36BC69)}
+@keyframes antz-p-transfers-stroke-speed{0%{opacity:0}20%{opacity:0}23%{opacity:1}36%{opacity:1}44%{opacity:1}54%{opacity:0}56%{opacity:0}100%{opacity:0}}
+.antz-p-transfers-stroke-speed{animation:antz-p-transfers-stroke-speed 3650ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-transfers-stroke-speed-trim{0%{stroke-dasharray:0 2;stroke-dashoffset:0}20%{stroke-dasharray:0 2;stroke-dashoffset:0}23%{stroke-dasharray:0.2 2;stroke-dashoffset:0}36%{stroke-dasharray:1 2;stroke-dashoffset:0}44%{stroke-dasharray:1 2;stroke-dashoffset:0}54%{stroke-dasharray:1 2;stroke-dashoffset:0}56%{stroke-dasharray:0 2;stroke-dashoffset:0}100%{stroke-dasharray:0 2;stroke-dashoffset:0}}
+.antz-p-transfers-stroke-speed-trim{animation:antz-p-transfers-stroke-speed-trim 3650ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-transfers-stroke-truck{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}4%{transform:translate(0px,0px) rotate(0deg) scale(1);}16%{transform:translate(-4px,0px) rotate(0deg) scale(1);}36%{transform:translate(1px,0px) rotate(0deg) scale(1);}42%{transform:translate(1px,0px) rotate(2.5deg) scale(1);}50%{transform:translate(0px,0px) rotate(-0.8deg) scale(1);}58%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-transfers-stroke-truck{transform-box:view-box;transform-origin:36.5px 37.5px;animation:antz-p-transfers-stroke-truck 3650ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-transfers-stroke-hubPlus{0%{opacity:1}4%{opacity:1}10%{opacity:0}16%{opacity:1}22%{opacity:0}28%{opacity:1}34%{opacity:0}40%{opacity:1}100%{opacity:1}}
+.antz-p-transfers-stroke-hubPlus{animation:antz-p-transfers-stroke-hubPlus 3650ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-transfers-stroke-hubX{0%{opacity:0}4%{opacity:0}10%{opacity:1}16%{opacity:0}22%{opacity:1}28%{opacity:0}34%{opacity:1}40%{opacity:0}100%{opacity:0}}
+.antz-p-transfers-stroke-hubX{animation:antz-p-transfers-stroke-hubX 3650ms cubic-bezier(.45,0,.55,1) infinite}
+@media (prefers-reduced-motion:reduce){.antz-p-transfers-stroke *{animation:none!important}}
+</style>
+  <rect x="0" y="0" width="48" height="48" rx="14" class="antz-p-transfers-stroke-f-tile" fill="#36BC69"/>
+  <g class="antz-p-transfers-stroke-speed" opacity="0">
+    <path d="M9.5 18.5H3.5" class="antz-p-transfers-stroke-s-ink antz-p-transfers-stroke-speed-trim" fill="none" stroke="#00451F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="0 2" stroke-dashoffset="0"/>
+    <path d="M9.5 25H5" class="antz-p-transfers-stroke-s-ink antz-p-transfers-stroke-speed-trim" fill="none" stroke="#00451F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="0 2" stroke-dashoffset="0"/>
+  </g>
+  <g class="antz-p-transfers-stroke-truck">
+    <path d="M13.5 12.5H27.5C28.881 12.5 30 13.619 30 15V29.5C30 30.881 28.881 32 27.5 32H13.5C12.119 32 11 30.881 11 29.5V15C11 13.619 12.119 12.5 13.5 12.5Z" class="antz-p-transfers-stroke-f-tile antz-p-transfers-stroke-s-ink" fill="#36BC69" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M30 18.5H35C35.9 18.5 36.7 19 37.1 19.8L39.7 24.9C39.9 25.3 40 25.7 40 26.2V30C40 31.1 39.1 32 38 32H30Z" class="antz-p-transfers-stroke-f-tile antz-p-transfers-stroke-s-ink" fill="#36BC69" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M15 19.5H26C26.828 19.5 27.5 20.172 27.5 21V23C27.5 23.828 26.828 24.5 26 24.5H15C14.172 24.5 13.5 23.828 13.5 23V21C13.5 20.172 14.172 19.5 15 19.5Z" class="antz-p-transfers-stroke-f-tile antz-p-transfers-stroke-s-ink" fill="#36BC69" stroke="#00451F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M32.3 21H34.6L36.8 25.3H32.3Z" class="antz-p-transfers-stroke-f-ink" fill="#00451F"/>
+    <path d="M16.5 29.5C18.709 29.5 20.5 31.291 20.5 33.5C20.5 35.709 18.709 37.5 16.5 37.5C14.291 37.5 12.5 35.709 12.5 33.5C12.5 31.291 14.291 29.5 16.5 29.5Z" class="antz-p-transfers-stroke-f-ink" fill="#00451F"/>
+    <path d="M34.5 29.5C36.709 29.5 38.5 31.291 38.5 33.5C38.5 35.709 36.709 37.5 34.5 37.5C32.291 37.5 30.5 35.709 30.5 33.5C30.5 31.291 32.291 29.5 34.5 29.5Z" class="antz-p-transfers-stroke-f-ink" fill="#00451F"/>
+    <g class="antz-p-transfers-stroke-hubPlus">
+      <path d="M14.5 33.5H18.5M16.5 31.5V35.5M32.5 33.5H36.5M34.5 31.5V35.5" class="antz-p-transfers-stroke-s-tile" fill="none" stroke="#36BC69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g class="antz-p-transfers-stroke-hubX" opacity="0">
+      <path d="M15.086 32.086L17.914 34.914M15.086 34.914L17.914 32.086M33.086 32.086L35.914 34.914M33.086 34.914L35.914 32.086" class="antz-p-transfers-stroke-s-tile" fill="none" stroke="#36BC69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" class="antz-p-activity_log-stroke" role="img" aria-label="Activity log">
+<style>
+.antz-p-activity_log-stroke-f-tile{fill:var(--antz-primary-container,#36BC69)}
+.antz-p-activity_log-stroke-s-ink{stroke:var(--antz-on-primary-container,#00451F)}
+@keyframes antz-p-activity_log-stroke-elapsed{0%{opacity:1}4%{opacity:1}11%{opacity:0}12%{opacity:0}16%{opacity:0}18%{opacity:1}46%{opacity:1}100%{opacity:1}}
+.antz-p-activity_log-stroke-elapsed{animation:antz-p-activity_log-stroke-elapsed 4400ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-activity_log-stroke-elapsed-trim{0%{stroke-dasharray:1 2;stroke-dashoffset:0}4%{stroke-dasharray:1 2;stroke-dashoffset:0}11%{stroke-dasharray:1 2;stroke-dashoffset:0}12%{stroke-dasharray:0 2;stroke-dashoffset:0}16%{stroke-dasharray:0 2;stroke-dashoffset:0}18%{stroke-dasharray:0.05 2;stroke-dashoffset:0}46%{stroke-dasharray:1 2;stroke-dashoffset:0}100%{stroke-dasharray:1 2;stroke-dashoffset:0}}
+.antz-p-activity_log-stroke-elapsed-trim{animation:antz-p-activity_log-stroke-elapsed-trim 4400ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-activity_log-stroke-hands{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}4%{transform:translate(0px,0px) rotate(0deg) scale(1);}14%{transform:translate(0px,0px) rotate(-12deg) scale(1);}18%{transform:translate(0px,0px) rotate(-12deg) scale(1);}46%{transform:translate(0px,0px) rotate(3deg) scale(1);}54%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-activity_log-stroke-hands{transform-box:view-box;transform-origin:24px 24px;animation:antz-p-activity_log-stroke-hands 4400ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-activity_log-stroke-ring{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}4%{transform:translate(0px,0px) rotate(0deg) scale(1);}14%{transform:translate(0px,0px) rotate(-10deg) scale(1);}30%{transform:translate(0px,0px) rotate(1.5deg) scale(1);}38%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-activity_log-stroke-ring{transform-box:view-box;transform-origin:24px 24px;animation:antz-p-activity_log-stroke-ring 4400ms cubic-bezier(.45,0,.55,1) infinite}
+@media (prefers-reduced-motion:reduce){.antz-p-activity_log-stroke *{animation:none!important}}
+</style>
+  <rect x="0" y="0" width="48" height="48" rx="14" class="antz-p-activity_log-stroke-f-tile" fill="#36BC69"/>
+  <path d="M12 24A12 12 0 1 0 24 12C19.5 12 16.5 13.5 15 15L12 18Z" class="antz-p-activity_log-stroke-f-tile" fill="#36BC69"/>
+  <g class="antz-p-activity_log-stroke-elapsed">
+    <path d="M26.997 16.583A8 8 0 0 1 31.064 27.756" class="antz-p-activity_log-stroke-s-ink antz-p-activity_log-stroke-elapsed-trim" fill="none" stroke="#00451F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="1 2" stroke-dashoffset="0"/>
+  </g>
+  <g class="antz-p-activity_log-stroke-hands">
+    <path d="M24 18V24L27 27" class="antz-p-activity_log-stroke-s-ink" fill="none" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g class="antz-p-activity_log-stroke-ring">
+    <path d="M12 24A12 12 0 1 0 24 12C19.5 12 16.5 13.5 15 15L12 18" class="antz-p-activity_log-stroke-s-ink" fill="none" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M12 12V18H18" class="antz-p-activity_log-stroke-s-ink" fill="none" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

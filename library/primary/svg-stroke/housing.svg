@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" class="antz-p-housing-stroke" role="img" aria-label="Housing">
+<style>
+.antz-p-housing-stroke-f-tile{fill:var(--antz-primary-container,#36BC69)}
+.antz-p-housing-stroke-s-ink{stroke:var(--antz-on-primary-container,#00451F)}
+@keyframes antz-p-housing-stroke-window{0%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:1}4%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:1}10%{transform:translate(0px,0px) rotate(0deg) scale(0.9);opacity:0}42%{transform:translate(0px,0px) rotate(0deg) scale(0.9);opacity:0}52%{transform:translate(0px,0px) rotate(0deg) scale(1.1);opacity:1}60%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:1}100%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:1}}
+.antz-p-housing-stroke-window{transform-box:view-box;transform-origin:24px 21px;animation:antz-p-housing-stroke-window 3250ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-housing-stroke-post1{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}6%{transform:translate(0px,0px) rotate(0deg) scale(1);}14%{transform:translate(0px,-4px) rotate(0deg) scale(1);}19%{transform:translate(0px,0.6px) rotate(0deg) scale(1);}23%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-housing-stroke-post1{transform-box:view-box;transform-origin:15px 40px;animation:antz-p-housing-stroke-post1 3250ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-housing-stroke-post2{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}13%{transform:translate(0px,0px) rotate(0deg) scale(1);}21%{transform:translate(0px,-4px) rotate(0deg) scale(1);}26%{transform:translate(0px,0.6px) rotate(0deg) scale(1);}30%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-housing-stroke-post2{transform-box:view-box;transform-origin:24px 40px;animation:antz-p-housing-stroke-post2 3250ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-housing-stroke-post3{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}20%{transform:translate(0px,0px) rotate(0deg) scale(1);}28%{transform:translate(0px,-4px) rotate(0deg) scale(1);}33%{transform:translate(0px,0.6px) rotate(0deg) scale(1);}37%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-housing-stroke-post3{transform-box:view-box;transform-origin:33px 40px;animation:antz-p-housing-stroke-post3 3250ms cubic-bezier(.45,0,.55,1) infinite}
+@media (prefers-reduced-motion:reduce){.antz-p-housing-stroke *{animation:none!important}}
+</style>
+  <rect x="0" y="0" width="48" height="48" rx="14" class="antz-p-housing-stroke-f-tile" fill="#36BC69"/>
+  <path d="M11 19L24 8.5L37 19V36H11Z" class="antz-p-housing-stroke-f-tile antz-p-housing-stroke-s-ink" fill="#36BC69" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g class="antz-p-housing-stroke-window">
+    <circle cx="24" cy="21" r="3.6" class="antz-p-housing-stroke-f-tile antz-p-housing-stroke-s-ink" fill="#36BC69" stroke="#00451F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <path d="M8 35H40" class="antz-p-housing-stroke-s-ink" fill="none" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g class="antz-p-housing-stroke-post1">
+    <path d="M15 40V31" class="antz-p-housing-stroke-s-ink" fill="none" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g class="antz-p-housing-stroke-post2">
+    <path d="M24 40V31" class="antz-p-housing-stroke-s-ink" fill="none" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g class="antz-p-housing-stroke-post3">
+    <path d="M33 40V31" class="antz-p-housing-stroke-s-ink" fill="none" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

@@ -13,7 +13,7 @@ Material 3 guard rails, name and add to the library).
   (scheme, icon colour, references on empty slots) and *Export*. Under 1100px the sidebar becomes an icon rail;
   under 720px it is a drawer behind a menu button.
 - **Routes (URL hash):** `#/library/line`, `#/library/filled` (with `module`, `status`, `q`, `size`, `sel`),
-  `#/library/primary` (with `q`, `psize`, `fmt`, `sel`), `#/builder` and `#/builder?slot=egg_nest`. `scheme`, `colour` and `refs` ride along on any route.
+  `#/library/primary` (with `q`, `cols`, `pv`, `fmt`, `pgroup`, `wall`, `sel`), `#/builder` and `#/builder?slot=egg_nest`. `scheme`, `colour` and `refs` ride along on any route.
 
 The icon files in `../library/` are the source of truth. The style spec is in `../library/STYLE.md`.
 
@@ -69,12 +69,18 @@ gentle loop. They are written by the design agent; the app reads them and only c
 
 ```
 index.json                    { version: 1, style, schemes, icons: [ { name, label, module, status, baseIcon, loopMs,
-                                order, motion, svg, lottie: { <scheme>: path } } ] }
+                                order, motion, svg, lottie: { <scheme>: path }, variants: ["filled","stroke"],
+                                lottieStroke: { <scheme>: path } } ] }
 svg/<name>.svg                self-contained animated SVG: CSS keyframes inside, class names prefixed per icon,
                               colours as var(--antz-<role>, #fallback), and a prefers-reduced-motion rule
 lottie/<name>.<scheme>.json   Lottie with that scheme's colours baked in, 6 per icon: light, light-medium-contrast,
                               light-high-contrast, dark, dark-medium-contrast, dark-high-contrast
+svg-stroke/<name>.svg         optional stroke variant (outlined glyph) of the SVG, same rules
+lottie-stroke/<name>.<scheme>.json   optional stroke variant of the Lottie files, same 6 schemes
 ```
+
+Filled (`svg/`, `lottie/`) is the default variant. The stroke files are optional per icon: the app finds them on disk
+the same way, and an icon without any shows a dashed "No stroke version" cell when Stroke is selected.
 
 The app finds the Lottie files by that file-name pattern on disk (the `lottie` map in `index.json` lists the same
 paths). Tiles are sorted by `order` (1–30); an entry without one keeps its place in the file, after the ordered ones.
@@ -109,7 +115,8 @@ To try the page without touching `library/`, point the dev server at another fol
 
 ## Primary icons section
 
-- **Header:** title and count, search (name, label, module, base icon), **Format** (SVG | Lottie), **Motion**
+- **Header:** title and count, search (name, label, module, base icon), **Variant** (Filled | Stroke, in the hash as
+  `pv=stroke`; Filled is the default and is left out), **Format** (SVG | Lottie), **Motion**
   (Play | Pause | Reduced), **Layout** (Tiles | Wall), **Group by module** and the size (48, 64 or 96). Motion starts
   on Reduced when the OS asks for reduced motion, and follows the OS setting if it changes. Layout and grouping ride
   in the hash (`wall=1`, `pgroup=1`).
@@ -126,11 +133,17 @@ To try the page without touching `library/`, point the dev server at another fol
   - Off-screen work stops (one shared IntersectionObserver, 120px margin): SVG tiles pause their CSS animations, and
     Lottie players are created only when a tile comes into view and destroyed when it leaves, so 30 icons keep only
     the visible players alive.
-- **Detail panel** (click a tile, Esc closes): SVG and Lottie side by side at 192px, a scrubber (0–100% of the loop,
+- **Variant** applies to the tiles, the wall and the detail panel, in SVG and Lottie: Stroke inlines
+  `svg-stroke/<name>.svg` or plays `lottie-stroke/<name>.<scheme>.json` (same scheme fallback as filled). Icons with no
+  stroke files show a dashed "No stroke version" cell.
+- **Detail panel** (click a tile, Esc closes): SVG and Lottie side by side at 192px (in the chosen variant), a compare
+  row with Filled and Stroke at 96px in the chosen format (click one to switch the page's variant), a scrubber (0–100% of the loop,
   for both formats; the play button returns to the Motion setting), the loop duration (index `loopMs`, plus the
   Lottie's frames and fps), the `motion` description and `order`, status (Mark draft, Approve), Copy SVG, Download SVG,
   **Lottie (all schemes, ZIP)** (`lottie/<scheme>/<name>.json`) or one scheme file (Light … Dark HC), the base icon
   (`baseIcon`) in line and filled, linking to its detail, and the 7 file paths (the Lottie being played is marked).
+  A **Stroke** download row adds the stroke SVG, the stroke Lottie for the current scheme and the stroke **Lottie (all
+  schemes, ZIP)** (`lottie-stroke/<scheme>/<name>.json`); the stroke file paths are listed too.
 - The line and filled detail panels show a small **Primary version** preview when an icon is some Primary icon's
   `baseIcon`, linking to it.
 
@@ -174,9 +187,9 @@ the sidebar. *New icon* clears it (after asking; Undo brings the drawing back).
 | GET | `/api/library` | | `{ index, svgs: { line: {name: svg}, filled: {name: svg} } }` |
 | PUT | `/api/library/icon` | `{ entry, line?, filled?, replaces?, overwrite? }` | writes the SVGs, then `index.json` (each through a temp file + rename). The default status is `draft`. Returns 409 if the name already exists and is neither `replaces` nor `overwrite: true`. |
 | PATCH | `/api/library/icon/:name` | `{ status?, label?, module?, tags?, notes?, reference? }` | updates one entry |
-| GET | `/api/primary` | | `{ present, error, index, svgs: {name: svg}, lottie: {name: {<scheme>: true}} }`, icons sorted by `order`; `present: false` when the folder is missing |
+| GET | `/api/primary` | | `{ present, error, index, svgs: {name: svg}, lottie: {name: {<scheme>: true}}, svgsStroke: {name: svg}, lottieStroke: {name: {<scheme>: true}} }` (stroke maps empty when the folders are missing), icons sorted by `order`; `present: false` when the folder is missing |
 | PATCH | `/api/primary/icon/:name` | `{ status?: "draft" \| "approved", label?, module? }` | updates one Primary entry; every other key in `index.json` is kept |
-| GET | `/primary/lottie/<name>.<scheme>.json`, `/primary/svg/<name>.svg` | | the files as they are (404 if missing) |
+| GET | `/primary/lottie/<name>.<scheme>.json`, `/primary/svg/<name>.svg`, `/primary/lottie-stroke/<name>.<scheme>.json`, `/primary/svg-stroke/<name>.svg` | | the files as they are (404 if missing) |
 
 Safety rules:
 
@@ -196,7 +209,8 @@ Safety rules:
   per drawn icon. Mask ids get the icon name added, so they never clash. Use them as
   `<svg class="antz-icon"><use href="antz-icons-line.svg#antz-egg"/></svg>`.
 - **index.json** and **antz-icons.css** (size and colour-role classes, with no icon font).
-- **Primary icons (ZIP):** `svg/`, `lottie/<scheme>/` (one folder per scheme: `light`, `light-medium-contrast`,
+- **Primary icons (ZIP):** `svg/`, `lottie/<scheme>/`, and for icons that have one the stroke variant in `svg-stroke/`
+  and `lottie-stroke/<scheme>/` (one folder per scheme: `light`, `light-medium-contrast`,
   `light-high-contrast`, `dark`, `dark-medium-contrast`, `dark-high-contrast`), `index.json` (sorted by `order`) and a
   README. The README explains how to pick the scheme file (load `lottie/dark/<name>.json` when the app is in dark mode,
   `lottie/dark-high-contrast/` when contrast is also raised, and so on), with usage for the web (inline SVG, `<img>`,

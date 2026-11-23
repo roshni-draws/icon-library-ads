@@ -6,25 +6,28 @@
 .antz-p-hospital-f-shade{fill:var(--antz-on-primary-container,#00451F)}
 .antz-p-hospital-f-tile{fill:var(--antz-primary-container,#36BC69)}
 .antz-p-hospital-s-ink{stroke:var(--antz-on-primary-container,#00451F)}
-@keyframes antz-p-hospital-paw{0%{transform:translate(-1px,0px) rotate(0deg) scale(1);opacity:0}4%{transform:translate(-1px,0px) rotate(0deg) scale(1);opacity:0}10%{transform:translate(0px,0px) rotate(0deg) scale(1);opacity:1}18%{transform:translate(2.5px,-1px) rotate(0deg) scale(1);opacity:1}26%{transform:translate(5px,0px) rotate(0deg) scale(1);opacity:1}34%{transform:translate(7.5px,0px) rotate(0deg) scale(1);opacity:0}35%{transform:translate(-1px,0px) rotate(0deg) scale(1);opacity:0}100%{transform:translate(-1px,0px) rotate(0deg) scale(1);opacity:0}}
-.antz-p-hospital-paw{transform-box:view-box;transform-origin:9.5px 29px;animation:antz-p-hospital-paw 3150ms cubic-bezier(.45,0,.55,1) infinite}
-@keyframes antz-p-hospital-cross{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}36%{transform:translate(0px,0px) rotate(0deg) scale(1);}42%{transform:translate(0px,0px) rotate(0deg) scale(1.1);}47%{transform:translate(0px,0px) rotate(0deg) scale(1);}52%{transform:translate(0px,0px) rotate(0deg) scale(1.06);}58%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
-.antz-p-hospital-cross{transform-box:view-box;transform-origin:27.5px 19.5px;animation:antz-p-hospital-cross 3150ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-hospital-elephant{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}4%{transform:translate(0px,0px) rotate(0deg) scale(1);}10%{transform:translate(1px,-1px) rotate(0deg) scale(1);}16%{transform:translate(2px,0px) rotate(0deg) scale(1);}22%{transform:translate(3px,-1px) rotate(0deg) scale(1);}28%{transform:translate(4px,0px) rotate(0deg) scale(1);}50%{transform:translate(4px,0px) rotate(0deg) scale(1);}58%{transform:translate(2px,-1px) rotate(0deg) scale(1);}66%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-hospital-elephant{transform-box:view-box;transform-origin:15px 38px;animation:antz-p-hospital-elephant 3150ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-hospital-trunk{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}6%{transform:translate(0px,0px) rotate(0deg) scale(1);}20%{transform:translate(0px,0px) rotate(-8deg) scale(1);}50%{transform:translate(0px,0px) rotate(-8deg) scale(1);}62%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-hospital-trunk{transform-box:view-box;transform-origin:25.6px 23px;animation:antz-p-hospital-trunk 3150ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-hospital-cross{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}30%{transform:translate(0px,0px) rotate(0deg) scale(1);}36%{transform:translate(0px,0px) rotate(0deg) scale(1.1);}41%{transform:translate(0px,0px) rotate(0deg) scale(1);}46%{transform:translate(0px,0px) rotate(0deg) scale(1.06);}52%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-hospital-cross{transform-box:view-box;transform-origin:36.5px 19.5px;animation:antz-p-hospital-cross 3150ms cubic-bezier(.45,0,.55,1) infinite}
 @media (prefers-reduced-motion:reduce){.antz-p-hospital *{animation:none!important}}
 </style>
   <rect x="0" y="0" width="48" height="48" rx="14" class="antz-p-hospital-f-tile" fill="#36BC69"/>
-  <g class="antz-p-hospital-paw" transform="translate(8.5 29) rotate(0) scale(1) translate(-9.5 -29)" opacity="0">
-    <path d="M11.6 29C11.6 26.9 8.8 24.8 7.4 24.8A2.1 2.1 0 0 0 5.3 26.9L5.3 31.1A2.1 2.1 0 0 0 7.4 33.2C8.8 33.2 11.6 31.1 11.6 29Z" class="antz-p-hospital-f-ink" fill="#00451F"/>
-    <circle cx="13" cy="24.1" r="1.75" class="antz-p-hospital-f-ink" fill="#00451F"/>
-    <circle cx="16.5" cy="26.9" r="1.9" class="antz-p-hospital-f-ink" fill="#00451F"/>
-    <circle cx="16.5" cy="31.1" r="1.9" class="antz-p-hospital-f-ink" fill="#00451F"/>
-    <circle cx="13" cy="33.9" r="1.75" class="antz-p-hospital-f-ink" fill="#00451F"/>
+  <g class="antz-p-hospital-elephant">
+    <path d="M5.8 29C5.8 23.2 9 19.8 13.5 19.8C15.2 19.8 16.3 19.5 17.1 18.8C18.3 16.6 20.3 15.2 22.6 15.2C25.4 15.2 27.4 17.5 27.4 20.6C27.4 22.6 26.8 24 25.8 25C24.6 26 22.8 26.5 20.6 26.7V36.4C20.6 37.3 19.9 38 19 38H17.4C16.5 38 15.8 37.3 15.8 36.4V33H11.4V36.4C11.4 37.3 10.7 38 9.8 38H7.8C6.9 38 6.2 37.3 6.2 36.4V32.6C6 31.6 5.8 30.4 5.8 29Z" class="antz-p-hospital-f-fill antz-p-hospital-s-ink" fill="#CCE5FF" stroke="#00451F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <g class="antz-p-hospital-trunk">
+      <path d="M25.6 23C26.8 26.2 26.9 30 26 33C25.6 34.6 26.5 35.6 27.5 34.6" class="antz-p-hospital-s-ink" fill="none" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <path d="M14.6 20.4C16.8 18.2 20.9 18.6 21.1 22.6C21.3 26.4 19.8 29.4 17.3 29.4C15.4 29.4 14.4 27.6 14.4 25.2C14.4 23.2 14.3 21.6 14.6 20.4Z" class="antz-p-hospital-f-fill antz-p-hospital-s-ink" fill="#CCE5FF" stroke="#00451F" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M23.7 18.65C24.335 18.65 24.85 19.165 24.85 19.8C24.85 20.435 24.335 20.95 23.7 20.95C23.065 20.95 22.55 20.435 22.55 19.8C22.55 19.165 23.065 18.65 23.7 18.65Z" class="antz-p-hospital-f-ink" fill="#00451F"/>
   </g>
-  <path d="M17 36V12A3 3 0 0 1 20 9H35A3 3 0 0 1 38 12V36Z" class="antz-p-hospital-f-fill antz-p-hospital-s-ink" fill="#CCE5FF" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M33 12.5H34.5A1.5 1.5 0 0 1 36 14V34.5H33Z" class="antz-p-hospital-f-shade" fill="#00451F" fill-opacity="0.2"/>
-  <path d="M23.5 36V30.5A1.5 1.5 0 0 1 25 29H30A1.5 1.5 0 0 1 31.5 30.5V36Z" class="antz-p-hospital-f-accent antz-p-hospital-s-ink" fill="#005226" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M6 36H41.5" class="antz-p-hospital-s-ink" fill="none" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M31 39.5V14.167A3.167 1.571 90 0 1 32.571 11H40.429A3.167 1.571 90 0 1 42 14.167V39.5Z" class="antz-p-hospital-f-fill antz-p-hospital-s-ink" fill="#CCE5FF" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M39 13.5H39.2A1.3 1.3 0 0 1 40.5 14.8V38H39Z" class="antz-p-hospital-f-shade" fill="#00451F" fill-opacity="0.2"/>
+  <path d="M34 39.5V34A1.5 1.5 0 0 1 35.5 32.5H37.5A1.5 1.5 0 0 1 39 34V39.5Z" class="antz-p-hospital-f-accent antz-p-hospital-s-ink" fill="#005226" stroke="#00451F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M4.5 39.5H42" class="antz-p-hospital-s-ink" fill="none" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
   <g class="antz-p-hospital-cross">
-    <path d="M27.5 15V24M23 19.5H32" class="antz-p-hospital-s-ink" fill="none" stroke="#00451F" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M36.5 17.1V21.9M34.1 19.5H38.9" class="antz-p-hospital-s-ink" fill="none" stroke="#00451F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
 </svg>

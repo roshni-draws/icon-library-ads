@@ -148,8 +148,8 @@ export function toLottie(spec, scheme, schemeName) {
   ordered.forEach((L, j) => { L.ind = j + 1; if (L.id) indOf[L.id] = L.ind; });
   const layers = ordered.map(({ id, parentId, ...L }) => (parentId ? { ...L, parent: indOf[parentId] } : L));
   return {
-    v: '5.12.2', fr: 60, ip: 0, op: frames, w: 48, h: 48, nm: `antz-primary-${spec.name}-${schemeName}`, ddd: 0,
+    v: '5.12.2', fr: 60, ip: 0, op: frames, w: 48, h: 48, nm: `antz-primary-${spec.name}${spec.variant === 'stroke' ? '-stroke' : ''}-${schemeName}`, ddd: 0,
     assets: [], layers, markers: [{ tm: 0, cm: 'static', dr: 0 }],
-    meta: { g: 'ANTZ Primary build.mjs', staticFrame: 0, loopMs: spec.loopMs, scheme: schemeName },
+    meta: { g: 'ANTZ Primary build.mjs', staticFrame: 0, loopMs: spec.loopMs, scheme: schemeName, ...(spec.variant ? { variant: spec.variant } : {}) },
   };
 }

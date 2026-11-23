@@ -13,7 +13,8 @@ const LIBRARY = resolve(fileURLToPath(new URL('../library/', import.meta.url)));
 const SYMBOLS = `${app}node_modules/@material-symbols/svg-400/rounded/`;
 /**
  * Primary icons (animated tile badges): library/primary/ with index.json, svg/<name>.svg, lottie/<name>.<scheme>.json
- * (one Lottie per colour scheme: light, light-medium-contrast, light-high-contrast, dark, dark-medium-contrast, dark-high-contrast).
+ * (one Lottie per colour scheme: light, light-medium-contrast, light-high-contrast, dark, dark-medium-contrast, dark-high-contrast),
+ * plus the optional stroke variant in svg-stroke/<name>.svg and lottie-stroke/<name>.<scheme>.json (same layout).
  * ANTZ_PRIMARY_DIR points the app at another folder (for testing with a fixture) without touching library/.
  */
 const PRIMARY = resolve(process.env.ANTZ_PRIMARY_DIR || resolve(LIBRARY, 'primary'));
@@ -297,13 +298,37 @@ function cleanPrimary(raw: unknown): PrimaryEntry[] {
   return out.sort((a, b) => a.order - b.order);
 }
 
+/** Safe SVG files of one folder (svg/ or svg-stroke/), by name. */
+function readSvgDir(dir: 'svg' | 'svg-stroke', out: Record<string, string>) {
+  const d = primPath(dir);
+  if (!existsSync(d)) return;
+  for (const f of readdirSync(d)) {
+    const n = f.slice(0, -4);
+    if (!f.endsWith('.svg') || !NAME.test(n)) continue;
+    const svg = readFileSync(primPath(dir, f), 'utf8');
+    // Same safety rule as the library: no script or event handlers (the page inlines these).
+    if (svg.length <= 400_000 && !/<script|\son[a-z]+\s*=|javascript:/i.test(svg)) out[n] = svg;
+  }
+}
+/** Which scheme files exist in one Lottie folder (lottie/ or lottie-stroke/), by name. */
+function readLottieDir(dir: 'lottie' | 'lottie-stroke', out: Record<string, Partial<Record<LottieScheme, boolean>>>) {
+  const d = primPath(dir);
+  if (!existsSync(d)) return;
+  for (const f of readdirSync(d)) {
+    const m = LOTTIE_FILE.exec(f);
+    if (m) (out[m[1]] ??= {})[m[2] as LottieScheme] = true;
+  }
+}
+
 /**
- * { present, error, index: { version, icons }, svgs: { name: svg }, lottie: { name: { <scheme>: true } } } (the 6 scheme
- * files found on disk). Icons are sorted by `order`.
+ * { present, error, index: { version, icons }, svgs: { name: svg }, lottie: { name: { <scheme>: true } },
+ *   svgsStroke: { name: svg }, lottieStroke: { name: { <scheme>: true } } } (the scheme files found on disk; the stroke
+ * maps come from svg-stroke/ and lottie-stroke/ and are empty when those folders are missing). Icons are sorted by `order`.
  * A missing or empty folder is not an error: present is false, or icons is empty.
  */
 function readPrimary() {
-  const empty = { present: false, error: '', index: { version: 1, icons: [] as PrimaryEntry[] }, svgs: {} as Record<string, string>, lottie: {} as Record<string, Partial<Record<LottieScheme, boolean>>> };
+  type Lot = Record<string, Partial<Record<LottieScheme, boolean>>>;
+  const empty = { present: false, error: '', index: { version: 1, icons: [] as PrimaryEntry[] }, svgs: {} as Record<string, string>, lottie: {} as Lot, svgsStroke: {} as Record<string, string>, lottieStroke: {} as Lot };
   if (!existsSync(PRIMARY)) return empty;
   const out = { ...empty, present: true };
   const idx = primPath('index.json');
@@ -313,24 +338,12 @@ function readPrimary() {
       out.index = { version: typeof raw?.version === 'number' ? raw.version : 1, icons: cleanPrimary(raw) };
     } catch (e) { out.error = `index.json does not parse: ${(e as Error).message}`; }
   }
-  const svgDir = primPath('svg');
-  if (existsSync(svgDir)) {
-    for (const f of readdirSync(svgDir)) {
-      const n = f.slice(0, -4);
-      if (!f.endsWith('.svg') || !NAME.test(n)) continue;
-      const svg = readFileSync(primPath('svg', f), 'utf8');
-      // Same safety rule as the library: no script or event handlers (the page inlines these).
-      if (svg.length <= 400_000 && !/<script|\son[a-z]+\s*=|javascript:/i.test(svg)) out.svgs[n] = svg;
-    }
-  }
-  const lotDir = primPath('lottie');
-  if (existsSync(lotDir)) {
-    for (const f of readdirSync(lotDir)) {
-      const m = LOTTIE_FILE.exec(f);
-      if (!m) continue;
-      (out.lottie[m[1]] ??= {})[m[2] as LottieScheme] = true;
-    }
-  }
+  // Fresh maps (the spread above shares `empty`'s objects).
+  out.svgs = {}; out.lottie = {}; out.svgsStroke = {}; out.lottieStroke = {};
+  readSvgDir('svg', out.svgs);
+  readLottieDir('lottie', out.lottie);
+  readSvgDir('svg-stroke', out.svgsStroke);
+  readLottieDir('lottie-stroke', out.lottieStroke);
   return out;
 }
 
@@ -354,9 +367,9 @@ function patchPrimary(name: string, b: Record<string, unknown>) {
 
 /**
  * Dev-only API for Primary icons:
- *   GET   /api/primary              { present, error, index, svgs, lottie }
+ *   GET   /api/primary              { present, error, index, svgs, lottie, svgsStroke, lottieStroke }
  *   PATCH /api/primary/icon/:name   { status?: draft | approved, label?, module? }
- *   GET   /primary/lottie/<name>.<scheme>.json, /primary/svg/<name>.svg   the files, served as they are
+ *   GET   /primary/{lottie,lottie-stroke}/<name>.<scheme>.json, /primary/{svg,svg-stroke}/<name>.svg   the files, as they are
  * Changes on disk send the same "antz:library-changed" event as the library. The build bundles virtual:primary
  * (a snapshot) and copies the files into dist/primary/.
  */
@@ -369,7 +382,7 @@ function antzPrimary(): Plugin {
       return `export default ${JSON.stringify(readPrimary())};`;
     },
     configureServer(server: ViteDevServer) {
-      // library/ is already watched (and includes primary/); an outside ANTZ_PRIMARY_DIR needs its own watch.
+      // library/ is already watched (and includes primary/, svg-stroke/ and lottie-stroke/ too); an outside ANTZ_PRIMARY_DIR needs its own watch.
       if (!PRIMARY.startsWith(LIBRARY + sep)) {
         server.watcher.add(PRIMARY);
         let t: ReturnType<typeof setTimeout> | undefined;
@@ -382,11 +395,13 @@ function antzPrimary(): Plugin {
         server.watcher.on('add', onFile).on('change', onFile).on('unlink', onFile).on('addDir', onFile).on('unlinkDir', onFile);
       }
       server.middlewares.use('/primary', (req, res, next) => {
-        const url = decodeURIComponent((req.url ?? '').split('?')[0]);
-        const lot = url.startsWith('/lottie/') && LOTTIE_FILE.test(url.slice(8)) ? [url, url.slice(8)] : null;
-        const svg = /^\/svg\/([a-z0-9_]+\.svg)$/.exec(url);
-        const file = lot ? primPath('lottie', lot[1]) : svg ? primPath('svg', svg[1]) : null;
-        if (!/^\/(lottie|svg)\//.test(url)) return next();
+        let url: string;
+        try { url = decodeURIComponent((req.url ?? '').split('?')[0]); } catch { res.statusCode = 400; res.end('Bad path'); return; }
+        // /lottie/ or /lottie-stroke/ + <name>.<scheme>.json; /svg/ or /svg-stroke/ + <name>.svg (strict names: no traversal).
+        const lot = /^\/(lottie|lottie-stroke)\/([^/]+)$/.exec(url);
+        const svg = /^\/(svg|svg-stroke)\/([a-z0-9_]+\.svg)$/.exec(url);
+        const file = lot && LOTTIE_FILE.test(lot[2]) ? primPath(lot[1], lot[2]) : svg ? primPath(svg[1], svg[2]) : null;
+        if (!/^\/(lottie|lottie-stroke|svg|svg-stroke)\//.test(url)) return next();
         // A missing file is a 404, not the SPA fallback (the page checks r.ok).
         if (!file || !existsSync(file)) { res.statusCode = 404; res.end('Not found'); return; }
         res.setHeader('Content-Type', lot ? 'application/json' : 'image/svg+xml');
@@ -409,9 +424,13 @@ function antzPrimary(): Plugin {
     },
     generateBundle() {
       const p = readPrimary();
-      for (const n of Object.keys(p.svgs)) this.emitFile({ type: 'asset', fileName: `primary/svg/${n}.svg`, source: p.svgs[n] });
-      for (const [n, v] of Object.entries(p.lottie)) {
-        for (const sc of LOTTIE_SCHEMES) if (v[sc]) this.emitFile({ type: 'asset', fileName: `primary/lottie/${n}.${sc}.json`, source: readFileSync(primPath('lottie', `${n}.${sc}.json`)) });
+      for (const [dir, svgs] of [['svg', p.svgs], ['svg-stroke', p.svgsStroke]] as const) {
+        for (const n of Object.keys(svgs)) this.emitFile({ type: 'asset', fileName: `primary/${dir}/${n}.svg`, source: svgs[n] });
+      }
+      for (const [dir, lot] of [['lottie', p.lottie], ['lottie-stroke', p.lottieStroke]] as const) {
+        for (const [n, v] of Object.entries(lot)) {
+          for (const sc of LOTTIE_SCHEMES) if (v[sc]) this.emitFile({ type: 'asset', fileName: `primary/${dir}/${n}.${sc}.json`, source: readFileSync(primPath(dir, `${n}.${sc}.json`)) });
+        }
       }
       if (p.present) this.emitFile({ type: 'asset', fileName: 'primary/index.json', source: JSON.stringify(p.index, null, 2) + '\n' });
     },

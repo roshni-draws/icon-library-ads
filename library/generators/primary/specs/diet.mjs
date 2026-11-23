@@ -25,6 +25,9 @@ export default {
   loopMs: 3350,
   peaks: [0.2, 0.34], // apple lifted · apple landing (squash), food bounced
   restAt: 0.85,
+  // Stroke variant: the green food becomes one mound line across the bowl (an outlined ellipse inside the rim
+  // ellipse reads as a double rim); it keeps its bounce.
+  stroke: { patch: { food: { shapes: [{ path: 'M15 28.6C19 26.4 29 26.4 33 28.6' }], fill: null, stroke: 'ink', strokeWidth: 2.5, on: ['tile'] } } },
   layers: [
     { id: 'tile', shapes: [{ rect: [0, 0, 48, 48, 14] }], fill: 'tile' },
     { id: 'rim', shapes: [{ ellipse: [RIM.cx, RIM.cy, RIM.rx, RIM.ry] }], fill: 'fill', stroke: 'ink', on: { stroke: ['tile', 'fill'] } },

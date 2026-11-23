@@ -23,7 +23,8 @@ const tf = (k) => `translate(${f(k.x)}px,${f(k.y)}px) rotate(${f(k.r)}deg) scale
 const dash = (k) => ({ a: `${f(k.te - k.ts)} 2`, o: f(-k.ts) });
 
 export function toSvg(spec, light) {
-  const P = `antz-p-${spec.name}`;
+  // The stroke variant gets its own prefix, so both variants can be inlined on one page.
+  const P = `antz-p-${spec.name}${spec.variant === 'stroke' ? '-stroke' : ''}`;
   const css = [];
   const defs = [];
   const usedRoles = new Set();

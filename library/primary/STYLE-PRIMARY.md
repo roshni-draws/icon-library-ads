@@ -20,9 +20,12 @@ anything it doesn't cover is a question for design review, not a per-icon judgem
 ```
 library/primary/
   index.json                      { version: 1, style: "primary-v2.1", schemes, icons: [ { name, label, module,
-                                    status, baseIcon, loopMs, motion, svg, lottie: { <scheme>: path } } ] }
-  svg/<name>.svg                  animated SVG (web), CSS keyframes inside, themed by --antz-* variables
-  lottie/<name>.<scheme>.json     Lottie (mobile), one per colour scheme, colours baked in (6 files per icon)
+                                    status, baseIcon, loopMs, motion, svg, lottie: { <scheme>: path },
+                                    variants: ["filled","stroke"], svgStroke, lottieStroke: { <scheme>: path } } ] }
+  svg/<name>.svg                  Filled variant: animated SVG (web), CSS keyframes inside, themed by --antz-* variables
+  lottie/<name>.<scheme>.json     Filled variant: Lottie (mobile), one per colour scheme, colours baked in (6 per icon)
+  svg-stroke/<name>.svg           Stroke variant (§8): same contract as svg/
+  lottie-stroke/<name>.<scheme>.json  Stroke variant: same contract as lottie/
   contrast.json                   contrast lint output (roles, pairs, every painted element × 6 schemes)
   review.html                     offline review page (not part of the contract)
   STYLE-PRIMARY.md                this file
@@ -41,18 +44,18 @@ edit `specs/<name>.mjs` and rebuild.
 | 4 | `species` | Species | `animal` | 3050 ms | Taxonomy: the stacked level cards fan out, the paw on the front card pops, and the cards settle back, then rest. |
 | 5 | `family_tree` | Family tree | `breeding_pair` | 3100 ms | Parentage: the pair leans together, a line drops from them and their offspring pops in at its end, then rest. |
 | 6 | `medical` | Medical | `medical` | 3000 ms | Heartbeat: the ECG line re-draws across the bag; the cross beats once (lub-dub) as the spike passes, then rest. |
-| 7 | `hospital` | Hospital | `local_hospital` | 3150 ms | Admission: a paw print walks up and in through the door, then the cross beats once, then rest. |
+| 7 | `hospital` | Hospital | `local_hospital` | 3150 ms | Admission: an elephant walks up to the door, lifting its trunk, then the cross beats once, then rest. |
 | 8 | `pharmacy` | Pharmacy | `medication` | 3200 ms | Dispense: the cap flips up, a capsule pops out of the bottle and the cap snaps shut, then rest. |
 | 9 | `lab` | Lab | `lab_request` | 3800 ms | Experiment: the liquid sloshes and settles while three bubbles rise from it one after another, then rest. |
 | 10 | `eggs` | Eggs | `egg` | 4200 ms | Hatching: the egg wobbles in its nest, a crack draws across, the top lifts and a chick peeks out, then it settles closed. |
 | 11 | `housing` | Housing | `enclosure` | 3250 ms | Enclosure: the fence pickets are hammered in one after another, then the shelter window lights up green, then rest. |
-| 12 | `move_animal` | Move animal | `move_in` | 3300 ms | Move: the arrow draws back, then pushes in through the door and the paw slides in with it, then rest. |
+| 12 | `move_animal` | Move animal | `move_in` | 3300 ms | Move: the route re-draws across the map as the truck drives along it, and the pin pops as the route arrives, then rest. |
 | 13 | `diet` | Diet | `dietitian` | 3350 ms | Feeding: the apple lifts out of the bowl and drops back in, and the food bounces as it lands, then rest. |
 | 14 | `kitchen` | Kitchen | `cooking_pot` | 3450 ms | Cooking: the pot lid lifts and tilts as steam rises from under it, then the lid settles, then rest. |
 | 15 | `mortality` | Mortality | `mortality` | 3500 ms | Remembrance: a single leaf drifts slowly down beside the still skull, swaying, and fades, then rest. |
 | 16 | `necropsy` | Necropsy | `necropsy` | 3550 ms | Examination: the scalpel lifts and glides along the tray as its marking line re-draws, then rest. |
 | 17 | `assessments` | Assessments | `assessment` | 3600 ms | Checklist: the board is picked up, its two checks tick in one after another, then it settles, then rest. |
-| 18 | `transfers` | Transfers | `transfer` | 3650 ms | Hand-off: the crate slides off to the right along the arrow and arrives back from the left, then rest. |
+| 18 | `transfers` | Transfers | `transfer` | 3650 ms | Hand-off: the truck backs up and rolls in from the left with its wheels turning and speed lines behind it, then brakes with a small tilt and settles, then rest. |
 | 19 | `requests` | Requests | `request` | 3700 ms | Approval: the stamp lifts and presses down on the slip, and the check pops in as it springs back, then rest. |
 | 20 | `notes` | Notes | `note` | 3750 ms | Journal: the pencil writes the newest line across the note, then lifts off, then rest. |
 | 21 | `announcements` | Announcements | `announcement` | 3850 ms | Broadcast: the megaphone draws back and pushes forward as its rays burst out, then rest. |
@@ -79,7 +82,7 @@ edit `specs/<name>.mjs` and rebuild.
 | Scene | one main object plus one or two supporting things. Use **five distinct shapes at most**, so the scene still reads at 48px. |
 | Detail strokes | 2.5px (ECG, crack, chick head) or 2px (straws, shine). Use 1.5px only for particle rings (bubbles). Never go under 1.5px. |
 | Live area | ink stays inside about 5–43. Particles may come within 4px of the tile edge. |
-| Families | reuse the library's metaphors. Line geometry is scaled ×1.5 about the centre (`L()`, `P()` and `D()` in `lib/geo.mjs`: `x48 = 1.5·x24 + 6`). The paw is the `PAD` and toes from `line/animal.svg`, and the egg is `egg()` from `lib/geo.mjs`. List every reused 24-grid path string in `base`: the build fails if one is no longer in `library/line/<baseIcon>.svg`. |
+| Families | reuse the library's metaphors. Line geometry is scaled ×1.5 about the centre (`L()`, `P()` and `D()` in `lib/geo.mjs`: `x48 = 1.5·x24 + 6`). The paw is the `PAD` and toes from `line/animal.svg`, the egg is `egg()` from `lib/geo.mjs`, and the transport truck is `truck(k, x, y)` from `lib/truck.mjs` (full size in `transfers`, ×0.55 in `move_animal`; the truck never fades out). List every reused 24-grid path string in `base`: the build fails if one is no longer in `library/line/<baseIcon>.svg`. |
 
 Keep the semantic grammar of `../STYLE.md`. Don't put a slash, a ✕/✓/+/clock badge or a sparkle on a module icon
 unless you mean that device's meaning (sparkle = golden egg). The Medical cross is **ink**, never red.
@@ -353,6 +356,7 @@ node validate.mjs --names schedule --png /tmp/primary-frames.png
 | `--dry-run` | lint only, write nothing | |
 | `--png <file>` | | frame strip (default `<tmpdir>/antz-primary-validate/frames.png`) |
 | `--report <file>` | | JSON report |
+| `--variant <v>` | `both` (default), `filled` or `stroke` | `filled` (default) or `stroke` |
 
 **Merging.** `index.json` and `contrast.json` are **read-modify-write**:
 
@@ -375,15 +379,20 @@ The v2 positional forms still work: `node build.mjs <outDir> [names...]` and
 - peak motion under 2%;
 - an accent pixel touching the tile.
 
-**v2.1 result, all 30 icons** (30 icons × 6 schemes × 4 times = 720 cells, 0 failures):
+**v2.1 result, all 30 icons, both variants** (re-run after the transfers / hospital / move_animal redraw and the
+Stroke variant; per variant 30 icons × 6 schemes × 4 times = 720 cells, 0 failures, 3 pages of 10):
 
-| Check | Result |
-| --- | --- |
-| Structural SVG/Lottie difference | **0.000%** everywhere |
-| Raw anti-aliasing difference | ≤ 1.43% (worst: `activity_log`) |
-| Rest vs frame 0, reduced motion vs frame 0 | 0.000% |
-| Accent pixels touching the tile | **0** |
-| Peak motion, weakest icon | 2.5% (`lab`), up to 22% |
+| Check | Filled | Stroke |
+| --- | --- | --- |
+| Structural SVG/Lottie difference | ≤ 0.098% (trim-path peaks of `medical`, `necropsy`, `assessments`, `kitchen`; 0.000% elsewhere) | ≤ 0.098% (same icons) |
+| Raw anti-aliasing difference | ≤ 1.43% (worst: `activity_log`) | ≤ 1.43% (worst: `mortality`) |
+| Rest vs frame 0, reduced motion vs frame 0 | 0.000% | 0.000% |
+| Accent rule | **0** accent pixels touching the tile | **0** accent and **0** light-fill pixels |
+| Ink on tile | | ≥ 4.57:1 in all 6 schemes |
+| Peak motion, weakest icon | 2.5% (`lab`), up to 19% | 2.55% (`medical`), up to 18% |
+
+The structural differences on trimmed strokes appeared in this re-run on unchanged filled files (they were 0.000% in
+the first v2.1 run), so they are renderer drift on partial trims, still under the 0.1% limit.
 
 **Validate in pages of 10 or fewer.** One page with all 30 icons is taller than headless Chrome can capture, and
 the last rows come back garbled. They show up as false SVG/Lottie and rest-pose failures on whichever icons come
@@ -392,3 +401,62 @@ last. Run `--names` with 10 names per call:
 ```
 node validate.mjs --names home,dashboard,…,eggs --png frames-1.png   # orders 1–10, then 11–20, 21–30
 ```
+
+Validate the stroke variant the same way, with `--variant stroke`, also in pages of 10.
+
+## 8. Stroke variant
+
+Every icon ships in two variants. **Filled** is everything above (`svg/`, `lottie/`). **Stroke** (`svg-stroke/`,
+`lottie-stroke/`, `index.json` `svgStroke` / `lottieStroke`) is the same tile (48, rx 14, `primaryContainer`), the
+same scene, the same motion and the same `loopMs`, drawn **outline only: monochrome ink on the tile**.
+
+| Rule | Value |
+| --- | --- |
+| Objects | no light fill, a 3px `onPrimaryContainer` (ink) outline with round caps and joins (the filled outline, unchanged) |
+| Shade / highlight | none: `shade` paints are removed, and a leaf left with no paint is dropped |
+| Accent | none. The green becomes ink: an accent stroke keeps its width in ink; an accent area becomes a 2px ink outline (inner detail) |
+| Small solid parts | toes, eyes, wheels, dots and windows stay **solid ink** where an outline would be unreadable at 48px |
+| Fill-only shapes | (liquid, food, bars, tags) become outlines, or a single line where an outline would double up (diet food) |
+| Contrast | only ink on tile is left: ≥ 4.57:1 in all 6 schemes (rule ≥ 3:1, linted by build and checked by validate) |
+| Roles allowed | `tile` and `ink` only. The build fails if `fill`, `accent` or `shade` is left in a stroke spec |
+
+**Derived, not drawn.** The stroke variant is generated from the one spec per icon by `lib/stroke.mjs`
+(`toStrokeSpec`). The paint rules, per leaf:
+
+| Filled paint | Stroke paint |
+| --- | --- |
+| `fill: 'fill'` (a light body) | `fill: 'tile'`: a **knockout**. It is invisible on the tile, so the object reads as "fill none", but an object in front still hides what is behind it (the building hides the elephant, the cab hides the route). Without it, overlapping outlines show through each other. |
+| `fill: 'fill'` on the accent (a bubble, an axle) | `fill: 'ink'` |
+| `fill: 'accent'` | `fill: 'tile'` knockout plus a 2px ink outline (when it had no stroke) |
+| `stroke: 'accent'` | `stroke: 'ink'`, same width |
+| `stroke: 'fill'` on the accent (the pharmacy cross) | `stroke: 'ink'` |
+| `stroke: 'fill'` elsewhere (a hub mark on an ink wheel) | `stroke: 'tile'`: it stays a cut-out |
+| `fill`/`stroke: 'shade'` | removed |
+| `ink`, `tile` | unchanged |
+| `on` | recomputed: every ink paint sits on the tile |
+
+**Overrides.** A spec may carry a `stroke: { ... }` block for icons that need a hand tweak after the automatic rules:
+`drop: [ids]` removes layers, `patch: { <id>: { ...props } }` merges props into a layer (a `null` value deletes a
+prop), `add: [{ after: <id>, layer }]` inserts a layer (e.g. hatch lines), and `peaks` / `restAt` replace the
+validator times. Overrides never change the filled output. Current overrides (8 of 30):
+
+| Icon | Override | Why |
+| --- | --- | --- |
+| `home` | the door light stays solid ink | as a 2px outline its flicker moved only 0.7% of the pixels (< 2%) |
+| `chat` | the typing dots stay solid ink | three small rings read as "ooo" at 48px |
+| `pharmacy` | drop the label box; the cross sits on the bottle in ink | a box round the cross inside the bottle is too busy |
+| `lab` | drop the shine; the bubbles stay rings (tile knockout in their ink ring) | the shine only meant something on green; solid ink bubbles read as blobs |
+| `eggs` | one straw curve, not three straws | three ink straws under an outlined nest are clutter |
+| `diet` | the food is one mound line (2.5px) | an outlined ellipse inside the rim ellipse reads as a double rim |
+| `settings` | drop the hub ring; the axle stays a solid ink dot | rings within rings at 48px |
+| `mortality` | the eyes are cubic `disc()` paths | native circles pushed the raw SVG/Lottie difference to 1.52% (budget 1.5%) |
+
+**Output.** The SVG classes, keyframes and clip ids are prefixed `antz-p-<name>-stroke-`, so both variants can be
+inlined on one page. The Lottie `nm` is `antz-primary-<name>-stroke-<scheme>` with `meta.variant: "stroke"`. Layer
+and group names are the same spec ids as in the filled file.
+
+**Validation** (`node validate.mjs --variant stroke --names …`, pages of 10): the same checks as §7 (SVG = Lottie,
+6 schemes, frame 0 = rest = reduced motion, peak motion ≥ 2%). The accent-rule probe becomes **no accent and no
+light fill at all**: the accent is painted #FF00FF and the fill #FFFF00, and any such pixel fails. Ink on tile is
+checked at ≥ 3:1 in all 6 schemes.
+

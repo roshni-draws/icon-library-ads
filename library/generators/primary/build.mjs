@@ -1,6 +1,6 @@
 // Build the ANTZ Primary (tile badge) icons, v2.1.
 //
-//   node build.mjs [--out <dir>] [--names a,b,c] [--dry-run]
+//   node build.mjs [--out <dir>] [--names a,b,c] [--dry-run] [--variant both|filled|stroke]
 //   node build.mjs <outDir> [names...]                     (v2 form, still accepted)
 //
 //   --out <dir>     output folder (default: library/primary). Use a private folder per agent, e.g.
@@ -8,10 +8,13 @@
 //   --names a,b     build only these specs (specs/<name>.mjs). Other spec files are still read for the loop
 //                   registry; one that fails to import is skipped with a warning unless it is named.
 //   --dry-run       lint only (motion, contrast, accent rule, structure, base paths, loop registry); write nothing.
+//   --variant v     both (default), filled or stroke. The stroke variant is derived from each spec by
+//                   lib/stroke.mjs (outline only, monochrome ink; per-spec overrides in `stroke: {...}`).
 //
 // Writes into <out>:
 //   svg/<name>.svg               animated SVG, CSS keyframes, --antz-* variables with light fallbacks
 //   lottie/<name>.<scheme>.json  Lottie, one per colour scheme (6), colours baked in
+//   svg-stroke/<name>.svg, lottie-stroke/<name>.<scheme>.json   the same for the stroke variant
 //   index.json                   { version: 1, style, schemes, icons: [...] }: read-modify-write. Entries for icons
 //                                that were not built (other agents' icons, icons without a spec here) are kept
 //                                as they are; built entries are replaced in place (a manual `status` is kept) or
@@ -33,6 +36,7 @@ import { toSvg } from './lib/svg.mjs';
 import { toLottie } from './lib/lottie.mjs';
 import { lint, contrastLint, ROLES, SCHEME_KEYS, flatScheme, contrast, STYLE } from './lib/model.mjs';
 import { reviewHtml } from './lib/review.mjs';
+import { toStrokeSpec, rolesUsed } from './lib/stroke.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 // Repo root (this file is library/generators/primary/<file>.mjs).
@@ -43,7 +47,7 @@ const CANON = join(LIB, 'primary');
 
 // ---- CLI
 const argv = process.argv.slice(2);
-const opt = { out: null, names: null, dry: false };
+const opt = { out: null, names: null, dry: false, variant: 'both' };
 const pos = [];
 for (let i = 0; i < argv.length; i++) {
   const a = argv[i];
@@ -52,6 +56,8 @@ for (let i = 0; i < argv.length; i++) {
   else if (a === '--names') opt.names = argv[++i];
   else if (a.startsWith('--names=')) opt.names = a.slice(8);
   else if (a === '--dry-run') opt.dry = true;
+  else if (a === '--variant') opt.variant = argv[++i];
+  else if (a.startsWith('--variant=')) opt.variant = a.slice(10);
   else if (a === '-h' || a === '--help') { console.log('usage: node build.mjs [--out <dir>] [--names a,b] [--dry-run]'); process.exit(0); }
   else if (a.startsWith('--')) { console.error(`unknown flag ${a}`); process.exit(1); }
   else pos.push(a);
@@ -59,6 +65,8 @@ for (let i = 0; i < argv.length; i++) {
 if (!opt.out && pos.length) opt.out = pos.shift();
 const names = opt.names ? opt.names.split(',').map((s) => s.trim()).filter(Boolean) : pos.length ? pos : null;
 const OUT = resolve(opt.out || CANON);
+if (!['both', 'filled', 'stroke'].includes(opt.variant)) { console.error(`--variant must be both, filled or stroke`); process.exit(1); }
+const DO_FILLED = opt.variant !== 'stroke', DO_STROKE = opt.variant !== 'filled';
 
 // ---- colours
 const colours = JSON.parse(readFileSync(COLOURS, 'utf8'));
@@ -111,6 +119,19 @@ for (const spec of build) {
   const c = contrastLint(spec, SCHEMES);
   errs.push(...c.errs);
   contrastRows.push(...c.rows);
+  // Stroke variant: same motion, every ink paint ≥ 3:1 on the tile, and no accent / light fill / shade left.
+  if (DO_STROKE) {
+    let st;
+    try { st = toStrokeSpec(spec); } catch (e) { errs.push(`stroke variant: ${e.message}`); }
+    if (st) {
+      for (const e of lint(st)) errs.push(`stroke variant: ${e}`);
+      const sc = contrastLint(st, SCHEMES);
+      errs.push(...sc.errs.map((e) => `stroke variant: ${e}`));
+      contrastRows.push(...sc.rows.map((r) => ({ ...r, variant: 'stroke' })));
+      const bad = [...rolesUsed(st)].filter((r) => !['tile', 'ink'].includes(r));
+      if (bad.length) errs.push(`stroke variant: roles ${bad.join(', ')} left (only tile and ink allowed)`);
+    }
+  }
   const line = join(LIB, 'line', `${spec.baseIcon}.svg`);
   if (existsSync(line)) {
     const src = readFileSync(line, 'utf8');
@@ -122,28 +143,45 @@ if (failed) process.exit(1);
 if (opt.dry) { console.log(`✓ lint ok: ${build.map((s) => `${s.name} (${s.loopMs}ms)`).join(', ')}`); process.exit(0); }
 
 // ---- emit
-mkdirSync(join(OUT, 'svg'), { recursive: true });
-mkdirSync(join(OUT, 'lottie'), { recursive: true });
-const svgs = {}, lotties = {};
+for (const d of ['svg', 'lottie', 'svg-stroke', 'lottie-stroke']) mkdirSync(join(OUT, d), { recursive: true });
+const svgs = {}, lotties = {}, svgsS = {}, lottiesS = {};
 const emit = (spec) => {
   if (svgs[spec.name]) return;
   svgs[spec.name] = toSvg(spec, SCHEMES.light);
   lotties[spec.name] = Object.fromEntries(SCHEME_KEYS.map((k) => [k, toLottie(spec, SCHEMES[k], k)]));
+  const st = toStrokeSpec(spec);
+  svgsS[spec.name] = toSvg(st, SCHEMES.light);
+  lottiesS[spec.name] = Object.fromEntries(SCHEME_KEYS.map((k) => [k, toLottie(st, SCHEMES[k], k)]));
 };
 for (const spec of build) {
   emit(spec);
-  writeFileSync(join(OUT, 'svg', `${spec.name}.svg`), svgs[spec.name]);
-  for (const k of SCHEME_KEYS) writeFileSync(join(OUT, 'lottie', `${spec.name}.${k}.json`), JSON.stringify(lotties[spec.name][k]));
-  console.log(`✓ ${spec.name}  ${spec.loopMs}ms  svg ${svgs[spec.name].length}B  lottie ${JSON.stringify(lotties[spec.name].light).length}B × ${SCHEME_KEYS.length}`);
+  if (DO_FILLED) {
+    writeFileSync(join(OUT, 'svg', `${spec.name}.svg`), svgs[spec.name]);
+    for (const k of SCHEME_KEYS) writeFileSync(join(OUT, 'lottie', `${spec.name}.${k}.json`), JSON.stringify(lotties[spec.name][k]));
+  }
+  if (DO_STROKE) {
+    writeFileSync(join(OUT, 'svg-stroke', `${spec.name}.svg`), svgsS[spec.name]);
+    for (const k of SCHEME_KEYS) writeFileSync(join(OUT, 'lottie-stroke', `${spec.name}.${k}.json`), JSON.stringify(lottiesS[spec.name][k]));
+  }
+  console.log(`✓ ${spec.name}  ${spec.loopMs}ms  ${opt.variant}  svg ${svgs[spec.name].length}B / stroke ${svgsS[spec.name].length}B  lottie ${JSON.stringify(lotties[spec.name].light).length}B × ${SCHEME_KEYS.length}`);
 }
 
 // ---- index.json: read-modify-write, unknown entries kept
+// Variants: `svg` / `lottie` are the filled variant (unchanged contract); the stroke variant adds `svgStroke` and
+// `lottieStroke` with the same shape, and `variants` lists what the entry has.
 const entry = (s, old) => ({
   ...(old || {}),
   name: s.name, order: s.order, label: s.label, module: s.module, status: old?.status || 'draft', baseIcon: s.baseIcon, loopMs: s.loopMs,
   motion: s.motion,
   svg: `svg/${s.name}.svg`,
   lottie: Object.fromEntries(SCHEME_KEYS.map((k) => [k, `lottie/${s.name}.${k}.json`])),
+  ...(DO_STROKE || old?.lottieStroke
+    ? {
+        variants: ['filled', 'stroke'],
+        svgStroke: `svg-stroke/${s.name}.svg`,
+        lottieStroke: Object.fromEntries(SCHEME_KEYS.map((k) => [k, `lottie-stroke/${s.name}.${k}.json`])),
+      }
+    : { variants: ['filled'] }),
 });
 const icons = [...(oldIndex?.icons || [])];
 for (const s of build) {
@@ -176,6 +214,6 @@ for (const e of icons) {
 }
 const require = createRequire(import.meta.url);
 const lottieJs = readFileSync(require.resolve('lottie-web/build/player/lottie_light.min.js'), 'utf8');
-writeFileSync(join(OUT, 'review.html'), reviewHtml({ specs: reviewSpecs, svgs, lotties, colours, schemes: SCHEMES, schemeKeys: SCHEME_KEYS, roleTable, lottieJs }));
+writeFileSync(join(OUT, 'review.html'), reviewHtml({ specs: reviewSpecs, svgs, lotties, svgsStroke: svgsS, lottiesStroke: lottiesS, colours, schemes: SCHEMES, schemeKeys: SCHEME_KEYS, roleTable, lottieJs }));
 console.log(`✓ ${OUT}: index.json (${icons.length} icons, ${build.length} built), contrast.json, review.html (${reviewSpecs.length})`);
 for (const [k, v] of Object.entries(roleTable.pairs)) console.log(`  ${k.padEnd(12)} ${v.map((x) => x.toFixed(2).padStart(6)).join('')}   min ${Math.min(...v).toFixed(2)}`);

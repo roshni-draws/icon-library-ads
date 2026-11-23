@@ -41,6 +41,8 @@ export default {
   loopMs: 4050,
   peaks: [0.14, 0.46], // door dark · light back on, smoke rising
   restAt: 0.85,
+  // Stroke variant: the lit door light stays solid ink (as an outline its flicker moves < 1% of the pixels).
+  stroke: { patch: { light: { fill: 'ink', stroke: null, strokeWidth: null } } },
   layers: [
     { id: 'tile', shapes: [{ rect: [0, 0, 48, 48, 14] }], fill: 'tile' },
     { id: 'chimney', shapes: [{ rect: [29.5, 10.5, 4.5, 8, 1.2] }], fill: 'ink', on: ['tile'] },

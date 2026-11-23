@@ -1,12 +1,15 @@
 import { useCallback, useEffect, useState } from 'react';
 import SNAPSHOT from 'virtual:primary';
 import type { SchemeKey } from './library';
+import { recolourLottie } from './tile';
 
 /**
  * Primary icons: animated "tile badge" icons for module navigation, in ../library/primary/:
  *   index.json                       { version: 1, icons: [{ name, label, module, status, baseIcon, loopMs, order, motion, svg, lottie }] }
  *   svg/<name>.svg                   self-contained animated SVG (CSS keyframes, --antz-<role> colours, reduced-motion rule)
  *   lottie/<name>.<scheme>.json      Lottie with baked colours, one per colour scheme (6 per icon)
+ *   svg-stroke/<name>.svg            optional stroke variant of the SVG (same rules)
+ *   lottie-stroke/<name>.<scheme>.json  optional stroke variant of the Lottie files
  * Dev reads /api/primary and reloads on "antz:library-changed"; a build shows the snapshot (virtual:primary).
  */
 export type PrimaryStatus = 'draft' | 'approved';
@@ -18,20 +21,35 @@ export interface PrimaryData {
   svgs: Record<string, string>;
   /** Which of the 6 scheme files exist, per icon. */
   lottie: Record<string, Partial<Record<SchemeKey, boolean>>>;
+  /** Stroke variant (svg-stroke/, lottie-stroke/); empty when the folders are missing. Optional for older snapshots. */
+  svgsStroke?: Record<string, string>;
+  lottieStroke?: Record<string, Partial<Record<SchemeKey, boolean>>>;
 }
 export type Motion = 'play' | 'pause' | 'reduced';
 export type Format = 'svg' | 'lottie';
+export type Variant = 'filled' | 'stroke';
+export const VARIANTS: Variant[] = ['filled', 'stroke'];
+
+/** The SVG of one variant, if present. */
+export const variantSvg = (p: PrimaryData, name: string, v: Variant): string | undefined => (v === 'stroke' ? p.svgsStroke?.[name] : p.svgs[name]);
+/** Which scheme files of one variant exist for an icon. */
+export const variantLottie = (p: PrimaryData, name: string, v: Variant): Partial<Record<SchemeKey, boolean>> => (v === 'stroke' ? p.lottieStroke?.[name] : p.lottie[name]) ?? {};
+/** Whether an icon has any file (SVG or Lottie) of the variant. */
+export const hasVariant = (p: PrimaryData, name: string, v: Variant) => !!variantSvg(p, name, v) || Object.values(variantLottie(p, name, v)).some(Boolean);
+/** Folder names per variant: svg/ + lottie/ or svg-stroke/ + lottie-stroke/. */
+export const svgDir = (v: Variant) => (v === 'stroke' ? 'svg-stroke' : 'svg');
+export const lottieDir = (v: Variant) => (v === 'stroke' ? 'lottie-stroke' : 'lottie');
 
 export const PRIMARY_SIZES = [48, 64, 96] as const;
 /** The 6 Lottie schemes, in the colour library's order. */
 export const LOTTIE_SCHEMES: SchemeKey[] = ['light', 'light-medium-contrast', 'light-high-contrast', 'dark', 'dark-medium-contrast', 'dark-high-contrast'];
-export const lottieUrl = (name: string, scheme: SchemeKey) => `primary/lottie/${name}.${scheme}.json`;
+export const lottieUrl = (name: string, scheme: SchemeKey, v: Variant = 'filled') => `primary/${lottieDir(v)}/${name}.${scheme}.json`;
 /**
  * The Lottie file to play for `scheme`: that scheme's own file, else the plain light or dark one of the same mode,
  * else the other mode. null when the icon has no Lottie at all.
  */
-export function lottieScheme(p: PrimaryData, name: string, scheme: SchemeKey): SchemeKey | null {
-  const has = p.lottie[name] ?? {};
+export function lottieScheme(p: PrimaryData, name: string, scheme: SchemeKey, v: Variant = 'filled'): SchemeKey | null {
+  const has = variantLottie(p, name, v);
   const mode: SchemeKey = scheme.startsWith('dark') ? 'dark' : 'light';
   for (const k of [scheme, mode, mode === 'dark' ? 'light' : 'dark'] as SchemeKey[]) if (has[k]) return k;
   return null;
@@ -140,7 +158,31 @@ export async function lottieJson(url: string): Promise<unknown> {
   }
   return structuredClone(await p);
 }
-export const clearLottieCache = () => jsonCache.clear();
+export const clearLottieCache = () => { jsonCache.clear(); tintCache.clear(); };
+
+const tintCache = new Map<string, Promise<unknown>>();
+/**
+ * A Lottie scheme file recoloured with a tile/ink pair (see recolourLottie in tile.ts), cached per
+ * icon + variant + scheme file + colours. The light file of the same variant is the role map when it exists.
+ * Each caller gets a fresh copy.
+ */
+export async function tintedLottie(p: PrimaryData, name: string, scheme: SchemeKey, v: Variant, tile: string, ink: string): Promise<unknown> {
+  const url = lottieUrl(name, scheme, v);
+  const key = `${url}|${tile}|${ink}`;
+  let pr = tintCache.get(key);
+  if (!pr) {
+    pr = (async () => {
+      const [data, ref] = await Promise.all([
+        lottieJson(url),
+        scheme !== 'light' && variantLottie(p, name, v).light ? lottieJson(lottieUrl(name, 'light', v)).catch(() => undefined) : Promise.resolve(undefined),
+      ]);
+      return recolourLottie(data, scheme, tile, ink, ref);
+    })();
+    tintCache.set(key, pr);
+    pr.catch(() => tintCache.delete(key));
+  }
+  return structuredClone(await pr);
+}
 
 /* ---------- Off-screen pause: one shared IntersectionObserver ---------- */
 

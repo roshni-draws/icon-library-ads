@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" class="antz-p-species-stroke" role="img" aria-label="Species">
+<style>
+.antz-p-species-stroke-f-ink{fill:var(--antz-on-primary-container,#00451F)}
+.antz-p-species-stroke-f-tile{fill:var(--antz-primary-container,#36BC69)}
+.antz-p-species-stroke-s-ink{stroke:var(--antz-on-primary-container,#00451F)}
+@keyframes antz-p-species-stroke-back{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}10%{transform:translate(0px,0px) rotate(0deg) scale(1);}20%{transform:translate(-2.8px,-2.8px) rotate(0deg) scale(1);}46%{transform:translate(-2.8px,-2.8px) rotate(0deg) scale(1);}58%{transform:translate(0.3px,0.3px) rotate(0deg) scale(1);}64%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-species-stroke-back{transform-box:view-box;transform-origin:24px 24px;animation:antz-p-species-stroke-back 3050ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-species-stroke-middle{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}4%{transform:translate(0px,0px) rotate(0deg) scale(1);}14%{transform:translate(-2px,-2px) rotate(0deg) scale(1);}46%{transform:translate(-2px,-2px) rotate(0deg) scale(1);}58%{transform:translate(0.3px,0.3px) rotate(0deg) scale(1);}64%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-species-stroke-middle{transform-box:view-box;transform-origin:24px 24px;animation:antz-p-species-stroke-middle 3050ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-species-stroke-paw{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}24%{transform:translate(0px,0px) rotate(0deg) scale(1);}30%{transform:translate(0px,0px) rotate(0deg) scale(0.9);}36%{transform:translate(0px,0px) rotate(0deg) scale(1.1);}44%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-species-stroke-paw{transform-box:view-box;transform-origin:28.5px 32px;animation:antz-p-species-stroke-paw 3050ms cubic-bezier(.45,0,.55,1) infinite}
+@media (prefers-reduced-motion:reduce){.antz-p-species-stroke *{animation:none!important}}
+</style>
+  <rect x="0" y="0" width="48" height="48" rx="14" class="antz-p-species-stroke-f-tile" fill="#36BC69"/>
+  <g class="antz-p-species-stroke-back">
+    <path d="M13 8H24C26.209 8 28 9.791 28 12V25C28 27.209 26.209 29 24 29H13C10.791 29 9 27.209 9 25V12C9 9.791 10.791 8 13 8Z" class="antz-p-species-stroke-f-tile antz-p-species-stroke-s-ink" fill="#36BC69" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g class="antz-p-species-stroke-middle">
+    <path d="M18 13H29C31.209 13 33 14.791 33 17V30C33 32.209 31.209 34 29 34H18C15.791 34 14 32.209 14 30V17C14 14.791 15.791 13 18 13Z" class="antz-p-species-stroke-f-tile antz-p-species-stroke-s-ink" fill="#36BC69" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <path d="M23 18H34C36.209 18 38 19.791 38 22V35C38 37.209 36.209 39 34 39H23C20.791 39 19 37.209 19 35V22C19 19.791 20.791 18 23 18Z" class="antz-p-species-stroke-f-tile antz-p-species-stroke-s-ink" fill="#36BC69" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M23 20.5H27C27.828 20.5 28.5 21.172 28.5 22V22C28.5 22.828 27.828 23.5 27 23.5H23C22.172 23.5 21.5 22.828 21.5 22V22C21.5 21.172 22.172 20.5 23 20.5Z" class="antz-p-species-stroke-f-tile antz-p-species-stroke-s-ink" fill="#36BC69" stroke="#00451F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g class="antz-p-species-stroke-paw">
+    <path d="M28.5 30.14C26.64 30.14 24.78 32.62 24.78 33.86A1.86 1.86 0 0 0 26.64 35.72H30.36A1.86 1.86 0 0 0 32.22 33.86C32.22 32.62 30.36 30.14 28.5 30.14Z" class="antz-p-species-stroke-f-ink antz-p-species-stroke-s-ink" fill="#00451F" stroke="#00451F" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M24.16 27.45C24.961 27.45 25.61 28.099 25.61 28.9C25.61 29.701 24.961 30.35 24.16 30.35C23.359 30.35 22.71 29.701 22.71 28.9C22.71 28.099 23.359 27.45 24.16 27.45Z" class="antz-p-species-stroke-f-ink" fill="#00451F"/>
+    <path d="M26.64 24.35C27.441 24.35 28.09 24.999 28.09 25.8C28.09 26.601 27.441 27.25 26.64 27.25C25.839 27.25 25.19 26.601 25.19 25.8C25.19 24.999 25.839 24.35 26.64 24.35Z" class="antz-p-species-stroke-f-ink" fill="#00451F"/>
+    <path d="M30.36 24.35C31.161 24.35 31.81 24.999 31.81 25.8C31.81 26.601 31.161 27.25 30.36 27.25C29.559 27.25 28.91 26.601 28.91 25.8C28.91 24.999 29.559 24.35 30.36 24.35Z" class="antz-p-species-stroke-f-ink" fill="#00451F"/>
+    <path d="M32.84 27.45C33.641 27.45 34.29 28.099 34.29 28.9C34.29 29.701 33.641 30.35 32.84 30.35C32.039 30.35 31.39 29.701 31.39 28.9C31.39 28.099 32.039 27.45 32.84 27.45Z" class="antz-p-species-stroke-f-ink" fill="#00451F"/>
+  </g>
+</svg>

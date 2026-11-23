@@ -2,13 +2,15 @@
 // 0 (static pose), peak A, peak B and the rest pose (spec.peaks / spec.restAt), in all 6 colour schemes, diff each
 // SVG/Lottie pair, check the accent rule in pixels, and write a frame strip (light, dark, light-high-contrast).
 //
-//   node validate.mjs [--out <dir>] [--names a,b] [--png <strip.png>] [--report <report.json>]
+//   node validate.mjs [--out <dir>] [--names a,b] [--png <strip.png>] [--report <report.json>] [--variant filled|stroke]
 //   node validate.mjs <primaryDir> <outPng> [reportJson]      (v2 form, still accepted)
 //
 //   --out <dir>     the folder build.mjs wrote (default: library/primary); reads <dir>/index.json, svg/, lottie/
 //   --names a,b     validate only these icons (default: every icon in <dir>/index.json)
 //   --png <file>    frame strip (default: <tmpdir>/antz-primary-validate/frames.png; the path is printed)
 //   --report <file> JSON report (optional)
+//   --variant v     filled (default: svg/, lottie/) or stroke (svg-stroke/, lottie-stroke/, the spec through
+//                   lib/stroke.mjs). For stroke, accentOnFill becomes noAccent (below) and ink/tile contrast is checked.
 //
 // Checks (exit 1 on failure):
 //   svgVsLottie  structural difference between SVG and Lottie, every time × scheme: ≤ 0.1% of pixels.
@@ -20,6 +22,8 @@
 //   motion       at least one peak differs from the rest pose by ≥ 2% of the icon's pixels (visible at 48px)
 //   accentOnFill the SVG is rendered with the accent variable set to #FF00FF and the tile to #00FFFF at all
 //                4 story times: no accent pixel may lie within 1 CSS px of a tile pixel (accent only on fill).
+//   noAccent     (stroke) the same probe also paints the light fill #FFFF00: no accent and no fill pixel at all.
+//   contrast     (stroke) ink (onPrimaryContainer) on tile (primaryContainer) ≥ 3:1 in all 6 schemes.
 // Needs Google Chrome in /Applications.
 import { readFileSync, writeFileSync, mkdtempSync, readdirSync } from 'node:fs';
 import { join, resolve, dirname } from 'node:path';
@@ -29,7 +33,8 @@ import { createRequire } from 'node:module';
 import puppeteer from 'puppeteer-core';
 import { PNG } from 'pngjs';
 import { mkdirSync } from 'node:fs';
-import { SCHEME_KEYS, flatScheme, ROLES } from './lib/model.mjs';
+import { SCHEME_KEYS, flatScheme, ROLES, contrast } from './lib/model.mjs';
+import { toStrokeSpec } from './lib/stroke.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 // Repo root (this file is library/generators/primary/<file>.mjs).
@@ -40,7 +45,7 @@ const opt = {};
 const pos = [];
 for (let i = 0; i < argv.length; i++) {
   const a = argv[i];
-  const m = a.match(/^--(out|names|png|report)(?:=(.*))?$/);
+  const m = a.match(/^--(out|names|png|report|variant)(?:=(.*))?$/);
   if (m) opt[m[1]] = m[2] ?? argv[++i];
   else if (a === '-h' || a === '--help') { console.log('usage: node validate.mjs [--out <dir>] [--names a,b] [--png <file>] [--report <file>]'); process.exit(0); }
   else if (a.startsWith('--')) { console.error(`unknown flag ${a}`); process.exit(1); }
@@ -49,6 +54,8 @@ for (let i = 0; i < argv.length; i++) {
 const DIR = resolve(opt.out || pos[0] || join(LIB, 'primary'));
 const outPng = resolve(opt.png || pos[1] || join(tmpdir(), 'antz-primary-validate', 'frames.png'));
 const reportPath = opt.report || pos[2];
+const STROKE = opt.variant === 'stroke';
+if (opt.variant && !['filled', 'stroke'].includes(opt.variant)) { console.error('--variant must be filled or stroke'); process.exit(1); }
 const NAMES = opt.names ? opt.names.split(',').map((s) => s.trim()).filter(Boolean) : null;
 mkdirSync(dirname(outPng), { recursive: true });
 const colours = JSON.parse(readFileSync(process.env.ANTZ_COLOURS || join(ROOT, 'app/src/data/ANTZ_colour_library.json'), 'utf8'));
@@ -66,7 +73,7 @@ const specs = {};
 for (const f of readdirSync(join(HERE, 'specs')).filter((x) => x.endsWith('.mjs'))) {
   if (!wanted.includes(f.slice(0, -4))) continue; // other agents' specs may be mid-edit
   const s = (await import(pathToFileURL(join(HERE, 'specs', f)).href)).default;
-  specs[s.name] = s;
+  specs[s.name] = STROKE ? toStrokeSpec(s) : s;
 }
 
 const kebab = (s) => s.replace(/[A-Z]/g, (c) => '-' + c.toLowerCase());
@@ -79,8 +86,8 @@ const data = index.icons.filter((ic) => wanted.includes(ic.name)).map((ic) => {
   const times = [0, s.peaks[0], s.peaks[1], s.restAt];
   return {
     ...ic, times,
-    svg: readFileSync(join(DIR, 'svg', `${ic.name}.svg`), 'utf8'),
-    lottie: Object.fromEntries(SCHEME_KEYS.map((m) => [m, JSON.parse(readFileSync(join(DIR, 'lottie', `${ic.name}.${m}.json`), 'utf8'))])),
+    svg: readFileSync(join(DIR, STROKE ? 'svg-stroke' : 'svg', `${ic.name}.svg`), 'utf8'),
+    lottie: Object.fromEntries(SCHEME_KEYS.map((m) => [m, JSON.parse(readFileSync(join(DIR, STROKE ? 'lottie-stroke' : 'lottie', `${ic.name}.${m}.json`), 'utf8'))])),
   };
 });
 const LABELS = ['start', 'peak A', 'peak B', 'rest'];
@@ -107,7 +114,7 @@ for (const ic of data) for (const m of SCHEME_KEYS) {
   extra += `<div class="cell rm" id="r-${ic.name}-${m}" style="${vars(m)}">${ic.svg}</div>`;
 }
 // Accent-rule probes: light scheme with the accent painted pure magenta and the tile pure cyan.
-const PROBE = `${vars('light')};${ROLES.accent.cssVar}:#FF00FF;${ROLES.tile.cssVar}:#00FFFF`;
+const PROBE = `${vars('light')};${ROLES.accent.cssVar}:#FF00FF;${ROLES.tile.cssVar}:#00FFFF${STROKE ? `;${ROLES.fill.cssVar}:#FFFF00` : ''}`;
 for (const ic of data) for (const t of ic.times) extra += `<div class="cell svg" id="a-${ic.name}-${key(t)}" data-t="${t}" data-loop="${ic.loopMs}" style="${PROBE}">${ic.svg}</div>`;
 
 const html = `<!doctype html><html><head><meta charset="utf-8"><style>
@@ -210,7 +217,9 @@ for (const ic of data) for (const [j, t] of ic.times.entries()) {
   const { width: w, height: h, data: px } = im;
   const isA = (i) => px[i] > 200 && px[i + 1] < 60 && px[i + 2] > 200;
   const isT = (i) => px[i] < 60 && px[i + 1] > 200 && px[i + 2] > 200;
-  let n = 0, acc = 0;
+  const isF = (i) => px[i] > 200 && px[i + 1] > 200 && px[i + 2] < 60;
+  let n = 0, acc = 0, fillPx = 0;
+  if (STROKE) for (let i = 0; i < px.length; i += 4) if (isF(i)) fillPx++;
   for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
     if (!isA((y * w + x) * 4)) continue;
     acc++;
@@ -221,8 +230,11 @@ for (const ic of data) for (const [j, t] of ic.times.entries()) {
     }
     if (hit) n++;
   }
-  accent.push({ icon: ic.name, at: LABELS[j], accentPx: acc, accentOnTilePx: n });
-  if (n > 0) fails.push(`${ic.name} ${LABELS[j]}: ${n} accent pixels touch the tile (accent only on fill)`);
+  accent.push({ icon: ic.name, at: LABELS[j], accentPx: acc, accentOnTilePx: n, ...(STROKE ? { fillPx } : {}) });
+  if (STROKE) {
+    if (acc > 0) fails.push(`${ic.name} ${LABELS[j]}: ${acc} accent pixels in the stroke variant (no accent allowed)`);
+    if (fillPx > 0) fails.push(`${ic.name} ${LABELS[j]}: ${fillPx} light-fill pixels in the stroke variant (outline only)`);
+  } else if (n > 0) fails.push(`${ic.name} ${LABELS[j]}: ${n} accent pixels touch the tile (accent only on fill)`);
 }
 await (await page.$('#strip')).screenshot({ path: outPng });
 await browser.close();
@@ -235,10 +247,16 @@ for (const r of report) {
   if (r.at.startsWith('peak')) s.peakMotion = Math.max(s.peakMotion, r.vsStart);
 }
 for (const r of reduced) summary[r.icon].worstReduced = Math.max(summary[r.icon].worstReduced || 0, r.reducedVsLottie0);
-for (const r of accent) summary[r.icon].accentOnTilePx = (summary[r.icon].accentOnTilePx || 0) + r.accentOnTilePx;
+for (const r of accent) {
+  summary[r.icon].accentOnTilePx = (summary[r.icon].accentOnTilePx || 0) + r.accentOnTilePx;
+  if (STROKE) summary[r.icon].accentOrFillPx = (summary[r.icon].accentOrFillPx || 0) + r.accentPx + r.fillPx;
+}
+// Stroke variant: the ink outline carries everything, so ink on tile must be ≥ 3:1 in every scheme.
+const inkTile = SCHEME_KEYS.map((k) => { const f = flatScheme(colours, k); return +contrast(f[ROLES.ink.scheme], f[ROLES.tile.scheme]).toFixed(2); });
+if (STROKE) for (const [i, v] of inkTile.entries()) if (v < 3) fails.push(`ink/tile ${SCHEME_KEYS[i]} is ${v}:1 (< 3:1)`);
 console.table(report.filter((r) => STRIP.includes(r.scheme)).map(({ icon, scheme, at, svgVsLottie, aaPct, vsStart }) => ({ icon, scheme: short(scheme), at, svgVsLottie, aaPct, vsStart })));
 console.table(summary);
-if (reportPath) writeFileSync(reportPath, JSON.stringify({ cellCssPx: CELL, dpr: DPR, limits: LIM, summary, report, reduced, accent, fails }, null, 2));
+if (reportPath) writeFileSync(reportPath, JSON.stringify({ variant: STROKE ? 'stroke' : 'filled', cellCssPx: CELL, dpr: DPR, limits: LIM, inkOnTile: Object.fromEntries(SCHEME_KEYS.map((k, i) => [k, inkTile[i]])), summary, report, reduced, accent, fails }, null, 2));
 if (fails.length) { console.error('✗ ' + fails.join('\n✗ ')); process.exit(1); }
-console.log(`✓ ${data.length} icons × ${SCHEME_KEYS.length} schemes × 4 story times: SVG = Lottie, rest = frame 0, reduced motion = frame 0, motion visible, accent only on fill`);
+console.log(`✓ ${STROKE ? 'stroke' : 'filled'}: ${data.length} icons × ${SCHEME_KEYS.length} schemes × 4 story times: SVG = Lottie, rest = frame 0, reduced motion = frame 0, motion visible, ${STROKE ? `no accent, no light fill, ink/tile ≥ ${Math.min(...inkTile)}:1` : 'accent only on fill'}`);
 console.log(`  strip: ${outPng}`);

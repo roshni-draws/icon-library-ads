@@ -31,6 +31,8 @@ export default {
   loopMs: 4200,
   peaks: [0.16, 0.52], // wobble right · chick peeking
   restAt: 0.85,
+  // Stroke variant: one straw curve in the nest; three ink straws under an outlined nest read as clutter.
+  stroke: { patch: { straw: { shapes: [{ path: 'M14 35C19 37.6 29 37.6 34 35' }] } } },
   layers: [
     { id: 'tile', shapes: [{ rect: [0, 0, 48, 48, 14] }], fill: 'tile' },
     {

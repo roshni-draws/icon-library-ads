@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" class="antz-p-chat-stroke" role="img" aria-label="Chat">
+<style>
+.antz-p-chat-stroke-f-ink{fill:var(--antz-on-primary-container,#00451F)}
+.antz-p-chat-stroke-f-tile{fill:var(--antz-primary-container,#36BC69)}
+.antz-p-chat-stroke-s-ink{stroke:var(--antz-on-primary-container,#00451F)}
+@keyframes antz-p-chat-stroke-message{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}50%{transform:translate(0px,0px) rotate(0deg) scale(1);}60%{transform:translate(0px,0px) rotate(-2deg) scale(1.06);}68%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-chat-stroke-message{transform-box:view-box;transform-origin:12px 36px;animation:antz-p-chat-stroke-message 3950ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-chat-stroke-dot1{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}4%{transform:translate(0px,0px) rotate(0deg) scale(1);}10%{transform:translate(0px,-3.5px) rotate(0deg) scale(1);}16%{transform:translate(0px,0px) rotate(0deg) scale(1);}24%{transform:translate(0px,0px) rotate(0deg) scale(1);}30%{transform:translate(0px,-3.5px) rotate(0deg) scale(1);}36%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-chat-stroke-dot1{transform-box:view-box;transform-origin:18px 21px;animation:antz-p-chat-stroke-dot1 3950ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-chat-stroke-dot2{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}9%{transform:translate(0px,0px) rotate(0deg) scale(1);}15%{transform:translate(0px,-3.5px) rotate(0deg) scale(1);}21%{transform:translate(0px,0px) rotate(0deg) scale(1);}29%{transform:translate(0px,0px) rotate(0deg) scale(1);}35%{transform:translate(0px,-3.5px) rotate(0deg) scale(1);}41%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-chat-stroke-dot2{transform-box:view-box;transform-origin:24px 21px;animation:antz-p-chat-stroke-dot2 3950ms cubic-bezier(.45,0,.55,1) infinite}
+@keyframes antz-p-chat-stroke-dot3{0%{transform:translate(0px,0px) rotate(0deg) scale(1);}14%{transform:translate(0px,0px) rotate(0deg) scale(1);}20%{transform:translate(0px,-3.5px) rotate(0deg) scale(1);}26%{transform:translate(0px,0px) rotate(0deg) scale(1);}34%{transform:translate(0px,0px) rotate(0deg) scale(1);}40%{transform:translate(0px,-3.5px) rotate(0deg) scale(1);}46%{transform:translate(0px,0px) rotate(0deg) scale(1);}100%{transform:translate(0px,0px) rotate(0deg) scale(1);}}
+.antz-p-chat-stroke-dot3{transform-box:view-box;transform-origin:30px 21px;animation:antz-p-chat-stroke-dot3 3950ms cubic-bezier(.45,0,.55,1) infinite}
+@media (prefers-reduced-motion:reduce){.antz-p-chat-stroke *{animation:none!important}}
+</style>
+  <rect x="0" y="0" width="48" height="48" rx="14" class="antz-p-chat-stroke-f-tile" fill="#36BC69"/>
+  <g class="antz-p-chat-stroke-message">
+    <path d="M13.5 10.5H34.5A3 3 0 0 1 37.5 13.5V28.5A3 3 0 0 1 34.5 31.5H16.5L10.5 37.5V13.5A3 3 0 0 1 13.5 10.5Z" class="antz-p-chat-stroke-f-tile antz-p-chat-stroke-s-ink" fill="#36BC69" stroke="#00451F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <g class="antz-p-chat-stroke-dot1">
+      <circle cx="18" cy="21" r="2.5" class="antz-p-chat-stroke-f-ink" fill="#00451F"/>
+    </g>
+    <g class="antz-p-chat-stroke-dot2">
+      <circle cx="24" cy="21" r="2.5" class="antz-p-chat-stroke-f-ink" fill="#00451F"/>
+    </g>
+    <g class="antz-p-chat-stroke-dot3">
+      <circle cx="30" cy="21" r="2.5" class="antz-p-chat-stroke-f-ink" fill="#00451F"/>
+    </g>
+  </g>
+</svg>

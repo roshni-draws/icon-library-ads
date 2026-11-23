@@ -27,6 +27,19 @@
         "dark": "lottie/home.dark.json",
         "dark-medium-contrast": "lottie/home.dark-medium-contrast.json",
         "dark-high-contrast": "lottie/home.dark-high-contrast.json"
+      },
+      "variants": [
+        "filled",
+        "stroke"
+      ],
+      "svgStroke": "svg-stroke/home.svg",
+      "lottieStroke": {
+        "light": "lottie-stroke/home.light.json",
+        "light-medium-contrast": "lottie-stroke/home.light-medium-contrast.json",
+        "light-high-contrast": "lottie-stroke/home.light-high-contrast.json",
+        "dark": "lottie-stroke/home.dark.json",
+        "dark-medium-contrast": "lottie-stroke/home.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie-stroke/home.dark-high-contrast.json"
       }
     },
     {
@@ -46,6 +59,19 @@
         "dark": "lottie/dashboard.dark.json",
         "dark-medium-contrast": "lottie/dashboard.dark-medium-contrast.json",
         "dark-high-contrast": "lottie/dashboard.dark-high-contrast.json"
+      },
+      "variants": [
+        "filled",
+        "stroke"
+      ],
+      "svgStroke": "svg-stroke/dashboard.svg",
+      "lottieStroke": {
+        "light": "lottie-stroke/dashboard.light.json",
+        "light-medium-contrast": "lottie-stroke/dashboard.light-medium-contrast.json",
+        "light-high-contrast": "lottie-stroke/dashboard.light-high-contrast.json",
+        "dark": "lottie-stroke/dashboard.dark.json",
+        "dark-medium-contrast": "lottie-stroke/dashboard.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie-stroke/dashboard.dark-high-contrast.json"
       }
     },
     {
@@ -65,7 +91,20 @@
         "dark-medium-contrast": "lottie/animals.dark-medium-contrast.json",
         "dark-high-contrast": "lottie/animals.dark-high-contrast.json"
       },
-      "order": 3
+      "order": 3,
+      "variants": [
+        "filled",
+        "stroke"
+      ],
+      "svgStroke": "svg-stroke/animals.svg",
+      "lottieStroke": {
+        "light": "lottie-stroke/animals.light.json",
+        "light-medium-contrast": "lottie-stroke/animals.light-medium-contrast.json",
+        "light-high-contrast": "lottie-stroke/animals.light-high-contrast.json",
+        "dark": "lottie-stroke/animals.dark.json",
+        "dark-medium-contrast": "lottie-stroke/animals.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie-stroke/animals.dark-high-contrast.json"
+      }
     },
     {
       "name": "species",
@@ -84,6 +123,19 @@
         "dark": "lottie/species.dark.json",
         "dark-medium-contrast": "lottie/species.dark-medium-contrast.json",
         "dark-high-contrast": "lottie/species.dark-high-contrast.json"
+      },
+      "variants": [
+        "filled",
+        "stroke"
+      ],
+      "svgStroke": "svg-stroke/species.svg",
+      "lottieStroke": {
+        "light": "lottie-stroke/species.light.json",
+        "light-medium-contrast": "lottie-stroke/species.light-medium-contrast.json",
+        "light-high-contrast": "lottie-stroke/species.light-high-contrast.json",
+        "dark": "lottie-stroke/species.dark.json",
+        "dark-medium-contrast": "lottie-stroke/species.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie-stroke/species.dark-high-contrast.json"
       }
     },
     {
@@ -103,6 +155,19 @@
         "dark": "lottie/family_tree.dark.json",
         "dark-medium-contrast": "lottie/family_tree.dark-medium-contrast.json",
         "dark-high-contrast": "lottie/family_tree.dark-high-contrast.json"
+      },
+      "variants": [
+        "filled",
+        "stroke"
+      ],
+      "svgStroke": "svg-stroke/family_tree.svg",
+      "lottieStroke": {
+        "light": "lottie-stroke/family_tree.light.json",
+        "light-medium-contrast": "lottie-stroke/family_tree.light-medium-contrast.json",
+        "light-high-contrast": "lottie-stroke/family_tree.light-high-contrast.json",
+        "dark": "lottie-stroke/family_tree.dark.json",
+        "dark-medium-contrast": "lottie-stroke/family_tree.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie-stroke/family_tree.dark-high-contrast.json"
       }
     },
     {
@@ -122,7 +187,20 @@
         "dark-medium-contrast": "lottie/medical.dark-medium-contrast.json",
         "dark-high-contrast": "lottie/medical.dark-high-contrast.json"
       },
-      "order": 6
+      "order": 6,
+      "variants": [
+        "filled",
+        "stroke"
+      ],
+      "svgStroke": "svg-stroke/medical.svg",
+      "lottieStroke": {
+        "light": "lottie-stroke/medical.light.json",
+        "light-medium-contrast": "lottie-stroke/medical.light-medium-contrast.json",
+        "light-high-contrast": "lottie-stroke/medical.light-high-contrast.json",
+        "dark": "lottie-stroke/medical.dark.json",
+        "dark-medium-contrast": "lottie-stroke/medical.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie-stroke/medical.dark-high-contrast.json"
+      }
     },
     {
       "name": "hospital",
@@ -132,7 +210,7 @@
       "status": "draft",
       "baseIcon": "local_hospital",
       "loopMs": 3150,
-      "motion": "Admission: a paw print walks up and in through the door, then the cross beats once, then rest.",
+      "motion": "Admission: an elephant walks up to the door, lifting its trunk, then the cross beats once, then rest.",
       "svg": "svg/hospital.svg",
       "lottie": {
         "light": "lottie/hospital.light.json",
@@ -141,6 +219,19 @@
         "dark": "lottie/hospital.dark.json",
         "dark-medium-contrast": "lottie/hospital.dark-medium-contrast.json",
         "dark-high-contrast": "lottie/hospital.dark-high-contrast.json"
+      },
+      "variants": [
+        "filled",
+        "stroke"
+      ],
+      "svgStroke": "svg-stroke/hospital.svg",
+      "lottieStroke": {
+        "light": "lottie-stroke/hospital.light.json",
+        "light-medium-contrast": "lottie-stroke/hospital.light-medium-contrast.json",
+        "light-high-contrast": "lottie-stroke/hospital.light-high-contrast.json",
+        "dark": "lottie-stroke/hospital.dark.json",
+        "dark-medium-contrast": "lottie-stroke/hospital.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie-stroke/hospital.dark-high-contrast.json"
       }
     },
     {
@@ -160,6 +251,19 @@
         "dark": "lottie/pharmacy.dark.json",
         "dark-medium-contrast": "lottie/pharmacy.dark-medium-contrast.json",
         "dark-high-contrast": "lottie/pharmacy.dark-high-contrast.json"
+      },
+      "variants": [
+        "filled",
+        "stroke"
+      ],
+      "svgStroke": "svg-stroke/pharmacy.svg",
+      "lottieStroke": {
+        "light": "lottie-stroke/pharmacy.light.json",
+        "light-medium-contrast": "lottie-stroke/pharmacy.light-medium-contrast.json",
+        "light-high-contrast": "lottie-stroke/pharmacy.light-high-contrast.json",
+        "dark": "lottie-stroke/pharmacy.dark.json",
+        "dark-medium-contrast": "lottie-stroke/pharmacy.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie-stroke/pharmacy.dark-high-contrast.json"
       }
     },
     {
@@ -179,7 +283,20 @@
         "dark-medium-contrast": "lottie/lab.dark-medium-contrast.json",
         "dark-high-contrast": "lottie/lab.dark-high-contrast.json"
       },
-      "order": 9
+      "order": 9,
+      "variants": [
+        "filled",
+        "stroke"
+      ],
+      "svgStroke": "svg-stroke/lab.svg",
+      "lottieStroke": {
+        "light": "lottie-stroke/lab.light.json",
+        "light-medium-contrast": "lottie-stroke/lab.light-medium-contrast.json",
+        "light-high-contrast": "lottie-stroke/lab.light-high-contrast.json",
+        "dark": "lottie-stroke/lab.dark.json",
+        "dark-medium-contrast": "lottie-stroke/lab.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie-stroke/lab.dark-high-contrast.json"
+      }
     },
     {
       "name": "eggs",
@@ -198,7 +315,20 @@
         "dark-medium-contrast": "lottie/eggs.dark-medium-contrast.json",
         "dark-high-contrast": "lottie/eggs.dark-high-contrast.json"
       },
-      "order": 10
+      "order": 10,
+      "variants": [
+        "filled",
+        "stroke"
+      ],
+      "svgStroke": "svg-stroke/eggs.svg",
+      "lottieStroke": {
+        "light": "lottie-stroke/eggs.light.json",
+        "light-medium-contrast": "lottie-stroke/eggs.light-medium-contrast.json",
+        "light-high-contrast": "lottie-stroke/eggs.light-high-contrast.json",
+        "dark": "lottie-stroke/eggs.dark.json",
+        "dark-medium-contrast": "lottie-stroke/eggs.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie-stroke/eggs.dark-high-contrast.json"
+      }
     },
     {
       "name": "housing",
@@ -217,6 +347,19 @@
         "dark": "lottie/housing.dark.json",
         "dark-medium-contrast": "lottie/housing.dark-medium-contrast.json",
         "dark-high-contrast": "lottie/housing.dark-high-contrast.json"
+      },
+      "variants": [
+        "filled",
+        "stroke"
+      ],
+      "svgStroke": "svg-stroke/housing.svg",
+      "lottieStroke": {
+        "light": "lottie-stroke/housing.light.json",
+        "light-medium-contrast": "lottie-stroke/housing.light-medium-contrast.json",
+        "light-high-contrast": "lottie-stroke/housing.light-high-contrast.json",
+        "dark": "lottie-stroke/housing.dark.json",
+        "dark-medium-contrast": "lottie-stroke/housing.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie-stroke/housing.dark-high-contrast.json"
       }
     },
     {
@@ -227,7 +370,7 @@
       "status": "draft",
       "baseIcon": "move_in",
       "loopMs": 3300,
-      "motion": "Move: the arrow draws back, then pushes in through the door and the paw slides in with it, then rest.",
+      "motion": "Move: the route re-draws across the map as the truck drives along it, and the pin pops as the route arrives, then rest.",
       "svg": "svg/move_animal.svg",
       "lottie": {
         "light": "lottie/move_animal.light.json",
@@ -236,6 +379,19 @@
         "dark": "lottie/move_animal.dark.json",
         "dark-medium-contrast": "lottie/move_animal.dark-medium-contrast.json",
         "dark-high-contrast": "lottie/move_animal.dark-high-contrast.json"
+      },
+      "variants": [
+        "filled",
+        "stroke"
+      ],
+      "svgStroke": "svg-stroke/move_animal.svg",
+      "lottieStroke": {
+        "light": "lottie-stroke/move_animal.light.json",
+        "light-medium-contrast": "lottie-stroke/move_animal.light-medium-contrast.json",
+        "light-high-contrast": "lottie-stroke/move_animal.light-high-contrast.json",
+        "dark": "lottie-stroke/move_animal.dark.json",
+        "dark-medium-contrast": "lottie-stroke/move_animal.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie-stroke/move_animal.dark-high-contrast.json"
       }
     },
     {
@@ -255,6 +411,19 @@
         "dark": "lottie/diet.dark.json",
         "dark-medium-contrast": "lottie/diet.dark-medium-contrast.json",
         "dark-high-contrast": "lottie/diet.dark-high-contrast.json"
+      },
+      "variants": [
+        "filled",
+        "stroke"
+      ],
+      "svgStroke": "svg-stroke/diet.svg",
+      "lottieStroke": {
+        "light": "lottie-stroke/diet.light.json",
+        "light-medium-contrast": "lottie-stroke/diet.light-medium-contrast.json",
+        "light-high-contrast": "lottie-stroke/diet.light-high-contrast.json",
+        "dark": "lottie-stroke/diet.dark.json",
+        "dark-medium-contrast": "lottie-stroke/diet.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie-stroke/diet.dark-high-contrast.json"
       }
     },
     {
@@ -274,6 +443,19 @@
         "dark": "lottie/kitchen.dark.json",
         "dark-medium-contrast": "lottie/kitchen.dark-medium-contrast.json",
         "dark-high-contrast": "lottie/kitchen.dark-high-contrast.json"
+      },
+      "variants": [
+        "filled",
+        "stroke"
+      ],
+      "svgStroke": "svg-stroke/kitchen.svg",
+      "lottieStroke": {
+        "light": "lottie-stroke/kitchen.light.json",
+        "light-medium-contrast": "lottie-stroke/kitchen.light-medium-contrast.json",
+        "light-high-contrast": "lottie-stroke/kitchen.light-high-contrast.json",
+        "dark": "lottie-stroke/kitchen.dark.json",
+        "dark-medium-contrast": "lottie-stroke/kitchen.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie-stroke/kitchen.dark-high-contrast.json"
       }
     },
     {
@@ -293,6 +475,19 @@
         "dark": "lottie/mortality.dark.json",
         "dark-medium-contrast": "lottie/mortality.dark-medium-contrast.json",
         "dark-high-contrast": "lottie/mortality.dark-high-contrast.json"
+      },
+      "variants": [
+        "filled",
+        "stroke"
+      ],
+      "svgStroke": "svg-stroke/mortality.svg",
+      "lottieStroke": {
+        "light": "lottie-stroke/mortality.light.json",
+        "light-medium-contrast": "lottie-stroke/mortality.light-medium-contrast.json",
+        "light-high-contrast": "lottie-stroke/mortality.light-high-contrast.json",
+        "dark": "lottie-stroke/mortality.dark.json",
+        "dark-medium-contrast": "lottie-stroke/mortality.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie-stroke/mortality.dark-high-contrast.json"
       }
     },
     {
@@ -312,6 +507,19 @@
         "dark": "lottie/necropsy.dark.json",
         "dark-medium-contrast": "lottie/necropsy.dark-medium-contrast.json",
         "dark-high-contrast": "lottie/necropsy.dark-high-contrast.json"
+      },
+      "variants": [
+        "filled",
+        "stroke"
+      ],
+      "svgStroke": "svg-stroke/necropsy.svg",
+      "lottieStroke": {
+        "light": "lottie-stroke/necropsy.light.json",
+        "light-medium-contrast": "lottie-stroke/necropsy.light-medium-contrast.json",
+        "light-high-contrast": "lottie-stroke/necropsy.light-high-contrast.json",
+        "dark": "lottie-stroke/necropsy.dark.json",
+        "dark-medium-contrast": "lottie-stroke/necropsy.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie-stroke/necropsy.dark-high-contrast.json"
       }
     },
     {
@@ -331,6 +539,19 @@
         "dark": "lottie/assessments.dark.json",
         "dark-medium-contrast": "lottie/assessments.dark-medium-contrast.json",
         "dark-high-contrast": "lottie/assessments.dark-high-contrast.json"
+      },
+      "variants": [
+        "filled",
+        "stroke"
+      ],
+      "svgStroke": "svg-stroke/assessments.svg",
+      "lottieStroke": {
+        "light": "lottie-stroke/assessments.light.json",
+        "light-medium-contrast": "lottie-stroke/assessments.light-medium-contrast.json",
+        "light-high-contrast": "lottie-stroke/assessments.light-high-contrast.json",
+        "dark": "lottie-stroke/assessments.dark.json",
+        "dark-medium-contrast": "lottie-stroke/assessments.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie-stroke/assessments.dark-high-contrast.json"
       }
     },
     {
@@ -341,7 +562,7 @@
       "status": "draft",
       "baseIcon": "transfer",
       "loopMs": 3650,
-      "motion": "Hand-off: the crate slides off to the right along the arrow and arrives back from the left, then rest.",
+      "motion": "Hand-off: the truck backs up and rolls in from the left with its wheels turning and speed lines behind it, then brakes with a small tilt and settles, then rest.",
       "svg": "svg/transfers.svg",
       "lottie": {
         "light": "lottie/transfers.light.json",
@@ -350,6 +571,19 @@
         "dark": "lottie/transfers.dark.json",
         "dark-medium-contrast": "lottie/transfers.dark-medium-contrast.json",
         "dark-high-contrast": "lottie/transfers.dark-high-contrast.json"
+      },
+      "variants": [
+        "filled",
+        "stroke"
+      ],
+      "svgStroke": "svg-stroke/transfers.svg",
+      "lottieStroke": {
+        "light": "lottie-stroke/transfers.light.json",
+        "light-medium-contrast": "lottie-stroke/transfers.light-medium-contrast.json",
+        "light-high-contrast": "lottie-stroke/transfers.light-high-contrast.json",
+        "dark": "lottie-stroke/transfers.dark.json",
+        "dark-medium-contrast": "lottie-stroke/transfers.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie-stroke/transfers.dark-high-contrast.json"
       }
     },
     {
@@ -369,6 +603,19 @@
         "dark": "lottie/requests.dark.json",
         "dark-medium-contrast": "lottie/requests.dark-medium-contrast.json",
         "dark-high-contrast": "lottie/requests.dark-high-contrast.json"
+      },
+      "variants": [
+        "filled",
+        "stroke"
+      ],
+      "svgStroke": "svg-stroke/requests.svg",
+      "lottieStroke": {
+        "light": "lottie-stroke/requests.light.json",
+        "light-medium-contrast": "lottie-stroke/requests.light-medium-contrast.json",
+        "light-high-contrast": "lottie-stroke/requests.light-high-contrast.json",
+        "dark": "lottie-stroke/requests.dark.json",
+        "dark-medium-contrast": "lottie-stroke/requests.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie-stroke/requests.dark-high-contrast.json"
       }
     },
     {
@@ -388,6 +635,19 @@
         "dark": "lottie/notes.dark.json",
         "dark-medium-contrast": "lottie/notes.dark-medium-contrast.json",
         "dark-high-contrast": "lottie/notes.dark-high-contrast.json"
+      },
+      "variants": [
+        "filled",
+        "stroke"
+      ],
+      "svgStroke": "svg-stroke/notes.svg",
+      "lottieStroke": {
+        "light": "lottie-stroke/notes.light.json",
+        "light-medium-contrast": "lottie-stroke/notes.light-medium-contrast.json",
+        "light-high-contrast": "lottie-stroke/notes.light-high-contrast.json",
+        "dark": "lottie-stroke/notes.dark.json",
+        "dark-medium-contrast": "lottie-stroke/notes.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie-stroke/notes.dark-high-contrast.json"
       }
     },
     {
@@ -407,6 +667,19 @@
         "dark": "lottie/announcements.dark.json",
         "dark-medium-contrast": "lottie/announcements.dark-medium-contrast.json",
         "dark-high-contrast": "lottie/announcements.dark-high-contrast.json"
+      },
+      "variants": [
+        "filled",
+        "stroke"
+      ],
+      "svgStroke": "svg-stroke/announcements.svg",
+      "lottieStroke": {
+        "light": "lottie-stroke/announcements.light.json",
+        "light-medium-contrast": "lottie-stroke/announcements.light-medium-contrast.json",
+        "light-high-contrast": "lottie-stroke/announcements.light-high-contrast.json",
+        "dark": "lottie-stroke/announcements.dark.json",
+        "dark-medium-contrast": "lottie-stroke/announcements.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie-stroke/announcements.dark-high-contrast.json"
       }
     },
     {
@@ -426,6 +699,19 @@
         "dark": "lottie/notifications.dark.json",
         "dark-medium-contrast": "lottie/notifications.dark-medium-contrast.json",
         "dark-high-contrast": "lottie/notifications.dark-high-contrast.json"
+      },
+      "variants": [
+        "filled",
+        "stroke"
+      ],
+      "svgStroke": "svg-stroke/notifications.svg",
+      "lottieStroke": {
+        "light": "lottie-stroke/notifications.light.json",
+        "light-medium-contrast": "lottie-stroke/notifications.light-medium-contrast.json",
+        "light-high-contrast": "lottie-stroke/notifications.light-high-contrast.json",
+        "dark": "lottie-stroke/notifications.dark.json",
+        "dark-medium-contrast": "lottie-stroke/notifications.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie-stroke/notifications.dark-high-contrast.json"
       }
     },
     {
@@ -445,6 +731,19 @@
         "dark": "lottie/chat.dark.json",
         "dark-medium-contrast": "lottie/chat.dark-medium-contrast.json",
         "dark-high-contrast": "lottie/chat.dark-high-contrast.json"
+      },
+      "variants": [
+        "filled",
+        "stroke"
+      ],
+      "svgStroke": "svg-stroke/chat.svg",
+      "lottieStroke": {
+        "light": "lottie-stroke/chat.light.json",
+        "light-medium-contrast": "lottie-stroke/chat.light-medium-contrast.json",
+        "light-high-contrast": "lottie-stroke/chat.light-high-contrast.json",
+        "dark": "lottie-stroke/chat.dark.json",
+        "dark-medium-contrast": "lottie-stroke/chat.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie-stroke/chat.dark-high-contrast.json"
       }
     },
     {
@@ -464,6 +763,19 @@
         "dark": "lottie/reports.dark.json",
         "dark-medium-contrast": "lottie/reports.dark-medium-contrast.json",
         "dark-high-contrast": "lottie/reports.dark-high-contrast.json"
+      },
+      "variants": [
+        "filled",
+        "stroke"
+      ],
+      "svgStroke": "svg-stroke/reports.svg",
+      "lottieStroke": {
+        "light": "lottie-stroke/reports.light.json",
+        "light-medium-contrast": "lottie-stroke/reports.light-medium-contrast.json",
+        "light-high-contrast": "lottie-stroke/reports.light-high-contrast.json",
+        "dark": "lottie-stroke/reports.dark.json",
+        "dark-medium-contrast": "lottie-stroke/reports.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie-stroke/reports.dark-high-contrast.json"
       }
     },
     {
@@ -483,6 +795,19 @@
         "dark": "lottie/staff.dark.json",
         "dark-medium-contrast": "lottie/staff.dark-medium-contrast.json",
         "dark-high-contrast": "lottie/staff.dark-high-contrast.json"
+      },
+      "variants": [
+        "filled",
+        "stroke"
+      ],
+      "svgStroke": "svg-stroke/staff.svg",
+      "lottieStroke": {
+        "light": "lottie-stroke/staff.light.json",
+        "light-medium-contrast": "lottie-stroke/staff.light-medium-contrast.json",
+        "light-high-contrast": "lottie-stroke/staff.light-high-contrast.json",
+        "dark": "lottie-stroke/staff.dark.json",
+        "dark-medium-contrast": "lottie-stroke/staff.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie-stroke/staff.dark-high-contrast.json"
       }
     },
     {
@@ -502,6 +827,19 @@
         "dark": "lottie/department.dark.json",
         "dark-medium-contrast": "lottie/department.dark-medium-contrast.json",
         "dark-high-contrast": "lottie/department.dark-high-contrast.json"
+      },
+      "variants": [
+        "filled",
+        "stroke"
+      ],
+      "svgStroke": "svg-stroke/department.svg",
+      "lottieStroke": {
+        "light": "lottie-stroke/department.light.json",
+        "light-medium-contrast": "lottie-stroke/department.light-medium-contrast.json",
+        "light-high-contrast": "lottie-stroke/department.light-high-contrast.json",
+        "dark": "lottie-stroke/department.dark.json",
+        "dark-medium-contrast": "lottie-stroke/department.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie-stroke/department.dark-high-contrast.json"
       }
     },
     {
@@ -521,6 +859,19 @@
         "dark": "lottie/security.dark.json",
         "dark-medium-contrast": "lottie/security.dark-medium-contrast.json",
         "dark-high-contrast": "lottie/security.dark-high-contrast.json"
+      },
+      "variants": [
+        "filled",
+        "stroke"
+      ],
+      "svgStroke": "svg-stroke/security.svg",
+      "lottieStroke": {
+        "light": "lottie-stroke/security.light.json",
+        "light-medium-contrast": "lottie-stroke/security.light-medium-contrast.json",
+        "light-high-contrast": "lottie-stroke/security.light-high-contrast.json",
+        "dark": "lottie-stroke/security.dark.json",
+        "dark-medium-contrast": "lottie-stroke/security.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie-stroke/security.dark-high-contrast.json"
       }
     },
     {
@@ -540,6 +891,19 @@
         "dark": "lottie/compliance.dark.json",
         "dark-medium-contrast": "lottie/compliance.dark-medium-contrast.json",
         "dark-high-contrast": "lottie/compliance.dark-high-contrast.json"
+      },
+      "variants": [
+        "filled",
+        "stroke"
+      ],
+      "svgStroke": "svg-stroke/compliance.svg",
+      "lottieStroke": {
+        "light": "lottie-stroke/compliance.light.json",
+        "light-medium-contrast": "lottie-stroke/compliance.light-medium-contrast.json",
+        "light-high-contrast": "lottie-stroke/compliance.light-high-contrast.json",
+        "dark": "lottie-stroke/compliance.dark.json",
+        "dark-medium-contrast": "lottie-stroke/compliance.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie-stroke/compliance.dark-high-contrast.json"
       }
     },
     {
@@ -559,6 +923,19 @@
         "dark": "lottie/activity_log.dark.json",
         "dark-medium-contrast": "lottie/activity_log.dark-medium-contrast.json",
         "dark-high-contrast": "lottie/activity_log.dark-high-contrast.json"
+      },
+      "variants": [
+        "filled",
+        "stroke"
+      ],
+      "svgStroke": "svg-stroke/activity_log.svg",
+      "lottieStroke": {
+        "light": "lottie-stroke/activity_log.light.json",
+        "light-medium-contrast": "lottie-stroke/activity_log.light-medium-contrast.json",
+        "light-high-contrast": "lottie-stroke/activity_log.light-high-contrast.json",
+        "dark": "lottie-stroke/activity_log.dark.json",
+        "dark-medium-contrast": "lottie-stroke/activity_log.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie-stroke/activity_log.dark-high-contrast.json"
       }
     },
     {
@@ -578,6 +955,19 @@
         "dark": "lottie/settings.dark.json",
         "dark-medium-contrast": "lottie/settings.dark-medium-contrast.json",
         "dark-high-contrast": "lottie/settings.dark-high-contrast.json"
+      },
+      "variants": [
+        "filled",
+        "stroke"
+      ],
+      "svgStroke": "svg-stroke/settings.svg",
+      "lottieStroke": {
+        "light": "lottie-stroke/settings.light.json",
+        "light-medium-contrast": "lottie-stroke/settings.light-medium-contrast.json",
+        "light-high-contrast": "lottie-stroke/settings.light-high-contrast.json",
+        "dark": "lottie-stroke/settings.dark.json",
+        "dark-medium-contrast": "lottie-stroke/settings.dark-medium-contrast.json",
+        "dark-high-contrast": "lottie-stroke/settings.dark-high-contrast.json"
       }
     }
   ]

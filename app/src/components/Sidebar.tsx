@@ -1,5 +1,6 @@
 import { useEffect, useId, useRef, useState, type ReactNode } from 'react';
-import { download, exportCss, exportIndex, exportPrimaryZip, exportSprite, exportZip, type ExportFile } from '../lib/exporters';
+import { download, exportCss, exportIndex, exportPrimaryZip, exportSprite, exportZip, type ExportFile, type ExportTint } from '../lib/exporters';
+import { DEFAULT_BG, resolveBg } from '../lib/tile';
 import { toHash, type SchemeSel, type UiState } from '../lib/hash';
 import type { LibData } from '../lib/iconLibrary';
 import type { PrimaryData } from '../lib/primary';
@@ -8,9 +9,9 @@ import { Ms } from './Segmented';
 
 export interface DraftInfo { hasWork: boolean; name: string; label: string }
 
-const EXPORTS: { id: string; title: string; hint: string; icon: string; make: (d: LibData, say: (m: string) => void, p: PrimaryData) => ExportFile | Promise<ExportFile> }[] = [
+const EXPORTS: { id: string; title: string; hint: string; icon: string; make: (d: LibData, say: (m: string) => void, p: PrimaryData, tint: ExportTint | null) => ExportFile | Promise<ExportFile> }[] = [
   { id: 'zip', title: 'Library (.zip)', hint: 'line/, filled/, index.json, both sprites, CSS', icon: 'folder_zip', make: (d, say) => exportZip(d, say) },
-  { id: 'prim', title: 'Primary icons (ZIP)', hint: 'svg/, lottie/<scheme>/ (6 schemes), index.json, README', icon: 'animation', make: (_d, say, p) => exportPrimaryZip(p, say) },
+  { id: 'prim', title: 'Primary icons (ZIP)', hint: 'svg/, lottie/<scheme>/ (6 schemes), svg-stroke/, lottie-stroke/<scheme>/, index.json, README', icon: 'animation', make: (_d, say, p, tint) => exportPrimaryZip(p, say, tint) },
   { id: 'sl', title: 'antz-icons-line.svg', hint: 'Sprite: <symbol id="antz-<name>">', icon: 'stack', make: (d) => exportSprite(d, 'line') },
   { id: 'sf', title: 'antz-icons-filled.svg', hint: 'Sprite: <symbol id="antz-<name>">', icon: 'stack', make: (d) => exportSprite(d, 'filled') },
   { id: 'json', title: 'index.json', hint: 'The library index', icon: 'data_object', make: (d) => exportIndex(d) },
@@ -28,7 +29,7 @@ function useOutside(open: boolean, wrap: React.RefObject<HTMLElement>, close: ()
 }
 
 /** Export menu (menu button pattern): one item per file, built from the library. */
-function ExportMenu({ data, primary }: { data: LibData; primary: PrimaryData }) {
+function ExportMenu({ data, primary, tint }: { data: LibData; primary: PrimaryData; tint: ExportTint | null }) {
   const id = useId();
   const [open, setOpen] = useState(false);
   const [busy, setBusy] = useState(false);
@@ -50,7 +51,7 @@ function ExportMenu({ data, primary }: { data: LibData; primary: PrimaryData }) 
     setBusy(true);
     say(`Making ${x.title}…`, true);
     try {
-      const f = await x.make(data, (m) => say(m, true), primary);
+      const f = await x.make(data, (m) => say(m, true), primary, tint);
       download(f);
       say(`Downloaded ${f.name}.`);
     } catch (err) {
@@ -77,7 +78,7 @@ function ExportMenu({ data, primary }: { data: LibData; primary: PrimaryData }) 
           {EXPORTS.map((x) => (
             <button key={x.id} type="button" role="menuitem" tabIndex={-1} onClick={() => void run(x)}>
               <Ms n={x.icon} size={20} />
-              <span className="menu-t"><span>{x.title}</span><small>{x.hint}</small></span>
+              <span className="menu-t"><span>{x.title}</span><small>{x.hint}{x.id === 'prim' && tint ? ` · Tile colour: ${resolveBg(tint.bg, tint.scheme).label}` : ''}</small></span>
             </button>
           ))}
         </div>
@@ -133,6 +134,9 @@ function NavLink({ href, current, icon, children, count, title }: { href: string
   );
 }
 
+/** The Primary page's "Export with tile colour: current choice" (bgx=1 with a non-default bg), else null. */
+const primaryTint = (s: UiState): ExportTint | null => (s.page === 'primary' && s.bgx && s.bg !== DEFAULT_BG ? { bg: s.bg, scheme: s.scheme === 'all' ? 'light' : s.scheme } : null);
+
 export function Sidebar({ state, set, data, primary, live, draft, onNew, open, onClose }: {
   state: UiState; set: (p: Partial<UiState>) => void; data: LibData; primary: PrimaryData; live: boolean; draft: DraftInfo;
   onNew: () => void; open: boolean; onClose: () => void;
@@ -185,7 +189,7 @@ export function Sidebar({ state, set, data, primary, live, draft, onNew, open, o
           <span className="lbl">{live ? 'Live library' : 'Read-only snapshot'}</span>
         </span>
         <Settings state={state} set={set} />
-        <ExportMenu data={data} primary={primary} />
+        <ExportMenu data={data} primary={primary} tint={primaryTint(state)} />
       </div>
     </nav>
   );

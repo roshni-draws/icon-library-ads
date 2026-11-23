@@ -3,6 +3,7 @@
 // set a little left of centre; a single leaf (light, thin ink outline, green midrib on its fill) drifts beside it.
 // Story: a leaf drifts slowly down past the skull, swaying gently, and fades before it reaches the ground; then
 // rest. Nothing bounces: the skull never moves. Static pose: the skull alone.
+import { disc } from '../lib/shapes.mjs';
 import svgpath from 'svgpath';
 
 const SKULL = 'M4 11A8 8 0 0 1 20 11V14A2 2 0 0 1 18 16V19A2 2 0 0 1 16 21H8A2 2 0 0 1 6 19V16A2 2 0 0 1 4 14Z';
@@ -32,6 +33,9 @@ export default {
   loopMs: 3500,
   peaks: [0.24, 0.42], // leaf high, swaying · leaf low beside the jaw
   restAt: 0.85,
+  // Stroke variant: the eyes as cubic discs (SVG and Lottie anti-alias native circles differently, and with no
+  // fill around them that edge decides the SVG/Lottie match).
+  stroke: { patch: { eyes: { shapes: [{ path: disc(16.5, 24, 2.6) }, { path: disc(25.5, 24, 2.6) }] } } },
   layers: [
     { id: 'tile', shapes: [{ rect: [0, 0, 48, 48, 14] }], fill: 'tile' },
     { id: 'skull', shapes: [{ path: T(SKULL) }], fill: 'fill', stroke: 'ink', on: { stroke: ['tile', 'fill'] } },

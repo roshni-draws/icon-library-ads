@@ -29,6 +29,8 @@ export default {
   loopMs: 3950,
   peaks: [0.14, 0.6], // dots mid-wave · bubble popped
   restAt: 0.85,
+  // Stroke variant: the typing dots stay solid ink (outlined, three small rings read as "ooo" at 48px).
+  stroke: { patch: Object.fromEntries([1, 2, 3].map((i) => [`dot${i}`, { fill: 'ink', stroke: null, strokeWidth: null }])) },
   layers: [
     { id: 'tile', shapes: [{ rect: [0, 0, 48, 48, 14] }], fill: 'tile' },
     {
